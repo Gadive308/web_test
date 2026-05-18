@@ -1,11 +1,207 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tin tức</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức - Medivax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="top-header">
+            <div class="container top-header-inner">
+                <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
+                    <span class="brand-mark">+</span>
+                    <span class="brand-text">MEDIVAX</span>
+                </a>
 
+                <form class="search-box" role="search">
+                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                </form>
+
+                <div class="header-actions">
+                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
+                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
+                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
+                    <li><a href="camnangyte.html">Cẩm nang</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" style="background: linear-gradient(135deg, #e51f2d 0%, #f5555e 100%); min-height: 200px; display: flex; align-items: center; justify-content: center;">
+            <div class="container" style="text-align: center;">
+                <h1 style="color: #fff; font-size: 32px; margin: 0;">Tin tức Medivax</h1>
+                <p style="color: rgba(255,255,255,0.9);">Cập nhật thông tin mới nhất về tiêm chủng và sức khỏe</p>
+            </div>
+        </section>
+
+        <section class="section-gap">
+            <div class="container narrow">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+                    
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #2c83dd 0%, #469df5 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">📅</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-05-15</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Những mốc tiêm quan trọng năm đầu đời</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Biết rõ các mốc tiêm chủng quan trọng giúp bé được bảo vệ toàn diện từ sơ sinh đến một tuổi...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #0e4fb0 0%, #2c83dd 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👨‍💼</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-05-10</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Tư vấn lịch tiêm cho người trưởng thành</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Người trưởng thành nên tiêm những vắc xin gì để bảo vệ sức khỏe lâu dài?...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👵</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-05-08</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Lưu ý khi tiêm cúm mùa cho người cao tuổi</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Người cao tuổi cần hiểu rõ về lợi ích và những cân nhắc khi tiêm vắc xin cúm...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">❗</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-05-05</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Giải đáp phản ứng sau tiêm thường gặp</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Hiểu rõ các phản ứng bình thường sau tiêm giúp bạn yên tâm và chăm sóc tốt...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👶</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-05-01</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Cách chăm sóc trẻ sơ sinh sau tiêm</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Những lưu ý quan trọng để giúp bé nhanh chóng hồi phục sau tiêm chủng...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">❤️</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-04-28</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Tiêm chủng - Cách bảo vệ sức khỏe hiệu quả</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Tại sao tiêm chủng là một trong những cách tốt nhất để bảo vệ sức khỏe gia đình?...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">🌍</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-04-25</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Vắc xin HPV - Bảo vệ sức khỏe phụ nữ</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Tìm hiểu về vắc xin HPV và tác dụng bảo vệ trong phòng ngừa ung thư cổ tử cung...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">💉</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-04-20</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Vắc xin mới nhất từ các nhà sản xuất thế giới</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Medivax cung cấp những vắc xin mới nhất và hiệu quả nhất từ các nhà sản xuất hàng đầu...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+
+                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s;">
+                        <div style="background: linear-gradient(135deg, #f97316 0%, #fb923c 100%); height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">⭐</div>
+                        <div style="padding: 20px;">
+                            <p style="margin: 0 0 8px 0; font-size: 12px; color: #999; text-transform: uppercase;">2024-04-15</p>
+                            <h3 style="margin: 0 0 12px 0; color: #1b2a4d;">Các gói tiêm chủng toàn diện cho gia đình</h3>
+                            <p style="margin: 0 0 16px 0; color: #666; font-size: 14px;">Lựa chọn các gói tiêm phù hợp để bảo vệ sức khỏe toàn bộ thành viên gia đình...</p>
+                            <button type="button" class="btn-pill" style="width: 100%; padding: 10px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 20px; font-weight: 600;">Đọc thêm</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-gap" style="background: linear-gradient(135deg, #2c83dd 0%, #469df5 100%); color: white;">
+            <div class="container narrow">
+                <h2 style="color: white; text-align: center; margin-top: 0;">Hãy theo dõi các tin tức mới</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: rgba(255,255,255,0.9);">Đăng ký để nhận thông tin cập nhật về sức khỏe và tiêm chủng</p>
+                <form style="display: flex; gap: 12px; max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Nhập email của bạn..." required style="flex: 1; padding: 12px; border: 0; border-radius: 6px; font-size: 14px;">
+                    <button type="submit" style="padding: 12px 24px; background: #e51f2d; color: white; border: 0; border-radius: 6px; font-weight: 600; cursor: pointer; white-space: nowrap;">Đăng ký</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section-gap">
+            <div class="container narrow">
+                <h2 class="center-heading">Cần hỗ trợ?</h2>
+                <p style="text-align: center; margin-bottom: 20px; color: #666;">Liên hệ với chúng tôi để có được tư vấn tốt nhất</p>
+                <div style="text-align: center;">
+                    <a href="datlichkham.html" class="btn-primary" style="display: inline-block; padding: 12px 32px; background: #2f87df; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin-right: 12px;">Đặt lịch khám</a>
+                    <button type="button" class="btn-pill" style="padding: 12px 32px; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd; cursor: pointer; border-radius: 6px; font-weight: 600;" onclick="alert('Hotline: 1900 6666')">Gọi hotline</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>MEDIVAX</strong>
+                <p>Tư vấn: 1900 6666</p>
+                <p>Email: care@medivax.vn</p>
+            </div>
+            <div>
+                <strong>Gói chăm sóc</strong>
+                <p>Tiêm cho trẻ em</p>
+                <p>Tiêm cho người lớn</p>
+                <p>Tiêm trước thai kỳ</p>
+            </div>
+            <div>
+                <strong>Hỗ trợ khách hàng</strong>
+                <p>Hướng dẫn đặt lịch</p>
+                <p>Điều khoản sử dụng</p>
+                <p>Chính sách bảo mật</p>
+            </div>
+            <div>
+                <strong>Giờ làm việc</strong>
+                <p>Thứ 2 - Thứ 7: 07:30 - 17:00</p>
+                <p>Chủ nhật: 07:30 - 12:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
