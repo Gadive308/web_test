@@ -12,8 +12,7 @@
         <div class="top-header">
             <div class="container top-header-inner">
                 <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
-                    <span class="brand-mark">+</span>
-                    <span class="brand-text">MEDIVAX</span>
+                        <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
                 </a>
 
                 <form class="search-box" role="search">
@@ -47,10 +46,10 @@
     </header>
 
     <main>
-        <section class="hero-section" style="background: linear-gradient(135deg, #2c83dd 0%, #469df5 100%); min-height: 200px; display: flex; align-items: center; justify-content: center;">
-            <div class="container" style="text-align: center;">
-                <h1 style="color: #fff; font-size: 32px; margin: 0;">Đặt lịch khám tiêm chủng</h1>
-                <p style="color: rgba(255,255,255,0.9);">Chọn thời gian và địa điểm phù hợp với bạn</p>
+        <section class="hero-section hero-shell hero-shell--blue">
+            <div class="container hero-copy">
+                <h1 class="hero-title hero-title--sm">Đặt lịch khám tiêm chủng</h1>
+                <p>Chọn thời gian và địa điểm phù hợp với bạn</p>
             </div>
         </section>
 
@@ -78,41 +77,41 @@
             </div>
         </section>
 
-        <section class="section-gap" style="background: #f2f7ff;">
+        <section class="section-gap form-section">
             <div class="container narrow">
                 <h2 class="center-heading">Đặt lịch khám ngay</h2>
-                <form class="booking-form">
+                <form class="booking-form form-card">
                     <fieldset>
-                        <legend style="font-size: 16px; font-weight: 700; margin-bottom: 20px; display: block;">Thông tin cá nhân</legend>
+                        <legend class="form-legend">Thông tin cá nhân</legend>
                         <div class="field-grid">
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Họ và tên *</label>
-                                <input type="text" placeholder="Nhập họ và tên" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                                <label class="form-field-label">Họ và tên *</label>
+                                <input type="text" placeholder="Nhập họ và tên" required class="form-input">
                             </div>
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Ngày sinh *</label>
-                                <input type="date" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                                <label class="form-field-label">Ngày sinh *</label>
+                                <input type="date" required class="form-input">
                             </div>
                         </div>
 
                         <div class="field-grid">
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Số điện thoại *</label>
-                                <input type="tel" placeholder="0123456789" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                                <label class="form-field-label">Số điện thoại *</label>
+                                <input type="tel" placeholder="0123456789" required class="form-input">
                             </div>
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Email</label>
-                                <input type="email" placeholder="example@email.com" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                                <label class="form-field-label">Email</label>
+                                <input type="email" placeholder="example@email.com" class="form-input">
                             </div>
                         </div>
                     </fieldset>
 
-                    <fieldset style="margin-top: 30px;">
-                        <legend style="font-size: 16px; font-weight: 700; margin-bottom: 20px; display: block;">Thông tin tiêm chủng</legend>
+                    <fieldset class="fieldset-spaced">
+                        <legend class="form-legend">Thông tin tiêm chủng</legend>
                         <div class="field-grid">
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Chọn gói tiêm *</label>
-                                <select required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+                                <label class="form-field-label">Chọn gói tiêm *</label>
+                                <select required class="form-select">
                                     <option value="">-- Chọn gói tiêm --</option>
                                     <option value="baby">Gói tiêm cho bé từ 0 - 24 tháng</option>
                                     <option value="child">Gói tiêm cho trẻ 3 - 14 tuổi</option>
@@ -124,8 +123,8 @@
                                 </select>
                             </div>
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Chọn trung tâm *</label>
-                                <select required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+                                <label class="form-field-label">Chọn trung tâm *</label>
+                                <select required class="form-select">
                                     <option value="">-- Chọn trung tâm --</option>
                                     <option value="vo-van-dung">TC Medivax 25 Võ Văn Dũng</option>
                                     <option value="yen-vien">TC Medivax 38 Yên Viên</option>
@@ -137,12 +136,12 @@
 
                         <div class="field-grid">
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Ngày khám dự kiến *</label>
-                                <input type="date" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px;">
+                                <label class="form-field-label">Ngày khám dự kiến *</label>
+                                <input type="date" required class="form-input">
                             </div>
                             <div>
-                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px;">Giờ khám *</label>
-                                <select required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px;">
+                                <label class="form-field-label">Giờ khám *</label>
+                                <select required class="form-select">
                                     <option value="">-- Chọn giờ --</option>
                                     <option value="07:30">07:30 - 08:30</option>
                                     <option value="08:30">08:30 - 09:30</option>
@@ -156,14 +155,14 @@
                         </div>
                     </fieldset>
 
-                    <fieldset style="margin-top: 30px;">
-                        <legend style="font-size: 16px; font-weight: 700; margin-bottom: 20px; display: block;">Ghi chú thêm</legend>
-                        <textarea placeholder="Ghi chú về tình trạng sức khỏe hoặc bất kỳ câu hỏi nào..." style="width: 100%; min-height: 120px; padding: 10px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; font-size: 14px;"></textarea>
+                    <fieldset class="fieldset-spaced">
+                        <legend class="form-legend">Ghi chú thêm</legend>
+                        <textarea placeholder="Ghi chú về tình trạng sức khỏe hoặc bất kỳ câu hỏi nào..." class="form-textarea"></textarea>
                     </fieldset>
 
-                    <div style="margin-top: 30px; display: flex; gap: 12px;">
-                        <button type="submit" class="btn-primary" style="flex: 1;">Xác nhận đặt lịch</button>
-                        <button type="reset" class="btn-pill" style="flex: 1; background: #f2f7ff; color: #2f87df; border: 1px solid #ddd;">Xóa</button>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Xác nhận đặt lịch</button>
+                        <button type="reset" class="btn-pill btn-soft">Xóa</button>
                     </div>
                 </form>
             </div>
@@ -173,39 +172,39 @@
             <div class="container narrow">
                 <h2 class="center-heading">Các địa điểm tiêm chủng Medivax</h2>
                 <div class="location-layout">
-                    <div class="location-list" style="display: grid; grid-template-columns: 1fr; gap: 12px;">
-                        <div class="location-item" style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.3s; background: #f9fbfd;">
-                            <strong style="color: #2f87df;">TC Medivax 25 Võ Văn Dũng</strong>
-                            <p style="margin: 6px 0; font-size: 14px; color: #666;">Phường Ô Chợ Dừa, Hà Nội</p>
-                            <p style="margin: 4px 0; font-size: 13px; color: #999;">Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
+                    <div class="location-list location-list--stacked">
+                        <div class="location-item location-item--filled">
+                            <strong>TC Medivax 25 Võ Văn Dũng</strong>
+                            <p>Phường Ô Chợ Dừa, Hà Nội</p>
+                            <p>Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
                         </div>
-                        <div class="location-item" style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.3s; background: #f9fbfd;">
-                            <strong style="color: #2f87df;">TC Medivax 38 Yên Viên</strong>
-                            <p style="margin: 6px 0; font-size: 14px; color: #666;">Gia Lâm, Hà Nội</p>
-                            <p style="margin: 4px 0; font-size: 13px; color: #999;">Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
+                        <div class="location-item location-item--filled">
+                            <strong>TC Medivax 38 Yên Viên</strong>
+                            <p>Gia Lâm, Hà Nội</p>
+                            <p>Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
                         </div>
-                        <div class="location-item" style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.3s; background: #f9fbfd;">
-                            <strong style="color: #2f87df;">TC Medivax 2 Vũ Trọng Phụng</strong>
-                            <p style="margin: 6px 0; font-size: 14px; color: #666;">Thanh Xuân, Hà Nội</p>
-                            <p style="margin: 4px 0; font-size: 13px; color: #999;">Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
+                        <div class="location-item location-item--filled">
+                            <strong>TC Medivax 2 Vũ Trọng Phụng</strong>
+                            <p>Thanh Xuân, Hà Nội</p>
+                            <p>Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
                         </div>
-                        <div class="location-item" style="padding: 16px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.3s; background: #f9fbfd;">
-                            <strong style="color: #2f87df;">TC Medivax 52 Nguyễn Trãi</strong>
-                            <p style="margin: 6px 0; font-size: 14px; color: #666;">Thanh Xuân, Hà Nội</p>
-                            <p style="margin: 4px 0; font-size: 13px; color: #999;">Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
+                        <div class="location-item location-item--filled">
+                            <strong>TC Medivax 52 Nguyễn Trãi</strong>
+                            <p>Thanh Xuân, Hà Nội</p>
+                            <p>Giờ mở cửa: 07:30 - 17:00 (T2 - CN)</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-gap" style="background: linear-gradient(135deg, #2c83dd 0%, #469df5 100%); color: white;">
+        <section class="section-gap support-panel">
             <div class="container narrow">
-                <h2 style="color: white; text-align: center;">Cần hỗ trợ?</h2>
-                <p style="text-align: center; margin-bottom: 20px;">Liên hệ trực tiếp với chúng tôi qua hotline hoặc email</p>
-                <div style="text-align: center;">
-                    <p style="font-size: 18px; font-weight: 700; margin: 10px 0;">📞 Hotline: 1900 6666</p>
-                    <p style="font-size: 16px; margin: 10px 0;">📧 Email: care@medivax.vn</p>
+                <h2>Cần hỗ trợ?</h2>
+                <p>Liên hệ trực tiếp với chúng tôi qua hotline hoặc email</p>
+                <div class="support-center">
+                    <p>📞 Hotline: 1900 6666</p>
+                    <p>📧 Email: care@medivax.vn</p>
                 </div>
             </div>
         </section>

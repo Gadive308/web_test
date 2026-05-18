@@ -12,8 +12,7 @@
         <div class="top-header">
             <div class="container top-header-inner">
                 <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
-                    <span class="brand-mark">+</span>
-                    <span class="brand-text">MEDIVAX</span>
+                        <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
                 </a>
 
                 <form class="search-box" role="search">
@@ -47,92 +46,92 @@
     </header>
 
     <main>
-        <section class="hero-section" style="background: linear-gradient(135deg, #0e4fb0 0%, #2c83dd 100%); min-height: 200px; display: flex; align-items: center; justify-content: center;">
-            <div class="container" style="text-align: center;">
-                <h1 style="color: #fff; font-size: 32px; margin: 0;">Các chuyên khoa tiêm chủng</h1>
-                <p style="color: rgba(255,255,255,0.9);">Chuyên khoa phù hợp với từng độ tuổi và tình trạng sức khỏe</p>
+        <section class="hero-section hero-shell hero-shell--blue-dark">
+            <div class="container hero-copy">
+                <h1 class="hero-title hero-title--sm">Các chuyên khoa tiêm chủng</h1>
+                <p>Chuyên khoa phù hợp với từng độ tuổi và tình trạng sức khỏe</p>
             </div>
         </section>
 
         <section class="section-gap">
             <div class="container narrow">
                 <h2 class="center-heading">Danh sách chuyên khoa</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                <div class="specialty-grid">
                     
-                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s; cursor: pointer; background: white;" onclick="location.href='chuyenkhoachi.html?id=1'">
-                        <div style="background: linear-gradient(135deg, #2c83dd 0%, #469df5 100%); height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👶</div>
-                        <div style="padding: 20px;">
-                            <h3 style="margin: 0 0 8px 0; color: #1b2a4d;">Tiêm chủng cho trẻ sơ sinh</h3>
-                            <p style="margin: 0 0 12px 0; color: #666; font-size: 14px;">Gói tiêm bảo vệ toàn diện từ 0-24 tháng với các vắc xin cần thiết nhất cho trẻ sơ sinh.</p>
-                            <div style="display: flex; gap: 8px;">
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">BCG</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Rota</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Sởi</span>
+                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=1'">
+                        <div class="specialty-card__media hero-shell--blue">👶</div>
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Tiêm chủng cho trẻ sơ sinh</h3>
+                            <p class="specialty-card__desc">Gói tiêm bảo vệ toàn diện từ 0-24 tháng với các vắc xin cần thiết nhất cho trẻ sơ sinh.</p>
+                            <div class="specialty-badges">
+                                <span class="tag-pill tag-pill--sm">BCG</span>
+                                <span class="tag-pill tag-pill--sm">Rota</span>
+                                <span class="tag-pill tag-pill--sm">Sởi</span>
                             </div>
                         </div>
                     </article>
 
-                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s; cursor: pointer; background: white;" onclick="location.href='chuyenkhoachi.html?id=2'">
-                        <div style="background: linear-gradient(135deg, #10b981 0%, #34d399 100%); height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👧</div>
-                        <div style="padding: 20px;">
-                            <h3 style="margin: 0 0 8px 0; color: #1b2a4d;">Tiêm chủng cho trẻ em lớn</h3>
-                            <p style="margin: 0 0 12px 0; color: #666; font-size: 14px;">Chuyên khoa tiêm chủng cho trẻ 3-14 tuổi với các vắc xin phòng bệnh quan trọng.</p>
-                            <div style="display: flex; gap: 8px;">
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">HPV</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Cúm</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Thủy đậu</span>
+                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=2'">
+                        <div class="specialty-card__media hero-shell--green">👧</div>
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Tiêm chủng cho trẻ em lớn</h3>
+                            <p class="specialty-card__desc">Chuyên khoa tiêm chủng cho trẻ 3-14 tuổi với các vắc xin phòng bệnh quan trọng.</p>
+                            <div class="specialty-badges">
+                                <span class="tag-pill tag-pill--sm">HPV</span>
+                                <span class="tag-pill tag-pill--sm">Cúm</span>
+                                <span class="tag-pill tag-pill--sm">Thủy đậu</span>
                             </div>
                         </div>
                     </article>
 
-                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s; cursor: pointer; background: white;" onclick="location.href='chuyenkhoachi.html?id=3'">
-                        <div style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👦</div>
-                        <div style="padding: 20px;">
-                            <h3 style="margin: 0 0 8px 0; color: #1b2a4d;">Tiêm chủng cho thanh niên</h3>
-                            <p style="margin: 0 0 12px 0; color: #666; font-size: 14px;">Chuyên khoa tiêm chủng cho thanh niên 15-34 tuổi chuẩn bị sức khỏe tối ưu.</p>
-                            <div style="display: flex; gap: 8px;">
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">HPV</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Sốt xuất huyết</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Viêm gan</span>
+                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=3'">
+                        <div class="specialty-card__media hero-shell--amber">👦</div>
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Tiêm chủng cho thanh niên</h3>
+                            <p class="specialty-card__desc">Chuyên khoa tiêm chủng cho thanh niên 15-34 tuổi chuẩn bị sức khỏe tối ưu.</p>
+                            <div class="specialty-badges">
+                                <span class="tag-pill tag-pill--sm">HPV</span>
+                                <span class="tag-pill tag-pill--sm">Sốt xuất huyết</span>
+                                <span class="tag-pill tag-pill--sm">Viêm gan</span>
                             </div>
                         </div>
                     </article>
 
-                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s; cursor: pointer; background: white;" onclick="location.href='chuyenkhoachi.html?id=4'">
-                        <div style="background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👩</div>
-                        <div style="padding: 20px;">
-                            <h3 style="margin: 0 0 8px 0; color: #1b2a4d;">Tiêm chủng cho phụ nữ</h3>
-                            <p style="margin: 0 0 12px 0; color: #666; font-size: 14px;">Chuyên khoa bảo vệ sức khỏe phụ nữ trước thai kỳ và các bệnh phụ khoa.</p>
-                            <div style="display: flex; gap: 8px;">
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Sởi</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Rubella</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Viêm gan</span>
+                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=4'">
+                        <div class="specialty-card__media hero-shell--pink">👩</div>
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Tiêm chủng cho phụ nữ</h3>
+                            <p class="specialty-card__desc">Chuyên khoa bảo vệ sức khỏe phụ nữ trước thai kỳ và các bệnh phụ khoa.</p>
+                            <div class="specialty-badges">
+                                <span class="tag-pill tag-pill--sm">Sởi</span>
+                                <span class="tag-pill tag-pill--sm">Rubella</span>
+                                <span class="tag-pill tag-pill--sm">Viêm gan</span>
                             </div>
                         </div>
                     </article>
 
-                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s; cursor: pointer; background: white;" onclick="location.href='chuyenkhoachi.html?id=5'">
-                        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%); height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👨‍💼</div>
-                        <div style="padding: 20px;">
-                            <h3 style="margin: 0 0 8px 0; color: #1b2a4d;">Tiêm chủng cho người trưởng thành</h3>
-                            <p style="margin: 0 0 12px 0; color: #666; font-size: 14px;">Chuyên khoa bảo vệ sức khỏe người trưởng thành với các vắc xin phòng bệnh mạn tính.</p>
-                            <div style="display: flex; gap: 8px;">
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Cúm</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Viêm gan</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Uốn ván</span>
+                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=5'">
+                        <div class="specialty-card__media hero-shell--violet">👨‍💼</div>
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Tiêm chủng cho người trưởng thành</h3>
+                            <p class="specialty-card__desc">Chuyên khoa bảo vệ sức khỏe người trưởng thành với các vắc xin phòng bệnh mạn tính.</p>
+                            <div class="specialty-badges">
+                                <span class="tag-pill tag-pill--sm">Cúm</span>
+                                <span class="tag-pill tag-pill--sm">Viêm gan</span>
+                                <span class="tag-pill tag-pill--sm">Uốn ván</span>
                             </div>
                         </div>
                     </article>
 
-                    <article style="border: 1px solid #e0e8f0; border-radius: 8px; overflow: hidden; transition: all 0.3s; cursor: pointer; background: white;" onclick="location.href='chuyenkhoachi.html?id=6'">
-                        <div style="background: linear-gradient(135deg, #6366f1 0%, #818cf8 100%); height: 120px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">👵</div>
-                        <div style="padding: 20px;">
-                            <h3 style="margin: 0 0 8px 0; color: #1b2a4d;">Tiêm chủng cho người cao tuổi</h3>
-                            <p style="margin: 0 0 12px 0; color: #666; font-size: 14px;">Chuyên khoa bảo vệ sức khỏe người cao tuổi từ 60 tuổi trở lên.</p>
-                            <div style="display: flex; gap: 8px;">
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Cúm</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Phế cầu</span>
-                                <span style="display: inline-block; background: #f0f4fb; color: #2f87df; padding: 4px 12px; border-radius: 20px; font-size: 12px;">Zona</span>
+                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=6'">
+                        <div class="specialty-card__media hero-shell--indigo">👵</div>
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Tiêm chủng cho người cao tuổi</h3>
+                            <p class="specialty-card__desc">Chuyên khoa bảo vệ sức khỏe người cao tuổi từ 60 tuổi trở lên.</p>
+                            <div class="specialty-badges">
+                                <span class="tag-pill tag-pill--sm">Cúm</span>
+                                <span class="tag-pill tag-pill--sm">Phế cầu</span>
+                                <span class="tag-pill tag-pill--sm">Zona</span>
                             </div>
                         </div>
                     </article>
@@ -140,11 +139,11 @@
             </div>
         </section>
 
-        <section class="section-gap" style="background: #f2f7ff;">
+        <section class="section-gap surface-light">
             <div class="container narrow">
                 <h2 class="center-heading">Tuyên bố hội chẩn chuyên khoa</h2>
-                <div style="background: white; padding: 24px; border-radius: 8px; border-left: 4px solid #2f87df;">
-                    <p style="margin: 0; color: #666; line-height: 1.6;">Tất cả các chuyên khoa tiêm chủng của Medivax được dẫn dắt bởi các bác sĩ có chứng chỉ chuyên khoa và kinh nghiệm lâu năm. Chúng tôi cung cấp tư vấn miễn phí để giúp bạn lựa chọn gói tiêm chủng phù hợp nhất với tình trạng sức khỏe và nhu cầu của từng cá nhân.</p>
+                <div class="specialty-notice">
+                    <p>Tất cả các chuyên khoa tiêm chủng của Medivax được dẫn dắt bởi các bác sĩ có chứng chỉ chuyên khoa và kinh nghiệm lâu năm. Chúng tôi cung cấp tư vấn miễn phí để giúp bạn lựa chọn gói tiêm chủng phù hợp nhất với tình trạng sức khỏe và nhu cầu của từng cá nhân.</p>
                 </div>
             </div>
         </section>
@@ -152,9 +151,9 @@
         <section class="section-gap">
             <div class="container narrow">
                 <h2 class="center-heading">Liên hệ chúng tôi</h2>
-                <p style="text-align: center; margin-bottom: 20px; color: #666;">Chọn chuyên khoa bạn cần và đặt lịch khám với các bác sĩ chuyên khoa</p>
-                <div style="text-align: center;">
-                    <a href="datlichkham.html" class="btn-primary" style="display: inline-block; padding: 12px 32px; background: #2f87df; color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">Đặt lịch ngay</a>
+                <p class="support-center">Chọn chuyên khoa bạn cần và đặt lịch khám với các bác sĩ chuyên khoa</p>
+                <div class="detail-cta-row">
+                    <a href="datlichkham.html" class="btn-primary btn-inline">Đặt lịch ngay</a>
                 </div>
             </div>
         </section>
@@ -169,13 +168,13 @@
             </div>
             <div>
                 <strong>Cơ sở y tế</strong>
-                <p><a href="cosoyte.html" style="color: inherit; text-decoration: none;">Danh sách cơ sở</a></p>
-                <p><a href="chuyenkhoa.html" style="color: inherit; text-decoration: none;">Chuyên khoa</a></p>
+                <p><a href="cosoyte.html">Danh sách cơ sở</a></p>
+                <p><a href="chuyenkhoa.html">Chuyên khoa</a></p>
             </div>
             <div>
                 <strong>Đội ngũ</strong>
-                <p><a href="bacsi.html" style="color: inherit; text-decoration: none;">Bác sĩ</a></p>
-                <p><a href="hoiapbacsi.html" style="color: inherit; text-decoration: none;">Hỏi đáp</a></p>
+                <p><a href="bacsi.html">Bác sĩ</a></p>
+                <p><a href="hoiapbacsi.html">Hỏi đáp</a></p>
             </div>
             <div>
                 <strong>Giờ làm việc</strong>
