@@ -1599,7 +1599,9 @@ a {
 		list-style: none;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
+		-webkit-overflow-scrolling: touch;
+		padding-left: 8px;
 		flex-wrap: nowrap;
 		gap: 22px;
 		min-height: 44px;
