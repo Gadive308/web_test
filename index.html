@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -14,16 +14,20 @@
                 <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
                         <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
                 </a>
-`
+
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link">
+                        <img src="assets/image/User.png" alt="Đăng nhập" class="header-action-image"> Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -46,16 +50,14 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="hero-banner-wrap">
-                <img class="hero-banner" src="assets/image/hero-frame-1.png" alt="Gói vắc xin linh hoạt">
-            </div>
+        <section class="hero-section" role="img" aria-label="Banner Medivax">
+            <!-- background image handled by CSS (fills available width/height) -->
         </section>
 
         <section class="quick-actions">
             <div class="container action-list">
                 <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/Group 1000004265.png" alt="Giới thiệu trung tâm">
+                    <img class="action-icon-image" src="assets/image/logo1.png" alt="Giới thiệu trung tâm">
                     <p>Giới thiệu trung tâm</p>
                 </article>
                 <article class="action-item">
@@ -67,11 +69,11 @@
                     <p>Bảng giá</p>
                 </article>
                 <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/Group 1000004266.png" alt="Quy trình tiêm">
+                    <img class="action-icon-image" src="assets/image/logo2.png" alt="Quy trình tiêm">
                     <p>Quy trình tiêm</p>
                 </article>
                 <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/Group 1000004267.png" alt="Địa điểm">
+                    <img class="action-icon-image" src="assets/image/logo3.png" alt="Địa điểm">
                     <p>Địa điểm</p>
                 </article>
             </div>
@@ -79,7 +81,7 @@
 
         <section class="trust-section section-gap">
             <div class="container narrow">
-                <img class="section-chip-image" src="assets/image/Group 1000002230.png" alt="Trung tâm tiêm chủng vắc xin">
+                <img class="section-chip-image" src="assets/image/banner.png" alt="Trung tâm tiêm chủng vắc xin">
                 <div class="quote-box">
                     <h2 class="section-title">“ Tiêm chủng đã giúp cứu sống hàng triệu sinh mạng trên thế giới ”</h2>
                     <p class="section-desc">Trung tâm tiêm chủng Medivax tự hào là đơn vị cung cấp các loại vắc xin thế hệ mới nhất từ các nhà sản xuất hàng đầu thế giới, toàn bộ vắc xin đều được nhập khẩu chính hãng từ các nhà sản xuất lớn trên thế giới.</p>
@@ -251,16 +253,16 @@
                 <h2 class="center-heading">Thông tin về trung tâm tiêm chủng</h2>
                 <div class="news-layout">
                     <article class="news-feature">
-                        <img class="news-feature-image" src="assets/image/nhombacsi.png">
+                        <img class="news-feature-image" src="assets/image/Group 1000004313.png" alt="Hình minh họa bài viết">
                         <h3>Hỏi đáp chuyên gia: chuẩn bị gì trước khi tiêm chủng?</h3>
                         <p>Gợi ý đầy đủ giấy tờ, thời điểm tiêm và cách theo dõi sức khỏe sau tiêm cho cả trẻ em và người lớn.</p>
                         <button type="button" class="btn-pill">Xem thêm</button>
                     </article>
                     <div class="news-list">
-                        <article class="news-mini"><img src="assets/image/khambenh.png" alt="Tin tiêm chủng"><p>Những mốc tiêm quan trọng năm đầu đời</p></article>
-                        <article class="news-mini"><img src="assets/image/khambenh.png" alt="Tin tiêm chủng"><p>Tư vấn lịch tiêm cho người trưởng thành</p></article>
-                        <article class="news-mini"><img src="assets/image/khambenh.png" alt="Tin tiêm chủng"><p>Lưu ý khi tiêm cúm mùa cho người cao tuổi</p></article>
-                        <article class="news-mini"><img src="assets/image/khambenh.png" alt="Tin tiêm chủng"><p>Giải đáp phản ứng sau tiêm thường gặp</p></article>
+                        <article class="news-mini"><img src="assets/image/Group 1000004276.png" alt="Tin tiêm chủng"><p>Những mốc tiêm quan trọng năm đầu đời</p></article>
+                        <article class="news-mini"><img src="assets/image/Group 1000001929 (1).png" alt="Tin tiêm chủng"><p>Tư vấn lịch tiêm cho người trưởng thành</p></article>
+                        <article class="news-mini"><img src="assets/image/Group 1000004265.png" alt="Tin tiêm chủng"><p>Lưu ý khi tiêm cúm mùa cho người cao tuổi</p></article>
+                        <article class="news-mini"><img src="assets/image/Group 1000004266.png" alt="Tin tiêm chủng"><p>Giải đáp phản ứng sau tiêm thường gặp</p></article>
                     </div>
                 </div>
             </div>
