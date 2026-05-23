@@ -9,15 +9,20 @@ if (button) {
 
 const packageData = {
     "baby-0-24": {
-        title: "Gói tiêm từ 0 - 24 tháng",
-        description: "Gói tiêm tối ưu giúp bé được bảo vệ toàn diện trước các bệnh truyền nhiễm thường gặp.",
-        price: 4850000,
+        title: "Gói trẻ em từ 0-2 tuổi",
+        description: "Trẻ cần được tiêm vắc xin sớm và đúng lịch để có kháng thể bảo vệ trước khi tiếp xúc với các mầm bệnh nguy hiểm.",
+        price: 16985100,
         rows: [
-            ["Lao", "BCG", "Việt Nam", "1"],
-            ["Rota virus", "ROTARIX", "Bỉ", "2"],
-            ["Bạch hầu, ho gà, uốn ván", "INFANRIX HEXA", "Bỉ", "3"],
-            ["Sởi - Quai bị - Rubella", "PRIORIX", "Bỉ", "1"],
-            ["Viêm gan A, B", "TWINRIX", "Bỉ", "2"],
+            ["Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B (Vắc xin 6.1)", "HEXAXIM", "Pháp", "3"],
+            ["Rota virus", "HEXAXIM", "Pháp", "3"],
+            ["Các bệnh do phế cầu (Viêm phổi, Viêm tai giữa, Viêm màng não)", "HEXAXIM", "Pháp", "3"],
+            ["Rota virus", "HEXAXIM", "Pháp", "3"],
+            ["Cúm mùa", "HEXAXIM", "Pháp", "3"],
+            ["Sởi - Quai bị - Rubella", "HEXAXIM", "Pháp", "3"],
+            ["Viêm não Nhật Bản", "HEXAXIM", "Pháp", "3"],
+            ["Viêm màng não mủ cầu ACYW", "HEXAXIM", "Pháp", "3"],
+            ["Thủy Đậu", "HEXAXIM", "Pháp", "3"],
+            ["Viêm Gan A+B", "HEXAXIM", "Pháp", "3"],
         ],
     },
     "child-3-14": {
@@ -125,7 +130,7 @@ function renderPackage(packageKey) {
         .map(
             ([disease, vaccine, origin, doses]) => `
                 <tr>
-                    <td>${disease}</td>
+                    <td><ul class="disease-list"><li>${disease}</li></ul></td>
                     <td>${vaccine}</td>
                     <td>${origin}</td>
                     <td>${doses}</td>
