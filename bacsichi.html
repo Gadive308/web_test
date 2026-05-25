@@ -16,14 +16,19 @@
                 </a>
 
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                    Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -33,155 +38,210 @@
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
-                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li class="nav-dropdown">
+                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
+                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                            <li><a href="bacsi.html">Bác sĩ</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
                     <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="null.html">Tin tức</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section hero-shell hero-shell--blue hero-shell--compact">
-            <div class="container hero-copy">
-                <h1 class="hero-title hero-title--sm">TS.BS Nguyễn Thị Hương</h1>
-                <p>Chuyên gia tiêm chủng trẻ em</p>
+    <main class="doctor-detail-page">
+        <section class="doctor-detail-hero">
+            <div class="container">
+                <nav class="detail-breadcrumb" aria-label="Đường dẫn">
+                    <a href="index.html">Trang chủ</a>
+                    <span>›</span>
+                    <a href="bacsi.html">Bác sĩ</a>
+                </nav>
+
+                <div class="doctor-detail-card">
+                    <div class="doctor-detail-card__media">
+                        <img src="assets/image/bacsi1.png" alt="BS TS. Bs. Nguyễn Xuân Điền">
+                    </div>
+                    <div class="doctor-detail-card__body">
+                        <h1>BS TS. Bs. Nguyễn Xuân Điền</h1>
+                        <p class="doctor-detail-subtitle">Giá dịch vụ: 300.000 đ</p>
+                        <div class="doctor-detail-tags">
+                            <span>Chuyên khoa Lao và bệnh phổi</span>
+                            <span>Ngoại khoa</span>
+                            <span>Hô hấp</span>
+                        </div>
+                    </div>
+                    <div class="doctor-detail-card__stats">
+                        <div class="doctor-stat-line"><img src="assets/image/Calendar2.png" alt=""><span>Lượt hẹn khám:</span><strong>1178</strong></div>
+                        <div class="doctor-stat-line"><img src="assets/image/Video.pngh" alt=""><span>Lượt giới thiệu:</span><strong>47</strong></div>
+                        <div class="doctor-stat-line"><img src="assets/image/3 User.png" alt=""><span>Lượt tư vấn:</span><strong>7</strong></div>
+                        <div class="doctor-stat-line"><img src="assets/image/Star2.png" alt=""><span>Đánh giá:</span><strong>5 (13 đánh giá)</strong></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section-gap">
-            <div class="container narrow">
-                <div class="page-grid-2-1">
-                    <div>
-                        <div class="doctor-bio">
-                            <div class="doctor-profile">
-                                <div class="doctor-avatar"><img src="https://openmoji.org/data/color/svg/1F469-200D-2695-FE0F.svg" alt="Bác sĩ nữ" class="icon-image icon-image--avatar"></div>
-                                <div>
-                                    <h2 class="content-card__title content-card__title--lg">TS.BS Nguyễn Thị Hương</h2>
-                                    <p class="role-line">Chuyên gia tiêm chủng trẻ em</p>
-                                    <p class="doctor-meta">📍 Cơ sở: Võ Văn Dũng</p>
-                                    <p class="doctor-meta">💼 Kinh nghiệm: 15 năm</p>
-                                </div>
+        <section class="doctor-schedule-section">
+            <div class="container">
+                <div class="doctor-schedule-card">
+                    <div class="doctor-schedule-head">
+                        <div class="doctor-schedule-location">
+                            <img src="assets/image/icon3.png" alt="">
+                            <div>
+                                <p>Phòng Khám Chuyên Khoa Vật Lý Trị Liệu Và Phục Hồi Chức Năng DR ALLEN - Hai Bà Trưng</p>
+                                <span>225 Phố Huế, P. Huế, Hai Bà Trưng, Thành phố Hà Nội</span>
                             </div>
                         </div>
-
-                        <h3 class="section-subtitle section-subtitle--first">Tiểu sử chuyên môn</h3>
-                        <p class="text-copy">TS.BS Nguyễn Thị Hương là tiến sĩ Y học chuyên khoa nhi, một trong những chuyên gia tiêm chủng hàng đầu tại Việt Nam. Bác sĩ Hương đã có hơn 15 năm kinh nghiệm trong lĩnh vực tiêm chủng trẻ em và tư vấn sức khỏe.</p>
-                        
-                        <h3 class="section-subtitle">Trình độ học vấn</h3>
-                        <ul class="bullet-list">
-                            <li>Tiến sĩ Y học - Chuyên khoa Nhi, Trường Đại học Y Hà Nội</li>
-                            <li>Bác sĩ Nhi khoa - Bệnh viện Nhi Trung ương</li>
-                            <li>Khóa đào tạo Tiêm chủng quốc tế - WHO</li>
-                            <li>Chứng chỉ Tư vấn sức khỏe - Bộ Y tế</li>
-                        </ul>
-
-                        <h3 class="section-subtitle">Kinh nghiệm công tác</h3>
-                        <ul class="bullet-list">
-                            <li>2009-2015: Bác sĩ Nhi khoa tại Bệnh viện Nhi Trung ương</li>
-                            <li>2015-2020: Trưởng phòng Tiêm chủng tại Bệnh viện Quân Y 103</li>
-                            <li>2020-nay: Chuyên gia tiêm chủng tại Medivax</li>
-                        </ul>
-
-                        <h3 class="section-subtitle">Chuyên môn</h3>
-                        <div class="doctor-tags">
-                            <span class="tag-pill tag-pill--md">Tiêm chủng trẻ sơ sinh</span>
-                            <span class="tag-pill tag-pill--md">Tiêm chủng trẻ em</span>
-                            <span class="tag-pill tag-pill--md">Tư vấn sức khỏe</span>
-                            <span class="tag-pill tag-pill--md">Lịch tiêm chủng</span>
-                        </div>
-
-                        <h3 class="section-subtitle">Giải thưởng và danh hiệu</h3>
-                        <ul class="bullet-list">
-                            <li>Bác sĩ xuất sắc năm 2019 - Bệnh viện Quân Y 103</li>
-                            <li>Thành viên Hội Nhi khoa Việt Nam</li>
-                            <li>Thành viên Hội Tiêm chủng Việt Nam</li>
-                        </ul>
+                        <button type="button" class="doctor-schedule-toggle" aria-label="Thu gọn">⌄</button>
                     </div>
-
-                    <div>
-                        <div class="doctor-sidebar">
-                            <h3 class="info-box__title">Thông tin liên hệ</h3>
-                            <div class="info-row">
-                                <p class="info-label">Bệnh viện</p>
-                                <p class="info-value">Medivax Võ Văn Dũng</p>
-                            </div>
-                            <div class="info-row">
-                                <p class="info-label">Địa chỉ</p>
-                                <p class="info-value">25 Võ Văn Dũng<br>Phường Ô Chợ Dừa<br>Hà Nội</p>
-                            </div>
-                            <div class="info-row">
-                                <p class="info-label">Giờ làm việc</p>
-                                <p class="info-value">T2 - CN<br>07:30 - 17:00</p>
-                            </div>
-                            <div class="info-row">
-                                <p class="info-label">Số điện thoại</p>
-                                <p class="info-value info-value--strong">1900 6666</p>
-                            </div>
-                            <div class="action-stack">
-                                <a href="hoiapbacsichi.html" class="btn-primary">Hỏi đáp</a>
-                                <a href="datlichkham.html" class="btn-outline-blue btn-outline-blue--block">Đặt lịch</a>
-                            </div>
+                    <div class="doctor-schedule-body">
+                        <div class="doctor-schedule-date">
+                            <span>Lịch khám tại viện</span>
+                            <strong class="doctor-schedule-date__pill">28/01/2024</strong>
                         </div>
-
-                        <div class="info-box info-box--spaced">
-                            <h4 class="info-box__title">Đánh giá từ bệnh nhân</h4>
-                            <div class="doctor-rating">
-                                <span class="doctor-rating__stars">★★★★★</span>
-                                <span class="doctor-rating__count">(234 đánh giá)</span>
-                            </div>
-                            <p class="rating-text">Chuyên gia tâm sự, chẩn đoán chính xác</p>
+                        <div class="doctor-time-grid">
+                            <button type="button" class="time-slot">08:00</button>
+                            <button type="button" class="time-slot">08:30</button>
+                            <button type="button" class="time-slot">09:00</button>
+                            <button type="button" class="time-slot">09:30</button>
+                            <button type="button" class="time-slot">10:00</button>
+                            <button type="button" class="time-slot">10:30</button>
+                            <button type="button" class="time-slot">11:00</button>
+                            <button type="button" class="time-slot">11:30</button>
+                            <button type="button" class="time-slot">12:00</button>
+                            <button type="button" class="time-slot">12:30</button>
+                            <button type="button" class="time-slot">13:00</button>
+                            <button type="button" class="time-slot">13:30</button>
+                            <button type="button" class="time-slot">14:00</button>
+                            <button type="button" class="time-slot">14:30</button>
+                            <button type="button" class="time-slot">15:00</button>
+                            <button type="button" class="time-slot">15:30</button>
+                            <button type="button" class="time-slot">16:00</button>
+                            <button type="button" class="time-slot">16:30</button>
+                            <button type="button" class="time-slot">17:00</button>
+                            <button type="button" class="time-slot">17:30</button>
+                            <button type="button" class="time-slot">18:00</button>
+                            <button type="button" class="time-slot">18:30</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-gap surface-light">
-            <div class="container narrow">
-                <h2 class="center-heading">Các bài viết của bác sĩ</h2>
-                <div class="doctor-related-grid">
-                    <article class="doctor-related-card" onclick="location.href='chitiettintuc.html?id=1'">
-                        <div class="doctor-related-card__media"><img src="https://openmoji.org/data/color/svg/1F4DA.svg" alt="Kiến thức" class="icon-image icon-image--xl"></div>
-                        <div class="doctor-related-card__body">
-                            <p class="doctor-related-card__date">2024-05-15</p>
-                            <h4 class="doctor-related-card__title">Lịch tiêm chủng từng tháng cho bé</h4>
-                            <p class="doctor-related-card__desc">Bé đúng tuổi là chìa khóa để xây dựng miễn dịch vững mạnh...</p>
+        <section class="doctor-review-section">
+            <div class="container">
+                <h2>Đánh giá từ người bệnh (6)</h2>
+                <div class="doctor-review-list">
+                    <article class="doctor-review-card">
+                        <div class="doctor-review-head">
+                            <img src="assets/image/Ellipse 739.png" alt="">
+                            <div>
+                                <h3>Nguyễn Văn Tín</h3>
+                                <div class="doctor-review-stars">★★★★★</div>
+                            </div>
                         </div>
+                        <p>Bác sĩ tư vấn hỗ trợ nhiệt tình xin cảm ơn</p>
+                        <span class="doctor-review-date">22/01/2024</span>
                     </article>
-
-                    <article class="doctor-related-card" onclick="location.href='chitiettintuc.html?id=2'">
-                        <div class="doctor-related-card__media hero-shell--green"><img src="https://openmoji.org/data/color/svg/2753.svg" alt="Câu hỏi" class="icon-image icon-image--xl"></div>
-                        <div class="doctor-related-card__body">
-                            <p class="doctor-related-card__date">2024-05-08</p>
-                            <h4 class="doctor-related-card__title">Phản ứng phụ sau tiêm ở trẻ em</h4>
-                            <p class="doctor-related-card__desc">Hiểu rõ các phản ứng bình thường giúp bạn yên tâm hơn...</p>
+                    <article class="doctor-review-card">
+                        <div class="doctor-review-head">
+                            <img src="assets/image/Ellipse 739.png" alt="">
+                            <div>
+                                <h3>Nguyễn Văn Tín</h3>
+                                <div class="doctor-review-stars">★★★★★</div>
+                            </div>
                         </div>
+                        <p>Bác sĩ tư vấn hỗ trợ nhiệt tình xin cảm ơn</p>
+                        <span class="doctor-review-date">22/01/2024</span>
                     </article>
-
-                    <article class="doctor-related-card" onclick="location.href='chitiettintuc.html?id=3'">
-                        <div class="doctor-related-card__media hero-shell--amber">🏥</div>
-                        <div class="doctor-related-card__body">
-                            <p class="doctor-related-card__date">2024-05-01</p>
-                            <h4 class="doctor-related-card__title">Chuẩn bị gì khi đưa bé đi tiêm</h4>
-                            <p class="doctor-related-card__desc">Những lưu ý quan trọng trước khi đưa bé đi tiêm chủng...</p>
+                    <article class="doctor-review-card">
+                        <div class="doctor-review-head">
+                            <img src="assets/image/Ellipse 739.png" alt="">
+                            <div>
+                                <h3>Nguyễn Văn Tín</h3>
+                                <div class="doctor-review-stars">★★★★★</div>
+                            </div>
                         </div>
+                        <p>Bác sĩ tư vấn hỗ trợ nhiệt tình xin cảm ơn</p>
+                        <span class="doctor-review-date">22/01/2024</span>
+                    </article>
+                    <article class="doctor-review-card">
+                        <div class="doctor-review-head">
+                            <img src="assets/image/Ellipse 739.png" alt="">
+                            <div>
+                                <h3>Nguyễn Văn Tín</h3>
+                                <div class="doctor-review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>Bác sĩ tư vấn hỗ trợ nhiệt tình xin cảm ơn</p>
+                        <span class="doctor-review-date">22/01/2024</span>
                     </article>
                 </div>
+                <nav class="review-pagination" aria-label="Phân trang đánh giá">
+                    <a href="#" aria-label="Trang trước">‹</a>
+                    <a href="#" class="active" aria-current="page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span class="pagination-ellipsis">...</span>
+                    <a href="#">638</a>
+                    <label class="pagination-size">
+                        <select aria-label="Số lượng mỗi trang">
+                            <option>10/Trang</option>
+                            <option>20/Trang</option>
+                            <option>50/Trang</option>
+                        </select>
+                    </label>
+                    <a href="#" aria-label="Trang sau">›</a>
+                </nav>
             </div>
         </section>
 
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Đặt lịch khám</h2>
-                <p class="support-center">Muốn tư vấn trực tiếp? Đặt lịch khám với TS.BS Nguyễn Thị Hương</p>
-                <div class="detail-cta-row">
-                    <a href="datlichkham.html" class="btn-primary btn-inline">Đặt lịch ngay</a>
-                </div>
+        <section class="doctor-community-section">
+            <div class="container">
+                <h2>Đóng góp từ cộng đồng (1 câu hỏi)</h2>
+                <article class="community-card">
+                    <div class="community-card__head">
+                        <img src="assets/image/Ellipse 739.png" alt="">
+                        <div>
+                            <h3>Nam, 29 tuổi</h3>
+                            <p>Em chào bác sĩ, khoảng 1 năm gần đây ngón tay út tay trái của em thấy nó phồng lên ở khớp ngón tay và có dấu hiệu tê khi gấp cánh tay lâu. Đi chụp xquang bác sĩ...</p>
+                        </div>
+                        <span class="community-like"><img src="assets/image/Ellipse 739.png" alt="">2</span>
+                    </div>
+                    <div class="community-card__answer">
+                        <p>Chào bạn! Nếu xương đã chụp rồi ko sao thì có thể xơ gân gấp ngón tay. Bạn cần khám trực tiếp mới đánh giá được.</p>
+                        <span class="community-card__date">22/01/2024</span>
+                    </div>
+                    <div class="community-card__footer">
+                        <a href="#" class="community-action">Trả lời</a>
+                        <a href="#" class="community-action">Đánh giá lại câu hỏi</a>
+                    </div>
+                </article>
+                <nav class="review-pagination" aria-label="Phân trang cộng đồng">
+                    <a href="#" aria-label="Trang trước">‹</a>
+                    <a href="#" class="active" aria-current="page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <span class="pagination-ellipsis">...</span>
+                    <a href="#">638</a>
+                    <label class="pagination-size">
+                        <select aria-label="Số lượng mỗi trang">
+                            <option>10/Trang</option>
+                            <option>20/Trang</option>
+                            <option>50/Trang</option>
+                        </select>
+                    </label>
+                    <a href="#" aria-label="Trang sau">›</a>
+                </nav>
             </div>
         </section>
     </main>

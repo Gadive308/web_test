@@ -16,14 +16,19 @@
                 </a>
 
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                    Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -33,153 +38,336 @@
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
-                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li class="nav-dropdown">
+                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
+                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                            <li><a href="bacsi.html">Bác sĩ</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
                     <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="null.html">Tin tức</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section hero-shell hero-shell--blue">
-            <div class="container hero-copy">
-                <h1 class="hero-title hero-title--sm">Đội ngũ bác sĩ Medivax</h1>
-                <p>Các chuyên gia tiêm chủng giàu kinh nghiệm</p>
+    <main class="doctor-list-page">
+        <section class="doctor-list-hero" aria-labelledby="doctor-list-title">
+            <div class="container">
+                <h1 id="doctor-list-title">Đặt khám tại Medivax</h1>
+                <p>Để được tiếp đón ưu tiên, không chờ đợi tại các bệnh viện, phòng khám hàng đầu</p>
+                <form class="doctor-search" role="search">
+                    <div class="doctor-search__bar">
+                        <div class="doctor-search__keyword">
+                            <img src="assets/image/Search.png" alt="">
+                            <input type="search" placeholder="Tìm triệu chứng, chuyên khoa, tên bệnh viện, phòng khám" aria-label="Tìm bác sĩ">
+                        </div>
+                        <div class="doctor-search__divider" aria-hidden="true"></div>
+                        <label class="doctor-search__location">
+                            <span>Địa điểm</span>
+                            <select aria-label="Địa điểm">
+                            </select>
+                        </label>
+                    </div>
+                </form>
             </div>
         </section>
 
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Danh sách bác sĩ</h2>
-                <div class="page-grid-auto-280">
-                    
-                    <article class="content-card content-card--lift" onclick="location.href='bacsichi.html?id=1'">
-                        <div class="content-card__media hero-shell--blue"><img src="assets/image/bacsi1.png" alt="Bác sĩ nam"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">TS.BS Nguyễn Thị Hương</h3>
-                            <p class="role-line">Chuyên gia tiêm chủng trẻ em</p>
-                            <p class="info-line">Kinh nghiệm: 15 năm | Cơ sở: Võ Văn Dũng</p>
-                            <div class="content-card__tag-list">
-                                <span class="tag-pill tag-pill--sm">Trẻ sơ sinh</span>
-                                <span class="tag-pill tag-pill--sm">Trẻ em</span>
-                            </div>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Xem hồ sơ</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift" onclick="location.href='bacsichi.html?id=2'">
-                        <div class="content-card__media hero-shell--blue-dark"><img src="assets/image/bacsi2.png" alt="Bác sĩ nữ"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">BS.CKI Trần Văn B</h3>
-                            <p class="role-line">Bác sĩ tiêm chủng</p>
-                            <p class="info-line">Kinh nghiệm: 12 năm | Cơ sở: Yên Viên</p>
-                            <div class="content-card__tag-list">
-                                <span class="tag-pill tag-pill--sm">Người lớn</span>
-                                <span class="tag-pill tag-pill--sm">Cao tuổi</span>
-                            </div>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Xem hồ sơ</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift" onclick="location.href='bacsichi.html?id=3'">
-                        <div class="content-card__media hero-shell--green"><img src="assets/image/bacsi3.png" alt="Bác sĩ nữ"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">BS.CKII Phạm Thu H</h3>
-                            <p class="role-line">Bác sĩ phụ nữ và sinh sản</p>
-                            <p class="info-line">Kinh nghiệm: 10 năm | Cơ sở: Vũ Trọng Phụng</p>
-                            <div class="content-card__tag-list">
-                                <span class="tag-pill tag-pill--sm">Phụ nữ</span>
-                                <span class="tag-pill tag-pill--sm">Mang thai</span>
-                            </div>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Xem hồ sơ</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift" onclick="location.href='bacsichi.html?id=4'">
-                        <div class="content-card__media hero-shell--amber"><img src="assets/image/bacsi1.png" alt="Bác sĩ nam"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">BS Lê Đức C</h3>
-                            <p class="role-line">Bác sĩ tiêm chủng tổng quát</p>
-                            <p class="info-line">Kinh nghiệm: 8 năm | Cơ sở: Nguyễn Trãi</p>
-                            <div class="content-card__tag-list">
-                                <span class="tag-pill tag-pill--sm">Tất cả độ tuổi</span>
-                                <span class="tag-pill tag-pill--sm">Tư vấn</span>
-                            </div>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Xem hồ sơ</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift" onclick="location.href='bacsichi.html?id=5'">
-                        <div class="content-card__media hero-shell--pink"><img src="assets/image/bacsi2.png" alt="Bác sĩ nữ"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">BS Đặng Lan Phương</h3>
-                            <p class="role-line">Điều dưỡng chuyên khoa tiêm</p>
-                            <p class="info-line">Kinh nghiệm: 9 năm | Cơ sở: Võ Văn Dũng</p>
-                            <div class="content-card__tag-list">
-                                <span class="tag-pill tag-pill--sm">Tiêm</span>
-                                <span class="tag-pill tag-pill--sm">Chăm sóc</span>
-                            </div>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Xem hồ sơ</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift" onclick="location.href='bacsichi.html?id=6'">
-                        <div class="content-card__media hero-shell--violet"><img src="assets/image/bacsi3.png" alt="Bác sĩ nam"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">BS Vũ Trần D</h3>
-                            <p class="role-line">Bác sĩ tư vấn sức khỏe</p>
-                            <p class="info-line">Kinh nghiệm: 11 năm | Cơ sở: Yên Viên</p>
-                            <div class="content-card__tag-list">
-                                <span class="tag-pill tag-pill--sm">Tư vấn</span>
-                                <span class="tag-pill tag-pill--sm">Sàng lọc</span>
-                            </div>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Xem hồ sơ</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-gap surface-light">
-            <div class="container narrow">
-                <h2 class="center-heading">Tiêu chuẩn bác sĩ Medivax</h2>
-                <div class="feature-grid">
-                    <div class="feature-tile">
-                        <div class="feature-emoji">🎓</div>
-                        <h3 class="feature-title">Chứng chỉ chuyên khoa</h3>
-                        <p class="feature-desc">Tất cả bác sĩ đều có chứng chỉ chuyên khoa y tế và tiêm chủng</p>
-                    </div>
-                    <div class="feature-tile">
-                        <div class="feature-emoji">💼</div>
-                        <h3 class="feature-title">Kinh nghiệm lâu năm</h3>
-                        <p class="feature-desc">Trung bình trên 10 năm kinh nghiệm trong lĩnh vực tiêm chủng</p>
-                    </div>
-                    <div class="feature-tile">
-                        <div class="feature-emoji">🌍</div>
-                        <h3 class="feature-title">Đào tạo quốc tế</h3>
-                        <p class="feature-desc">Đã đào tạo và cập nhật kiến thức từ các chuyên gia quốc tế</p>
-                    </div>
-                    <div class="feature-tile">
-                        <div class="feature-emoji">❤️</div>
-                        <h3 class="feature-title">Chăm sóc tận tâm</h3>
-                        <p class="feature-desc">Cam kết cung cấp dịch vụ y tế tốt nhất cho bệnh nhân</p>
+        <section class="doctor-list-section">
+            <div class="container">
+                <div class="doctor-list-toolbar">
+                    <h2>Chọn bác sĩ</h2>
+                    <div class="doctor-filters">
+                        <label>
+                            <span>Chuyên khoa:</span>
+                            <select aria-label="Chuyên khoa">
+                                <option>Tất cả chuyên khoa</option>
+                                <option>Nhi khoa</option>
+                                <option>Sản phụ khoa</option>
+                                <option>Nội tổng quát</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>Hình thức khám:</span>
+                            <select aria-label="Hình thức khám">
+                                <option>Tất cả</option>
+                                <option>Khám tại viện</option>
+                                <option>Khám tại nhà</option>
+                            </select>
+                        </label>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Đặt lịch khám với bác sĩ</h2>
-                <p class="support-center">Chọn bác sĩ yêu thích và đặt lịch khám ngay</p>
-                <div class="detail-cta-row">
-                    <a href="datlichkham.html" class="btn-primary btn-inline">Đặt lịch ngay</a>
+                <div class="doctor-grid">
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=1'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi1.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=2'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi2.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=3'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi3.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=4'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi4.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=1'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi1.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=2'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi2.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=3'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi3.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=4'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi4.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=1'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi1.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=2'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi2.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=3'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi3.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=4'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi4.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=1'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi1.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=2'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi2.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=3'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi3.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=4'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi4.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=5'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi1.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=6'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi2.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=7'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi3.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
+
+                    <article class="doctor-card" onclick="location.href='bacsichi.html?id=8'">
+                        <div class="doctor-card__avatar"><img src="assets/image/bacsi4.png" alt="BS TS. Bs. Nguyễn Xuân Điền"></div>
+                        <h3 class="doctor-card__name">BS TS. Bs. Nguyễn Xuân Điền</h3>
+                        <p class="doctor-card__specialty">Chuyên khoa Lao và bệnh phổi</p>
+                        <div class="doctor-card__stats">
+                            <span><img src="assets/image/Calendar1.png" alt="">1178</span>
+                            <span><img src="assets/image/Star.png" alt="">5</span>
+                        </div>
+                        <button type="button" class="doctor-card__cta">
+                            <img src="assets/image/Calendar.png" alt="">Đặt lịch khám
+                        </button>
+                    </article>
                 </div>
+
+                <nav class="facility-pagination" aria-label="Phân trang bác sĩ">
+                    <a href="#" aria-label="Trang trước">‹</a>
+                    <a href="#" class="active" aria-current="page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#" aria-label="Trang sau">›</a>
+                </nav>
             </div>
         </section>
     </main>

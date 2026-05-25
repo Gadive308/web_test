@@ -16,14 +16,19 @@
                 </a>
 
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                    Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -33,170 +38,160 @@
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
-                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li class="nav-dropdown">
+                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
+                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                            <li><a href="bacsi.html">Bác sĩ</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
                     <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="null.html">Tin tức</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section hero-shell hero-shell--blue hero-shell--tall">
-            <div class="container hero-copy">
-                <h1 class="hero-title hero-title--md">Những mốc tiêm quan trọng năm đầu đời</h1>
-                <p>Hướng dẫn lịch tiêm chủng chi tiết cho trẻ từ sơ sinh đến 12 tháng</p>
-            </div>
-        </section>
-
-        <section class="section-gap">
-            <div class="container narrow">
+    <main class="article-page">
+        <section class="article-detail">
+            <div class="container">
                 <div class="article-layout">
-                    <div>
-                        <div class="article-head">
-                            <p class="article-head__meta">
-                                <img src="https://openmoji.org/data/color/svg/1F4C5.svg" alt="Ngày đăng" class="icon-image icon-image--sm"> 2024-05-15 | <img src="https://openmoji.org/data/color/svg/1F441.svg" alt="Lượt xem" class="icon-image icon-image--sm"> 1,234 lượt xem | <img src="https://openmoji.org/data/color/svg/23F1.svg" alt="Thời gian đọc" class="icon-image icon-image--sm"> 5 phút đọc
-                            </p>
-                            <div class="article-head__tags">
-                                <span class="tag-pill">Trẻ sơ sinh</span>
-                                <span class="tag-pill">Lịch tiêm</span>
-                                <span class="tag-pill">Vắc xin</span>
+                    <div class="article-main">
+                        <div class="article-header">
+                            <nav class="breadcrumb">
+                                <a href="index.html">Trang chủ</a>
+                                <span>/</span>
+                                <a href="tintuc.html">Tin tức</a>
+                                <span>/</span>
+                                <span>Chi tiết bài viết</span>
+                            </nav>
+                            <h1>TĂNG CƯỜNG GIÁM SÁT CHẤT LƯỢNG NƯỚC VÀ ĐÁNH GIÁ/KIỂM TOÁN (AUDITING) KẾ HOẠCH CẤP NƯỚC AN TOÀN ĐÔ THỊ</h1>
+                            <div class="article-meta-row">
+                                <span><img src="assets/image/icon.png" alt="">05/12/2023</span>
+                                <span><img src="assets/image/icon.png" alt="">11 lượt xem</span>
+                                <span><img src="assets/image/icon.png" alt="">5 phút đọc</span>
+                            </div>
+                            <div class="article-link-list">
+                                <a href="#">Tìm hiểu văn bản hướng dẫn 06/2023/QĐ-UBND</a>
+                                <a href="#">Tìm hiểu văn bản hướng dẫn 06/2023/QĐ-UBND</a>
+                                <a href="#">Tìm hiểu văn bản hướng dẫn 06/2023/QĐ-UBND</a>
                             </div>
                         </div>
 
-                        <div class="article-content">
-                            <p>Năm đầu đời là khoảng thời gian vàng để xây dựng hệ miễn dịch cho trẻ. Tiêm chủng đúng lịch trong giai đoạn này sẽ giúp bé được bảo vệ khỏi các bệnh truyền nhiễm nguy hiểm. Bài viết này sẽ giúp bạn hiểu rõ hơn về lịch tiêm chủng từng tháng cho trẻ.</p>
+                        <div class="article-body">
+                            <p>Thủ tướng Chính phủ Phạm Minh Chính vừa ký Quyết định số 933/QĐ-TTg ngày 6/8/2023 ban hành Kế hoạch tăng cường giám sát chất lượng nước và đánh giá/kiểm toán kế hoạch cấp nước an toàn đô thị.</p>
+                            <p>Mục tiêu của Kế hoạch nhằm đánh giá đầy đủ, đánh giá khách quan chất lượng nước cấp đô thị, đáp ứng yêu cầu sức khỏe cộng đồng.</p>
+                            <p>Trong thời gian tới, các cơ quan chức năng sẽ rà soát, xây dựng quy trình giám sát, cập nhật công nghệ, và tăng cường phối hợp liên ngành.</p>
+                            <img src="assets/image/image 213-6.png" alt="">
+                            <p>Mục tiêu dài hạn là đảm bảo an toàn nước cấp, giảm thiểu nguy cơ ô nhiễm và nâng cao hiệu quả quản lý cấp nước.</p>
+                        </div>
 
-                            <h2>1. Lúc sinh (0 ngày)</h2>
-                            <p>Ngay khi bé vừa chào đời, bé sẽ được tiêm:</p>
-                            <ul>
-                                <li><strong>Vắc xin BCG:</strong> Phòng bệnh lao (phòng bệnh lao)</li>
-                                <li><strong>Vắc xin Viêm gan B (HBV):</strong> Liều 1 (phòng viêm gan B)</li>
-                            </ul>
-                            <p>BCG được tiêm bằng đường tiêm ngoại da (vào da), sẽ tạo ra một vết sưng nhỏ, sau đó sẽ mọc một mụn nhỏ rồi đóng vảy và để lại một vết sẹo tròn vĩnh viễn (đây là dấu hiệu chứng tỏ bé đã được tiêm BCG).</p>
+                        <div class="article-actions">
+                            <span><img src="assets/image/icon.png" alt="">Từ khóa:</span>
+                            <a href="#" class="tag-pill">Xét nghiệm nước</a>
+                            <a href="#" class="tag-pill">Quan trắc môi trường</a>
+                        </div>
 
-                            <h2>2. Tuần thứ 2</h2>
-                            <p>Tiêm vắc xin:</p>
-                            <ul>
-                                <li><strong>Rotavirus (Rota):</strong> Liều 1 (phòng tiêu chảy do Rotavirus)</li>
-                            </ul>
-                            <p>Rotavirus là tác nhân gây tiêu chảy cấp ở trẻ em, đặc biệt nguy hiểm ở những bé dưới 5 tuổi. Vắc xin Rota được tiêm uống (bằng miệng), không phải bằng kim tiêm.</p>
-
-                            <h2>3. Tháng thứ 1 (4 tuần tuổi)</h2>
-                            <p>Tiêm vắc xin:</p>
-                            <ul>
-                                <li><strong>Viêm gan B (HBV):</strong> Liều 2</li>
-                                <li><strong>Rotavirus (Rota):</strong> Liều 2</li>
-                            </ul>
-
-                            <h2>4. Tháng thứ 2 (8 tuần tuổi)</h2>
-                            <p>Bắt đầu từ tháng thứ 2, bé sẽ bắt đầu được tiêm các vắc xin phòng bệnh quan trọng:</p>
-                            <ul>
-                                <li><strong>Infanrix Hexa:</strong> Tiêm chủng combo (liều 1) - phòng bạch hầu, ho gà, uốn ván, bại liệt, viêm gan B, Hib</li>
-                                <li><strong>Pneumococcal (PCV13):</strong> Liều 1 (phòng viêm phổi do phế cầu)</li>
-                                <li><strong>Rotavirus (Rota):</strong> Liều 3 (nếu chọn lịch 3 liều)</li>
-                            </ul>
-
-                            <h2>5. Tháng thứ 3 (12 tuần tuổi)</h2>
-                            <p>Tiêm vắc xin:</p>
-                            <ul>
-                                <li><strong>Infanrix Hexa:</strong> Liều 2</li>
-                                <li><strong>Pneumococcal (PCV13):</strong> Liều 2</li>
-                            </ul>
-
-                            <h2>6. Tháng thứ 4 (16 tuần tuổi)</h2>
-                            <p>Tiêm vắc xin:</p>
-                            <ul>
-                                <li><strong>Infanrix Hexa:</strong> Liều 3</li>
-                                <li><strong>Pneumococcal (PCV13):</strong> Liều 3</li>
-                            </ul>
-
-                            <h2>7. Tháng thứ 9-12</h2>
-                            <p>Tiêm vắc xin:</p>
-                            <ul>
-                                <li><strong>Sởi, Quai bị, Rubella (MMR hoặc Priorix):</strong> Liều 1 (phòng sởi, quai bị, rubella)</li>
-                                <li><strong>Pneumococcal (PCV13):</strong> Liều 4 (sau khi được 12 tháng)</li>
-                            </ul>
-
-                            <h2>Lời khuyên từ chuyên gia</h2>
-                            <div class="article-tip">
-                                <p><strong>✓ Tiêm đúng lịch:</strong> Tuân thủ đúng lịch tiêm chủng giúp bé xây dựng miễn dịch hiệu quả nhất.</p>
-                                <p><strong>✓ Chuẩn bị trước tiêm:</strong> Đảm bảo bé ăn đủ, khoẻ mạnh, không bị sốt cao trước khi đi tiêm.</p>
-                                <p><strong>✓ Chăm sóc sau tiêm:</strong> Theo dõi bé trong 30 phút sau tiêm, cho bé uống nhiều nước, giữ nơi tiêm sạch.</p>
-                                <p><strong>✓ Tư vấn với bác sĩ:</strong> Nếu bé có bệnh lý nền hoặc dị ứng, hãy tư vấn với bác sĩ trước khi tiêm.</p>
+                        <div class="article-comment">
+                            <div class="article-comment__head">
+                                <h3>Bình luận (0)</h3>
+                                <div>
+                                    <a href="#">Đăng nhập</a>
+                                    <a href="#">Đăng ký</a> để bình luận
+                                </div>
                             </div>
+                            <textarea placeholder="Bạn nghĩ gì về bài viết này"></textarea>
+                            <div class="article-comment__footer">
+                                <span>Ý kiến của bạn sẽ được xét duyệt trước khi đăng</span>
+                                <button type="button">Gửi bình luận</button>
+                            </div>
+                        </div>
 
-                            <h2>Bảng tóm tắt lịch tiêm</h2>
-                            <table class="article-table article-table--alt">
-                                <thead>
-                                    <tr>
-                                        <th>Tuổi</th>
-                                        <th>Vắc xin</th>
-                                        <th>Phòng bệnh</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Lúc sinh</td>
-                                        <td>BCG, HBV</td>
-                                        <td>Lao, Viêm gan B</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2-16 tuần</td>
-                                        <td>Infanrix Hexa, PCV13, Rota</td>
-                                        <td>Nhiều bệnh</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9-12 tháng</td>
-                                        <td>MMR/Priorix, PCV13</td>
-                                        <td>Sởi, Viêm phổi</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="article-related">
+                            <h3>TIN CÙNG CHUYÊN MỤC</h3>
+                            <div class="article-related-list">
+                                <article class="blog-card">
+                                    <div class="blog-card__image"><img src="assets/image/image 213-1.png" alt=""></div>
+                                    <div class="blog-card__body">
+                                        <h4>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h4>
+                                        <div class="blog-card__meta">
+                                            <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                            <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
 
-                            <h2>Đặt lịch tiêm chủng</h2>
-                            <p>Nếu bạn có bất kỳ câu hỏi nào về lịch tiêm chủng hoặc muốn tư vấn chi tiết, vui lòng <a href="datlichkham.html">liên hệ với chúng tôi</a> hoặc gọi hotline 1900 6666.</p>
+                                <article class="blog-card">
+                                    <div class="blog-card__image"><img src="assets/image/image 213-2.png" alt=""></div>
+                                    <div class="blog-card__body">
+                                        <h4>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h4>
+                                        <div class="blog-card__meta">
+                                            <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                            <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="blog-card">
+                                    <div class="blog-card__image"><img src="assets/image/image 213-3.png" alt=""></div>
+                                    <div class="blog-card__body">
+                                        <h4>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h4>
+                                        <div class="blog-card__meta">
+                                            <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                            <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
                     </div>
 
-                    <div>
-                        <div class="info-box info-box--soft">
-                            <h3 class="info-box__title">Thông tin bài viết</h3>
-                            <div class="info-row">
-                                <p class="info-label">Tác giả</p>
-                                <p class="info-value">TS.BS Nguyễn Thị Hương</p>
+                    <aside class="article-sidebar">
+                        <form class="qa-form-card">
+                            <h2>ĐẶT CÂU HỎI VỚI BÁC SĨ</h2>
+                            <label class="qa-field">
+                                <span>Tuổi *</span>
+                                <input type="text" placeholder="Nhập" required>
+                            </label>
+                            <div class="qa-field">
+                                <span>Giới tính</span>
+                                <div class="qa-radio-row">
+                                    <label><input type="radio" name="gender" checked> Nam</label>
+                                    <label><input type="radio" name="gender"> Nữ</label>
+                                    <label><input type="radio" name="gender"> Khác</label>
+                                </div>
                             </div>
-                            <div class="info-row">
-                                <p class="info-label">Danh mục</p>
-                                <span class="tag-pill">Lịch tiêm chủng</span>
-                            </div>
-                            <div class="info-row">
-                                <p class="info-label">Cập nhật</p>
-                                <p class="info-value">2024-05-15</p>
-                            </div>
-                            <a href="datlichkham.html" class="btn-primary">Đặt lịch tư vấn</a>
-                            <button class="btn-outline-blue btn-outline-blue--block">Lưu bài viết</button>
-                        </div>
+                            <label class="qa-field">
+                                <span>Chọn chuyên khoa</span>
+                                <select>
+                                    <option>Chọn</option>
+                                    <option>Chuyên khoa Da liễu</option>
+                                    <option>Chuyên khoa Tai Mũi Họng</option>
+                                </select>
+                            </label>
+                            <label class="qa-field">
+                                <span>Tiêu đề</span>
+                                <input type="text" placeholder="Tiêu đề (Ví dụ: Mụn ở cằm ở trán)">
+                            </label>
+                            <label class="qa-field">
+                                <span>Nội dung</span>
+                                <textarea rows="4" placeholder="Nội dung câu hỏi. Ví dụ: Mỗi khi bị dị ứng hoa phấn bên tai, tôi bị đỏ và mọc mụn nhỏ. Nhờ bác sĩ tư vấn cho tôi nên sử dụng thuốc gì?"></textarea>
+                            </label>
+                            <label class="qa-upload">
+                                <img src="assets/image/icon.png" alt="">
+                                <span>Thêm ảnh</span>
+                                <input type="file" hidden>
+                            </label>
+                            <p class="qa-note">* Các tài liệu của bạn sẽ được hiển thị công khai</p>
+                            <button type="submit" class="qa-submit">Gửi</button>
+                        </form>
 
-                        <div class="info-box info-box--spaced">
-                            <h4 class="info-box__title">Bài viết liên quan</h4>
-                            <ul class="related-list">
-                                <li>
-                                    <a href="chitiettintuc.html?id=2">Phản ứng phụ sau tiêm ở trẻ em</a>
-                                </li>
-                                <li>
-                                    <a href="chitiettintuc.html?id=3">Chuẩn bị gì khi đưa bé đi tiêm</a>
-                                </li>
-                                <li>
-                                    <a href="chitiettintuc.html?id=4">Tiêm chủng - Cách bảo vệ sức khỏe</a>
-                                </li>
-                            </ul>
+                        <div class="qa-ad-card">
+                            <img src="assets/image/Rectangle 11302.png" alt="">
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </section>

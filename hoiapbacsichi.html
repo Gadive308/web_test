@@ -16,14 +16,19 @@
                 </a>
 
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                    Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -33,147 +38,103 @@
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
-                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li class="nav-dropdown">
+                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
+                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                            <li><a href="bacsi.html">Bác sĩ</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
                     <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="null.html">Tin tức</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="section-gap">
-            <div class="container narrow">
-                <div class="qa-detail-layout">
+    <main class="qa-page">
+        <section class="qa-detail-section">
+            <div class="container">
+                <a href="hoiapbacsi.html" class="qa-back">← Quay lại</a>
+                <div class="qa-content-grid">
                     <div>
-                        <div class="qa-detail-card">
-                            <div class="qa-detail-card__head">
-                                <h2 class="qa-detail-card__title">Bé bao nhiêu tuổi thì có thể tiêm vắc xin HPV?</h2>
-                                <span class="qa-status">Đã trả lời</span>
+                        <article class="qa-detail-card">
+                            <div class="qa-item__head">
+                                <strong>Nam, 29 tuổi</strong>
+                                <span class="qa-item__title">Mụn ở cằm ở trán</span>
                             </div>
-                            <div class="qa-detail-meta">
-                                <p><img src="https://openmoji.org/data/color/svg/1F464.svg" alt="Người dùng" class="icon-image icon-image--sm"> Phạm Hồng Anh | <img src="https://openmoji.org/data/color/svg/1F4C5.svg" alt="Ngày" class="icon-image icon-image--sm"> 3 ngày trước | <img src="https://openmoji.org/data/color/svg/1F441.svg" alt="Lượt xem" class="icon-image icon-image--sm"> 234 lượt xem</p>
-                            </div>
-                            <div class="qa-detail-answer">
-                                <p>Xin chào! Bé tôi năm nay 11 tuổi, bé bao nhiêu tuổi thì có thể bắt đầu tiêm vắc xin HPV? Tôi nghe nói vắc xin HPV phòng ung thư cổ tử cung nên muốn tiêm cho bé từ sớm. Bác sĩ giúp tôi với!</p>
-                            </div>
-                        </div>
-
-                        <div class="qa-detail-card">
-                            <h3 class="qa-detail-section-title">Trả lời từ bác sĩ</h3>
-                            <div class="doctor-profile">
-                                <div class="doctor-avatar"><img src="https://openmoji.org/data/color/svg/1F469-200D-2695-FE0F.svg" alt="Bác sĩ nữ" class="icon-image icon-image--avatar"></div>
-                                <div class="doctor-profile__body">
-                                    <div class="qa-detail-block-gap">
-                                        <h4 class="qa-detail-doctor__name">TS.BS Nguyễn Thị Hương</h4>
-                                        <p class="qa-detail-doctor__role qa-detail-role--large">Chuyên gia tiêm chủng trẻ em | Medivax</p>
-                                    </div>
-                                    <p class="text-copy">Xin chào anh/chị! Câu hỏi của anh/chị rất hay. Vắc xin HPV thực sự có tác dụng phòng ngừa ung thư cổ tử cung rất hiệu quả.</p>
-                                    
-                                    <h4 class="section-subtitle">Tuổi tiêm chủng HPV:</h4>
-                                    <ul class="bullet-list">
-                                        <li>Khuyến cáo chính thức: Từ 9-26 tuổi, tốt nhất là tiêm trước khi khởi động hoạt động tình dục</li>
-                                        <li>Ở một số quốc gia, được phép tiêm đến 45 tuổi</li>
-                                        <li>Dành cho cả nam và nữ để tạo miễn dịch cộng đồng</li>
-                                    </ul>
-
-                                    <h4 class="section-subtitle">Lịch tiêm:</h4>
-                                    <p class="text-copy">Có 2 lịch tiêm phổ biến:</p>
-                                    <ul class="bullet-list">
-                                        <li>Lịch 2 mũi: Tiêm 2 liều cách nhau 6-12 tháng (cho trẻ 9-14 tuổi)</li>
-                                        <li>Lịch 3 mũi: Tiêm 3 liều tại thời điểm 0, 1-2 tháng, 6 tháng (cho người 15+ tuổi)</li>
-                                    </ul>
-
-                                    <h4 class="section-subtitle">Hiệu quả của vắc xin HPV:</h4>
-                                    <p class="text-copy">Tiêm sớm (từ 9-12 tuổi) giúp phòng ngừa hiệu quả hơn 95% so với tiêm muộn. Vắc xin HPV bảo vệ chống lại các chủng HPV gây ung thư cổ tử cung, ung thư hầu họng, và một số ung thư khác.</p>
-
-                                    <div class="qa-detail-note">
-                                        <p class="qa-detail-emphasis"><img src="https://openmoji.org/data/color/svg/1F4A1.svg" alt="Lời khuyên" class="icon-image icon-image--sm"> Lời khuyên: Bé anh/chị 11 tuổi là lứa tuổi lý tưởng để tiêm vắc xin HPV. Bé có thể bắt đầu tiêm ngay bây giờ với lịch 2 mũi (cách nhau 6-12 tháng).</p>
-                                    </div>
-
-                                    <p class="qa-detail-meta qa-detail-meta--spaced">Nếu anh/chị có thêm câu hỏi, vui lòng <a href="datlichkham.html" class="qa-detail-link">đặt lịch khám</a> hoặc liên hệ trực tiếp qua hotline 1900 6666.</p>
+                            <p>Em chào bác sĩ, khoảng 1 năm gần đây ngón tay út tay trái của em thấy nó phồng lên ở khớp ngón tay và có dấu hiệu tê khi gấp cánh tay lâu. Đi chụp xquang bác sĩ kết luận không có vấn đề gì, nhưng dạo gần đây thấy tê nhiều hơn. Bác sĩ cho em hỏi tình trạng của em là như thế nào ạ và hướng xử lý ạ? Em cảm ơn bác sĩ</p>
+                            <div class="qa-item__footer">
+                                <span class="qa-item__tag">Chuyên khoa Lao và bệnh phổi</span>
+                                <div class="qa-item__meta">
+                                    <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                    <span><img src="assets/image/icon.png" alt="">1 Trả lời</span>
+                                    <span><img src="assets/image/icon.png" alt="">2 Cảm ơn</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="info-box info-box--soft info-box--spaced">
-                            <h4 class="info-box__title">Các câu hỏi liên quan:</h4>
-                            <ul class="related-list">
-                                <li><a href="#">Vắc xin HPV có tác dụng phụ gì không?</a></li>
-                                <li><a href="#">Chi phí tiêm vắc xin HPV bao nhiêu?</a></li>
-                                <li><a href="#">Tiêm vắc xin HPV ở đâu uy tín?</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="qa-detail-comment-box">
-                            <h4>Bình luận</h4>
-                            <form>
-                                <textarea placeholder="Chia sẻ ý kiến hoặc câu hỏi thêm..." class="qa-textarea"></textarea>
-                                <button type="submit" class="btn-primary">Gửi bình luận</button>
-                            </form>
-                        </div>
+                            <div class="qa-detail-answer-box">
+                                <div class="qa-detail-answer-head">
+                                    <img src="assets/image/icon.png" alt="">
+                                    <div>
+                                        <strong>TSBS Nguyễn Xuân Điền</strong>
+                                        <span>12/08/2020</span>
+                                    </div>
+                                </div>
+                                <p>Chào bạn! nếu xương đã chụp rồi ko sao thì có thể xơ gân gấp ngón tay. Bạn cần khám trực tiếp mới đánh giá được.</p>
+                            </div>
+                            <div class="qa-detail-actions">
+                                <button type="button" class="qa-action-btn">Cảm ơn</button>
+                                <button type="button" class="qa-action-btn">Chia sẻ</button>
+                            </div>
+                        </article>
                     </div>
 
-                    <div>
-                        <div class="qa-detail-sidebar">
-                            <h3 class="qa-detail-sidebar__title">Thông tin câu hỏi</h3>
-                            <div class="qa-detail-sidebar__row">
-                                <p class="qa-detail-sidebar__label">Chuyên khoa</p>
-                                <p class="qa-detail-sidebar__value">Tiêm chủng trẻ em</p>
+                    <div class="qa-side">
+                        <form class="qa-form-card">
+                            <h2>ĐẶT CÂU HỎI VỚI BÁC SĨ</h2>
+                            <label class="qa-field">
+                                <span>Tuổi *</span>
+                                <input type="text" placeholder="Nhập" required>
+                            </label>
+                            <div class="qa-field">
+                                <span>Giới tính</span>
+                                <div class="qa-radio-row">
+                                    <label><input type="radio" name="gender" checked> Nam</label>
+                                    <label><input type="radio" name="gender"> Nữ</label>
+                                    <label><input type="radio" name="gender"> Khác</label>
+                                </div>
                             </div>
-                            <div class="qa-detail-sidebar__row">
-                                <p class="qa-detail-sidebar__label">Ngày hỏi</p>
-                                <p class="qa-detail-sidebar__value">3 ngày trước</p>
-                            </div>
-                            <div class="qa-detail-sidebar__row">
-                                <p class="qa-detail-sidebar__label">Trạng thái</p>
-                                <span class="qa-status qa-status--soft">Đã trả lời</span>
-                            </div>
-                            <div class="qa-detail-sidebar__row">
-                                <p class="qa-detail-sidebar__label">Lượt xem</p>
-                                <p class="qa-detail-sidebar__value">234</p>
-                            </div>
-                            <a href="datlichkham.html" class="btn-primary">Đặt lịch tư vấn</a>
-                            <button class="btn-soft btn-soft--rounded btn-inline btn-block"><img src="https://openmoji.org/data/color/svg/1F44D.svg" alt="Hữu ích" class="icon-image icon-image--sm"> Hữu ích (45)</button>
-                        </div>
+                            <label class="qa-field">
+                                <span>Chọn chuyên khoa</span>
+                                <select>
+                                    <option>Chọn</option>
+                                    <option>Chuyên khoa Da liễu</option>
+                                    <option>Chuyên khoa Tai Mũi Họng</option>
+                                </select>
+                            </label>
+                            <label class="qa-field">
+                                <span>Tiêu đề</span>
+                                <input type="text" placeholder="Tiêu đề (Ví dụ: Mụn ở cằm ở trán)">
+                            </label>
+                            <label class="qa-field">
+                                <span>Nội dung</span>
+                                <textarea rows="4" placeholder="Nội dung câu hỏi. Ví dụ: Mỗi khi bị dị ứng hoa phấn bên tai, tôi bị đỏ và mọc mụn nhỏ. Nhờ bác sĩ tư vấn cho tôi nên sử dụng thuốc gì?"></textarea>
+                            </label>
+                            <label class="qa-upload">
+                                <img src="assets/image/Image 2.png" alt="">
+                                <span>Thêm ảnh</span>
+                                <input type="file" hidden>
+                            </label>
+                            <p class="qa-note">* Các tài liệu của bạn sẽ được hiển thị công khai</p>
+                            <button type="submit" class="qa-submit">Gửi</button>
+                        </form>
 
-                        <div class="qa-detail-sidebar qa-detail-sidebar--spaced">
-                            <h4 class="qa-detail-sidebar__title">Bác sĩ trả lời</h4>
-                            <div class="qa-detail-doctor">
-                                <div class="qa-detail-doctor__avatar"><img src="https://openmoji.org/data/color/svg/1F469-200D-2695-FE0F.svg" alt="Bác sĩ nữ" class="icon-image icon-image--avatar"></div>
-                                <h4 class="qa-detail-doctor__name">TS.BS Nguyễn Thị Hương</h4>
-                                <p class="qa-detail-doctor__role">Chuyên gia tiêm chủng</p>
-                                <a href="bacsichi.html" class="specialty-contact-card__button">Xem hồ sơ</a>
-                            </div>
+                        <div class="qa-ad-card">
+                            <img src="assets/image/giai-ma-gen-tet-ket-noi-voi-genetica_8b8430b8_af21_44b3_8bb3_e82fa5646494 1.png" alt="">
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-gap surface-light">
-            <div class="container narrow">
-                <h2 class="center-heading">Các câu hỏi khác</h2>
-                <div class="qa-detail-related-grid">
-                    <a href="#" class="qa-detail-related-card">
-                        <h4>Sau khi tiêm bao lâu có thể tắm cho bé?</h4>
-                        <p>BS.CKI Trần Văn B | 5 ngày trước</p>
-                        <span class="qa-detail-related-status">Đã trả lời</span>
-                    </a>
-                    <a href="#" class="qa-detail-related-card">
-                        <h4>Bé bị sốt nhẹ có nên tiêm không?</h4>
-                        <p>BS Lê Đức C | 7 ngày trước</p>
-                        <span class="qa-detail-related-status">Đã trả lời</span>
-                    </a>
-                    <a href="#" class="qa-detail-related-card">
-                        <h4>Cách xử lý khi bé sốt cao sau tiêm?</h4>
-                        <p>BS Đặng Lan Phương | 10 ngày trước</p>
-                        <span class="qa-detail-related-status">Đã trả lời</span>
-                    </a>
                 </div>
             </div>
         </section>

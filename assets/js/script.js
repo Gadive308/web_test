@@ -172,6 +172,17 @@ function highlightCurrentNavLink() {
             link.removeAttribute("aria-current");
         }
     });
+
+    document.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
+        const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+        const hasActiveChild = Boolean(dropdown.querySelector(".nav-dropdown-menu a.active"));
+
+        if (!toggle) {
+            return;
+        }
+
+        toggle.classList.toggle("active", toggle.classList.contains("active") || hasActiveChild);
+    });
 }
 
 highlightCurrentNavLink();
@@ -256,12 +267,8 @@ function closeLoginModal() {
     document.body.classList.remove("modal-open");
 }
 
-const loginLinks = document.querySelectorAll(".header-actions .action-link");
+const loginLinks = document.querySelectorAll(".header-actions .action-login");
 loginLinks.forEach((link) => {
-    if (link.textContent.trim().toLowerCase() !== "đăng nhập") {
-        return;
-    }
-
     link.setAttribute("role", "button");
     link.setAttribute("tabindex", "0");
     link.addEventListener("click", (event) => {

@@ -16,14 +16,19 @@
                 </a>
 
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                    Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -33,127 +38,117 @@
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
-                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li class="nav-dropdown">
+                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
+                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                            <li><a href="bacsi.html">Bác sĩ</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
                     <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="null.html">Tin tức</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section hero-shell hero-shell--blue-dark">
-            <div class="container hero-copy">
-                <h1 class="hero-title hero-title--sm">Cẩm nang y tế</h1>
-                <p>Thông tin hữu ích về tiêm chủng và sức khỏe</p>
-            </div>
-        </section>
-
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Các chủ đề nổi bật</h2>
-                <div class="page-grid-auto-300">
-                    
-                    <article class="content-card content-card--lift">
-                        <div class="content-card__media hero-shell--blue"><img src="https://openmoji.org/data/color/svg/1F4DA.svg" alt="Kiến thức" class="icon-image icon-image--xl"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">Kiến thức cơ bản về tiêm chủng</h3>
-                            <p class="content-card__desc">Tìm hiểu về vai trò của tiêm chủng, cách thức hoạt động và lợi ích bảo vệ sức khỏe.</p>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Đọc thêm</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift">
-                        <div class="content-card__media hero-shell--red"><img src="https://openmoji.org/data/color/svg/1F50D.svg" alt="Tìm hiểu" class="icon-image icon-image--xl"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">Chuẩn bị trước khi tiêm</h3>
-                            <p class="content-card__desc">Những điều cần biết để chuẩn bị tốt nhất trước khi đi tiêm chủng.</p>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Đọc thêm</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift">
-                        <div class="content-card__media hero-shell--green"><img src="https://openmoji.org/data/color/svg/2705.svg" alt="Chăm sóc" class="icon-image icon-image--xl"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">Chăm sóc sau tiêm</h3>
-                            <p class="content-card__desc">Hướng dẫn chăm sóc đúng cách sau tiêm để đạt hiệu quả tốt nhất.</p>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Đọc thêm</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift">
-                        <div class="content-card__media hero-shell--amber"><img src="https://openmoji.org/data/color/svg/26A0.svg" alt="Cảnh báo" class="icon-image icon-image--xl"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">Phản ứng phụ sau tiêm</h3>
-                            <p class="content-card__desc">Thông tin về các phản ứng có thể gặp và cách xử lý an toàn.</p>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Đọc thêm</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift">
-                        <div class="content-card__media hero-shell--violet"><img src="https://openmoji.org/data/color/svg/1F46A.svg" alt="Gia đình" class="icon-image icon-image--xl"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">Lịch tiêm cho gia đình</h3>
-                            <p class="content-card__desc">Tìm hiểu lịch tiêm chủng phù hợp cho từng độ tuổi.</p>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Đọc thêm</button>
-                        </div>
-                    </article>
-
-                    <article class="content-card content-card--lift">
-                        <div class="content-card__media hero-shell--pink"><img src="https://openmoji.org/data/color/svg/2753.svg" alt="Câu hỏi" class="icon-image icon-image--xl"></div>
-                        <div class="content-card__body">
-                            <h3 class="content-card__title content-card__title--md">Câu hỏi thường gặp</h3>
-                            <p class="content-card__desc">Giải đáp các câu hỏi phổ biến về tiêm chủng và vắc xin.</p>
-                            <button type="button" class="btn-pill btn-soft btn-soft--block">Đọc thêm</button>
-                        </div>
-                    </article>
+    <main class="blog-page">
+        <section class="blog-hero">
+            <div class="container blog-hero__inner">
+                <div class="blog-hero__content">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Trang chủ</a>
+                        <span>/</span>
+                        <span>Cẩm nang y tế</span>
+                    </nav>
+                    <h1>Cẩm nang y tế</h1>
+                </div>
+                <div class="blog-hero__media">
+                    <img src="assets/image/banner3.png" alt="Cẩm nang y tế">
                 </div>
             </div>
         </section>
 
-        <section class="section-gap surface-light">
-            <div class="container narrow">
-                <h2 class="center-heading">Những câu hỏi phổ biến</h2>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary class="faq-summary">Vắc xin có an toàn không?</summary>
-                        <p class="faq-answer">Vắc xin đã được kiểm tra kỹ càng về an toàn và hiệu quả trước khi phê duyệt sử dụng. Tất cả các vắc xin tại Medivax đều được nhập khẩu chính hãng từ các nhà sản xuất uy tín trên thế giới.</p>
-                    </details>
+        <section class="blog-content">
+            <div class="container blog-grid">
+                <div class="blog-list">
+                    <article class="blog-card">
+                        <div class="blog-card__image"><img src="assets/image/image 213-1.png" alt=""></div>
+                        <div class="blog-card__body">
+                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
+                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
+                            <div class="blog-card__meta">
+                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <details class="faq-item">
-                        <summary class="faq-summary">Tiêm chủng có đau không?</summary>
-                        <p class="faq-answer">Tiêm chủng có thể gây cảm giác nhẹ, nhưng không đau. Bác sĩ của chúng tôi được đào tạo để thực hiện tiêm một cách nhẹ nhàng và an toàn.</p>
-                    </details>
+                    <article class="blog-card">
+                        <div class="blog-card__image"><img src="assets/image/image 213-2.png" alt=""></div>
+                        <div class="blog-card__body">
+                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
+                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
+                            <div class="blog-card__meta">
+                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <details class="faq-item">
-                        <summary class="faq-summary">Tôi có nên tiêm nếu bị cảm cúm?</summary>
-                        <p class="faq-answer">Nếu bạn bị sốt cao hoặc bệnh nặng, nên hoãn tiêm lại. Tuy nhiên, nếu chỉ bị sổi mũi hoặc ho nhẹ, bạn vẫn có thể tiêm. Tốt nhất là tư vấn với bác sĩ của chúng tôi trước tiêm.</p>
-                    </details>
+                    <article class="blog-card">
+                        <div class="blog-card__image"><img src="assets/image/image 213-3.png" alt=""></div>
+                        <div class="blog-card__body">
+                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
+                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
+                            <div class="blog-card__meta">
+                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                            </div>
+                        </div>
+                    </article>
 
-                    <details class="faq-item">
-                        <summary class="faq-summary">Sau tiêm bao lâu sẽ có miễn dịch?</summary>
-                        <p class="faq-answer">Điều này tùy thuộc vào loại vắc xin. Thông thường, cơ thể sẽ phát triển miễn dịch từ 1-2 tuần sau tiêm. Một số vắc xin cần tiêm nhiều mũi để có hiệu quả tối ưu.</p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary class="faq-summary">Phụ nữ mang thai có thể tiêm được không?</summary>
-                        <p class="faq-answer">Một số vắc xin an toàn khi mang thai, nhưng một số khác không. Phụ nữ mang thai nên tư vấn với bác sĩ trước khi tiêm để xác định vắc xin nào phù hợp.</p>
-                    </details>
+                    <article class="blog-card">
+                        <div class="blog-card__image"><img src="assets/image/image 213-4.png" alt=""></div>
+                        <div class="blog-card__body">
+                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
+                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
+                            <div class="blog-card__meta">
+                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
+                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </section>
 
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Đặt lịch tư vấn miễn phí</h2>
-                <p class="support-center">Hãy liên hệ với chúng tôi để tư vấn về lịch tiêm chủng phù hợp với bạn</p>
-                <div class="detail-cta-row">
-                    <a href="datlichkham.html" class="btn-primary btn-inline">Đặt lịch ngay</a>
-                </div>
+                <aside class="blog-sidebar">
+                    <div class="blog-search-card">
+                        <h3>TÌM KIẾM BÀI VIẾT</h3>
+                        <div class="blog-search">
+                            <img src="assets/image/icon.png" alt="">
+                            <input type="search" placeholder="Tìm kiếm từ khóa, chủ đề" aria-label="Tìm kiếm bài viết">
+                        </div>
+                    </div>
+
+                    <div class="blog-category-card">
+                        <h3>ĐỌC THEO CHUYÊN ĐỀ</h3>
+                        <ul class="blog-category-list">
+                            <li><img src="assets/image/icon.png" alt=""><span>Hướng dẫn khám bệnh</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Cơ xương khớp</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Sức khỏe giới tính</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Tiểu hóa</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Tai Biến Mạch Máu Não</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Xét nghiệm</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Nhi khoa</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Vaccine Covid-19</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Covid-19 và Chăm sóc F0</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Răng hàm mặt</span><strong>1809 bài viết</strong></li>
+                            <li><img src="assets/image/icon.png" alt=""><span>Tim mạch</span><strong>1809 bài viết</strong></li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>

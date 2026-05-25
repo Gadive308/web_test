@@ -12,18 +12,23 @@
         <div class="top-header">
             <div class="container top-header-inner">
                 <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
-                        <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
+                    <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
                 </a>
 
                 <form class="search-box" role="search">
-                    <input type="search" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" aria-label="Tìm kiếm">Tìm</button>
+                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
+                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+                        <img src="assets/image/Search.png" alt="Tìm">
+                    </button>
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                        Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/Group 1000004254.png" alt="Giỏ hàng" class="header-action-image">
+                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
                 </div>
             </div>
@@ -33,10 +38,14 @@
             <div class="container">
                 <ul class="nav-links">
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="datlichkham.html">Đặt lịch khám</a></li>
-                    <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                    <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                    <li><a href="bacsi.html">Bác sĩ</a></li>
+                    <li class="nav-dropdown">
+                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
+                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                            <li><a href="bacsi.html">Bác sĩ</a></li>
+                        </ul>
+                    </li>
                     <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
                     <li><a href="camnangyte.html">Cẩm nang</a></li>
                     <li><a href="tintuc.html">Tin tức</a></li>
@@ -45,146 +54,210 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section hero-shell hero-shell--blue-dark">
-            <div class="container hero-copy">
-                <h1 class="hero-title hero-title--sm">Các chuyên khoa tiêm chủng</h1>
-                <p>Chuyên khoa phù hợp với từng độ tuổi và tình trạng sức khỏe</p>
-            </div>
-        </section>
-
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Danh sách chuyên khoa</h2>
-                <div class="specialty-grid">
-                    
-                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=1'">
-                        <div class="specialty-card__media hero-shell--blue">👶</div>
-                        <div class="specialty-card__body">
-                            <h3 class="specialty-card__title">Tiêm chủng cho trẻ sơ sinh</h3>
-                            <p class="specialty-card__desc">Gói tiêm bảo vệ toàn diện từ 0-24 tháng với các vắc xin cần thiết nhất cho trẻ sơ sinh.</p>
-                            <div class="specialty-badges">
-                                <span class="tag-pill tag-pill--sm">BCG</span>
-                                <span class="tag-pill tag-pill--sm">Rota</span>
-                                <span class="tag-pill tag-pill--sm">Sởi</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=2'">
-                        <div class="specialty-card__media hero-shell--green">👧</div>
-                        <div class="specialty-card__body">
-                            <h3 class="specialty-card__title">Tiêm chủng cho trẻ em lớn</h3>
-                            <p class="specialty-card__desc">Chuyên khoa tiêm chủng cho trẻ 3-14 tuổi với các vắc xin phòng bệnh quan trọng.</p>
-                            <div class="specialty-badges">
-                                <span class="tag-pill tag-pill--sm">HPV</span>
-                                <span class="tag-pill tag-pill--sm">Cúm</span>
-                                <span class="tag-pill tag-pill--sm">Thủy đậu</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=3'">
-                        <div class="specialty-card__media hero-shell--amber">👦</div>
-                        <div class="specialty-card__body">
-                            <h3 class="specialty-card__title">Tiêm chủng cho thanh niên</h3>
-                            <p class="specialty-card__desc">Chuyên khoa tiêm chủng cho thanh niên 15-34 tuổi chuẩn bị sức khỏe tối ưu.</p>
-                            <div class="specialty-badges">
-                                <span class="tag-pill tag-pill--sm">HPV</span>
-                                <span class="tag-pill tag-pill--sm">Sốt xuất huyết</span>
-                                <span class="tag-pill tag-pill--sm">Viêm gan</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=4'">
-                        <div class="specialty-card__media hero-shell--pink">👩</div>
-                        <div class="specialty-card__body">
-                            <h3 class="specialty-card__title">Tiêm chủng cho phụ nữ</h3>
-                            <p class="specialty-card__desc">Chuyên khoa bảo vệ sức khỏe phụ nữ trước thai kỳ và các bệnh phụ khoa.</p>
-                            <div class="specialty-badges">
-                                <span class="tag-pill tag-pill--sm">Sởi</span>
-                                <span class="tag-pill tag-pill--sm">Rubella</span>
-                                <span class="tag-pill tag-pill--sm">Viêm gan</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=5'">
-                        <div class="specialty-card__media hero-shell--violet">👨‍💼</div>
-                        <div class="specialty-card__body">
-                            <h3 class="specialty-card__title">Tiêm chủng cho người trưởng thành</h3>
-                            <p class="specialty-card__desc">Chuyên khoa bảo vệ sức khỏe người trưởng thành với các vắc xin phòng bệnh mạn tính.</p>
-                            <div class="specialty-badges">
-                                <span class="tag-pill tag-pill--sm">Cúm</span>
-                                <span class="tag-pill tag-pill--sm">Viêm gan</span>
-                                <span class="tag-pill tag-pill--sm">Uốn ván</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="specialty-card" onclick="location.href='chuyenkhoachi.html?id=6'">
-                        <div class="specialty-card__media hero-shell--indigo">👵</div>
-                        <div class="specialty-card__body">
-                            <h3 class="specialty-card__title">Tiêm chủng cho người cao tuổi</h3>
-                            <p class="specialty-card__desc">Chuyên khoa bảo vệ sức khỏe người cao tuổi từ 60 tuổi trở lên.</p>
-                            <div class="specialty-badges">
-                                <span class="tag-pill tag-pill--sm">Cúm</span>
-                                <span class="tag-pill tag-pill--sm">Phế cầu</span>
-                                <span class="tag-pill tag-pill--sm">Zona</span>
-                            </div>
-                        </div>
-                    </article>
+    <main class="specialty-figma-page">
+        <section class="specialty-figma-hero">
+            <div class="container specialty-figma-hero__inner">
+                <div class="specialty-tabs" aria-label="Lọc chuyên khoa">
+                    <button type="button">Tất cả</button>
+                    <button type="button" class="active">Khám bệnh</button>
+                    <button type="button">Khám tại nhà</button>
+                    <button type="button">Xét nghiệm Cúm A,B</button>
+                    <button type="button">Xét nghiệm Gene</button>
+                    <button type="button">Cơ Xương Khớp</button>
+                    <button type="button">Khám Nhi và Sàng lọc Sơ sinh</button>
+                    <button type="button">Nam khoa</button>
+                    <button type="button">Vật lý trị liệu</button>
+                    <button type="button">Sản Phụ Khoa</button>
+                    <button type="button">Khám Sức Khỏe tổng quát</button>
+                    <button type="button">Tiêu Hoá</button>
+                    <button type="button">Khám Sức Khoẻ Lái Xe</button>
+                    <button type="button">Xét nghiệm Chức năng Gan - Thận</button>
                 </div>
+
+                <form class="facility-search specialty-search" role="search">
+                    <div class="facility-search__keyword">
+                        <img src="assets/image/Search.png" alt="">
+                        <input type="search" placeholder="Tìm triệu chứng, chuyên khoa, tên bệnh viện, phòng khám" aria-label="Tìm dịch vụ">
+                    </div>
+                    <label class="facility-search__location">
+                        <span>Địa điểm</span>
+                        <select aria-label="Địa điểm">
+                            <option>Hà Nội</option>
+                            <option>TP. Hồ Chí Minh</option>
+                        </select>
+                    </label>
+                </form>
             </div>
         </section>
 
-        <section class="section-gap surface-light">
-            <div class="container narrow">
-                <h2 class="center-heading">Tuyên bố hội chẩn chuyên khoa</h2>
-                <div class="specialty-notice">
-                    <p>Tất cả các chuyên khoa tiêm chủng của Medivax được dẫn dắt bởi các bác sĩ có chứng chỉ chuyên khoa và kinh nghiệm lâu năm. Chúng tôi cung cấp tư vấn miễn phí để giúp bạn lựa chọn gói tiêm chủng phù hợp nhất với tình trạng sức khỏe và nhu cầu của từng cá nhân.</p>
-                </div>
-            </div>
-        </section>
+        <section class="specialty-services-section">
+            <div class="container specialty-services-container">
+                <h1>Chọn dịch vụ đặt hẹn</h1>
 
-        <section class="section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Liên hệ chúng tôi</h2>
-                <p class="support-center">Chọn chuyên khoa bạn cần và đặt lịch khám với các bác sĩ chuyên khoa</p>
-                <div class="detail-cta-row">
-                    <a href="datlichkham.html" class="btn-primary btn-inline">Đặt lịch ngay</a>
+                <div class="specialty-service-grid">
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213.png" alt="Khám mắt theo chuyên gia">
+                        <div class="specialty-service-card__body">
+                            <h2>Khám mắt theo chuyên gia</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiết</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-1.png" alt="Khám nhi">
+                        <div class="specialty-service-card__body">
+                            <h2>Khám nhi</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiết</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-2.png" alt="Khám tiêu hóa">
+                        <div class="specialty-service-card__body">
+                            <h2>Khám tiêu hóa</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiết</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-3.png" alt="Khám tổng quát">
+                        <div class="specialty-service-card__body">
+                            <h2>Khám tổng quát</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiết</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-4.png" alt="Chăm sóc tại viện">
+                        <div class="specialty-service-card__body">
+                            <h2>Chăm sóc tại viện</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiáº¿t</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-5.png" alt="Äá»™i ngÅ© bÃ¡c sÄ©">
+                        <div class="specialty-service-card__body">
+                            <h2>Đội ngũ bác sĩ</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiáº¿t</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-6.png" alt="Khám nhi khoa">
+                        <div class="specialty-service-card__body">
+                            <h2>Khám nội khoa</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiết</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-7(1).png" alt="Sáº£n phá»¥ khoa">
+                        <div class="specialty-service-card__body">
+                            <h2>Sản phụ khoa</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiết</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-7.png" alt="TÆ° váº¥n chuyÃªn khoa">
+                        <div class="specialty-service-card__body">
+                            <h2>Tư vấn chuyên khoa</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiáº¿t</a>
+                    </article>
+                    <article class="specialty-service-card">
+                        <img src="assets/image/image 213-8.png" alt="KhÃ¡m tai">
+                        <div class="specialty-service-card__body">
+                            <h2>Khám tai</h2>
+                            <p>Phòng khám Đa khoa Quốc tế Thanh Chân</p>
+                            <strong>300.000 đ</strong>
+                        </div>
+                        <a href="chuyenkhoachi.html">Chi tiáº¿t</a>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <strong>MEDIVAX</strong>
-                <p>Tư vấn: 1900 6666</p>
-                <p>Email: care@medivax.vn</p>
+        <div class="container footer-grid footer-grid--figma">
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo" aria-label="Medivax">
+                    <img src="assets/image/logo.png" alt="Medivax">
+                </a>
+                <ul class="footer-contact-list">
+                    <li>
+                        <img src="assets/image/Map Point Wave.png" alt="">
+                        <span>38 P. Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</span>
+                    </li>
+                    <li>
+                        <img src="assets/image/Phone Calling.png" alt="">
+                        <span>Hotline: 1900 6666</span>
+                    </li>
+                    <li>
+                        <img src="assets/image/icon.png" alt="">
+                        <span>Email: care@medivax.vn</span>
+                    </li>
+                </ul>
+                <div class="footer-socials" aria-label="Mạng xã hội">
+                    <a href="#" aria-label="Facebook"><img src="assets/image/icon.png" alt=""></a>
+                    <a href="#" aria-label="YouTube"><img src="assets/image/icon.png" alt=""></a>
+                    <a href="#" aria-label="Zalo"><img src="assets/image/icon.png" alt=""></a>
+                    <a href="#" aria-label="TikTok"><img src="assets/image/icon.png" alt=""></a>
+                </div>
             </div>
-            <div>
-                <strong>Cơ sở y tế</strong>
-                <p><a href="cosoyte.html">Danh sách cơ sở</a></p>
-                <p><a href="chuyenkhoa.html">Chuyên khoa</a></p>
+            <div class="footer-link-col">
+                <strong>GÓI KHÁM SỨC KHỎE</strong>
+                <a href="#">Tiêm chủng</a>
+                <a href="#">Khám tổng quát</a>
+                <a href="#">Tầm soát ung thư</a>
+                <a href="#">Khám nhi khoa</a>
+                <a href="#">Khám sản phụ khoa</a>
             </div>
-            <div>
-                <strong>Đội ngũ</strong>
-                <p><a href="bacsi.html">Bác sĩ</a></p>
-                <p><a href="hoiapbacsi.html">Hỏi đáp</a></p>
+            <div class="footer-link-col">
+                <strong>HỖ TRỢ KHÁCH HÀNG</strong>
+                <a href="#">Hướng dẫn đặt lịch</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Câu hỏi thường gặp</a>
+                <a href="#">Liên hệ</a>
             </div>
-            <div>
-                <strong>Giờ làm việc</strong>
-                <p>Thứ 2 - Thứ 7: 07:30 - 17:00</p>
-                <p>Chủ nhật: 07:30 - 12:00</p>
+            <div class="footer-hours-card">
+                <strong>GIỜ LÀM VIỆC</strong>
+                <div class="footer-hours-row"><span>Thứ 2</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 3</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 4</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 5</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 6</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 7</span><span>7:30 - 12:00</span></div>
             </div>
         </div>
     </footer>
+
+    <div class="floating-contact floating-contact--left">
+        <a href="tel:0965466288" class="floating-hotline">
+            <img src="assets/image/Phone Calling.png" alt="">
+            <span>0965 46 62 88</span>
+        </a>
+    </div>
+    <div class="floating-contact floating-contact--right">
+        <a href="#" class="floating-circle" aria-label="Lên đầu trang"><img src="assets/image/icon.png" alt=""></a>
+        <a href="#" class="floating-circle floating-circle--green" aria-label="Tư vấn"><img src="assets/image/icon.png" alt=""></a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+
