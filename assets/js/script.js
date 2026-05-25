@@ -304,3 +304,18 @@ document.addEventListener("keydown", (event) => {
         closeLoginModal();
     }
 });
+
+document.querySelectorAll(".booking-tab").forEach((tab) => {
+    tab.addEventListener("click", () => {
+        document.querySelectorAll(".booking-tab").forEach((item) => item.classList.remove("active"));
+        tab.classList.add("active");
+    });
+});
+
+document.querySelectorAll(".booking-location-item input[type='radio']").forEach((radio) => {
+    radio.addEventListener("change", () => {
+        document.querySelectorAll(".booking-location-item").forEach((item) => {
+            item.classList.toggle("active", item.contains(radio) && radio.checked);
+        });
+    });
+});

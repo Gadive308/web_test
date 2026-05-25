@@ -23,7 +23,10 @@
                 </form>
 
                 <div class="header-actions">
-                    <a href="#" class="action-link">Đăng nhập</a>
+                    <a href="#" class="action-link action-login">
+                        <img src="assets/image/cart.png" alt="" class="icon-cart">
+                    Đăng nhập
+                    </a>
                     <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
                         <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
                     </a>
@@ -478,9 +481,96 @@
             </div>
         </section>
 
-        
+        <section class="booking-section section-gap">
+            <div class="container narrow booking-wrap">
+                <h2 class="center-heading">Bảng giá tiêm chủng</h2>
+                <p class="section-desc">Giá bán lẻ tham khảo, có thể sẽ thay đổi theo từng thời điểm</p>
+                <form class="booking-form booking-form--home">
+                    <fieldset>
+                        <legend><img src="assets/image/User.png" alt=""> Thông tin người đăng ký</legend>
+                        <div class="field-grid">
+                            <input type="text" placeholder="Nhập họ và tên">
+                            <input type="date" aria-label="Ngày sinh">
+                        </div>
+                        <div class="field-grid">
+                            <input type="tel" placeholder="Nhập số điện thoại">
+                            <input type="text" placeholder="Nhập email (Không bắt buộc)">
+                        </div>
+                        <div class="booking-tab-row">
+                            <button type="button" class="booking-tab active">Tiêm cho tôi</button>
+                            <button type="button" class="booking-tab">Tiêm cho người thân</button>
+                        </div>
+                    </fieldset>
 
-    
+                    <fieldset>
+                        <legend><img src="assets/image/Map Point Wave.png" alt=""> Chọn trung tâm tiêm chủng</legend>
+                        <div class="field-grid">
+                            <select aria-label="Chọn tỉnh thành phố">
+                                <option>Chọn Tỉnh/Thành phố</option>
+                            </select>
+                            <select aria-label="Chọn quận huyện">
+                                <option>Chọn quận/huyện</option>
+                            </select>
+                        </div>
+                        <p class="location-count"><strong>Có 86 trung tâm tiêm chủng:</strong></p>
+                        <div class="booking-location-list">
+                            <label class="booking-location-item active">
+                                <input type="radio" name="booking-location" checked>
+                                <span>
+                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
+                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
+                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                                </span>
+                                <button type="button">Xem chỉ đường</button>
+                            </label>
+                            <label class="booking-location-item">
+                                <input type="radio" name="booking-location">
+                                <span>
+                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
+                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
+                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                                </span>
+                                <button type="button">Xem chỉ đường</button>
+                            </label>
+                            <label class="booking-location-item">
+                                <input type="radio" name="booking-location">
+                                <span>
+                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
+                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
+                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                                </span>
+                                <button type="button">Xem chỉ đường</button>
+                            </label>
+                            <label class="booking-location-item">
+                                <input type="radio" name="booking-location">
+                                <span>
+                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
+                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
+                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                                </span>
+                                <button type="button">Xem chỉ đường</button>
+                            </label>
+                        </div>
+                        <button type="button" class="location-more-btn">Xem thêm trung tâm tiêm chủng</button>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><img src="assets/image/Shield Plus.png" alt=""> Thông tin tiêm chủng</legend>
+                        <div class="field-grid three-cols">
+                            <select aria-label="Chọn vắc xin phòng bệnh">
+                                <option>Chọn vắc xin phòng bệnh (Không bắt buộc)</option>
+                            </select>
+                            <input type="date" aria-label="Chọn ngày hẹn tiêm">
+                            <select aria-label="Chọn khung giờ">
+                                <option>Chọn khung giờ</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-primary">Đăng ký ngay</button>
+                </form>
+            </div>
+        </section>
+
 
         <section class="news-section section-gap">
             <div class="container narrow">
@@ -549,31 +639,74 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <strong>MEDIVAX</strong>
-                <p>Tư vấn: 1900 6666</p>
-                <p>Email: care@medivax.vn</p>
+        <div class="container footer-grid footer-grid--figma">
+            <div class="footer-brand-col">
+                <a href="index.html" class="footer-logo" aria-label="Medivax">
+                    <img src="assets/image/logo.png" alt="Medivax">
+                </a>
+                <ul class="footer-contact-list">
+                    <li>
+                        <img src="assets/image/Map Point Wave.png" alt="">
+                        <span>38 P. Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</span>
+                    </li>
+                    <li>
+                        <img src="assets/image/Phone Calling.png" alt="">
+                        <span>Hotline: 1900 6666</span>
+                    </li>
+                    <li>
+                        <img src="assets/image/icon.png" alt="">
+                        <span>Email: care@medivax.vn</span>
+                    </li>
+                </ul>
+                <div class="footer-socials" aria-label="Mạng xã hội">
+                    <a href="#" aria-label="Facebook"><img src="assets/image/icon.png" alt=""></a>
+                    <a href="#" aria-label="YouTube"><img src="assets/image/icon.png" alt=""></a>
+                    <a href="#" aria-label="Zalo"><img src="assets/image/icon.png" alt=""></a>
+                    <a href="#" aria-label="TikTok"><img src="assets/image/icon.png" alt=""></a>
+                </div>
             </div>
-            <div>
-                <strong>Gói chăm sóc</strong>
-                <p>Tiêm cho trẻ em</p>
-                <p>Tiêm cho người lớn</p>
-                <p>Tiêm trước thai kỳ</p>
+            <div class="footer-link-col">
+                <strong>GÓI KHÁM SỨC KHỎE</strong>
+                <a href="#">Tiêm chủng</a>
+                <a href="#">Khám tổng quát</a>
+                <a href="#">Tầm soát ung thư</a>
+                <a href="#">Khám nhi khoa</a>
+                <a href="#">Khám sản phụ khoa</a>
             </div>
-            <div>
-                <strong>Hỗ trợ khách hàng</strong>
-                <p>Hướng dẫn đặt lịch</p>
-                <p>Điều khoản sử dụng</p>
-                <p>Chính sách bảo mật</p>
+            <div class="footer-link-col">
+                <strong>HỖ TRỢ KHÁCH HÀNG</strong>
+                <a href="#">Hướng dẫn đặt lịch</a>
+                <a href="#">Chính sách bảo mật</a>
+                <a href="#">Điều khoản sử dụng</a>
+                <a href="#">Câu hỏi thường gặp</a>
+                <a href="#">Liên hệ</a>
             </div>
-            <div>
-                <strong>Giờ làm việc</strong>
-                <p>Thứ 2 - Thứ 7: 07:30 - 17:00</p>
-                <p>Chủ nhật: 07:30 - 12:00</p>
+            <div class="footer-hours-card">
+                <strong>GIỜ LÀM VIỆC</strong>
+                <div class="footer-hours-row"><span>Thứ 2</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 3</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 4</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 5</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 6</span><span>7:30 - 17:00</span></div>
+                <div class="footer-hours-row"><span>Thứ 7</span><span>7:30 - 12:00</span></div>
             </div>
         </div>
     </footer>
+
+    <div class="floating-contact floating-contact--left">
+        <a href="tel:0956466268" class="floating-hotline">
+            <img src="assets/image/Phone Calling.png" alt="">
+            <span>0956 46 62 68</span>
+        </a>
+    </div>
+    <div class="floating-contact floating-contact--right">
+        <a href="#" class="floating-circle" aria-label="Lên đầu trang">
+            <img src="assets/image/icon.png" alt="">
+        </a>
+        <a href="#" class="floating-circle floating-circle--green" aria-label="Tư vấn">
+            <img src="assets/image/icon.png" alt="">
+        </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
