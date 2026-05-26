@@ -87,10 +87,7 @@ a {
 .site-header .container {
   max-width: 960px;
 }
-.site-header {
-  /* header search and action buttons */
-}
-.site-header .top-header-inner .search-box {
+.site-header .search-box {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -101,7 +98,7 @@ a {
   height: 42px;
   box-shadow: inset 0 0 0 1px rgba(41, 134, 229, 0.18);
 }
-.site-header .top-header-inner .search-box input[type=search] {
+.site-header .search-box input[type=search] {
   border: 0;
   outline: none;
   padding: 8px 10px;
@@ -109,7 +106,7 @@ a {
   background: transparent;
   font-size: 14px;
 }
-.site-header .top-header-inner .search-box .search-btn {
+.site-header .search-box .search-btn {
   background: #e5f3fe;
   border: 0;
   min-width: 36px;
@@ -123,16 +120,16 @@ a {
   box-shadow: none;
   cursor: pointer;
 }
-.site-header .top-header-inner .search-box .search-btn img {
+.site-header .search-box .search-btn img {
   width: 18px;
   height: 18px;
 }
-.site-header .top-header-inner .header-actions {
+.site-header .header-actions {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.site-header .top-header-inner .header-actions .action-link {
+.site-header .header-actions .action-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,26 +143,17 @@ a {
   box-shadow: 0 10px 24px rgba(12, 63, 120, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-.site-header .top-header-inner .header-actions .action-link img {
+.site-header .header-actions .action-link img {
   width: 18px;
   height: 18px;
   display: inline-block;
 }
-.site-header .top-header-inner .header-actions .action-link.action-login {
+.site-header .header-actions .action-link.action-login {
   padding-left: 12px;
-}
-.site-header .top-header-inner {
-  /* login should be a simple inline link (no pill background) */
-}
-.site-header .top-header-inner .header-actions .action-link.action-login {
   background: transparent;
   box-shadow: none;
   padding: 0 8px;
   border-radius: 4px;
-}
-.site-header .top-header-inner .header-actions .action-link.action-login img {
-  width: 18px;
-  height: 18px;
 }
 
 .brand {
@@ -642,14 +630,11 @@ a {
 .location-item--filled strong {
   color: #2f87df;
 }
-.location-item--filled p {
-  margin: 6px 0 0;
-  font-size: 14px;
-  color: #666;
-}
-.location-item--filled p:last-child {
-  font-size: 13px;
-  color: #999;
+.location-item--filled .header-actions .action-link.action-login {
+  background: transparent;
+  box-shadow: none;
+  padding: 0 8px;
+  border-radius: 4px;
 }
 
 .support-panel {
@@ -2231,141 +2216,6 @@ a {
     height: 120px;
   }
 }
-.qa-card {
-  border: 1px solid #e0e8f0;
-  border-radius: 8px;
-  padding: 20px;
-  background: #fff;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.qa-card__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-}
-.qa-card__title {
-  margin: 0 0 8px;
-  color: #1b2a4d;
-  font-size: 16px;
-}
-.qa-card__meta {
-  margin: 0 0 12px;
-  color: #666;
-  font-size: 14px;
-}
-
-.qa-answer-box {
-  background: #f2f7ff;
-  padding: 12px;
-  border-radius: 6px;
-  border-left: 4px solid #2f87df;
-}
-
-.qa-answer-text {
-  margin: 0;
-  color: #666;
-  font-size: 13px;
-}
-
-.qa-status {
-  background: #f0f4fb;
-  color: #2f87df;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-.qa-form {
-  background: #fff;
-  padding: 24px;
-  border-radius: 8px;
-}
-
-.qa-field {
-  margin-bottom: 20px;
-}
-.qa-field-label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.qa-input,
-.qa-select,
-.qa-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-.qa-select {
-  font-size: 14px;
-}
-
-.qa-textarea {
-  min-height: 120px;
-  font-family: inherit;
-  font-size: 14px;
-}
-
-.specialty-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.specialty-card {
-  background: #fff;
-  border: 1px solid #e0e8f0;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.specialty-card__media {
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 48px;
-}
-.specialty-card__body {
-  padding: 20px;
-}
-.specialty-card__title {
-  margin: 0 0 8px;
-  color: #1b2a4d;
-}
-.specialty-card__desc {
-  margin: 0 0 12px;
-  color: #666;
-  font-size: 14px;
-}
-
-.specialty-badges {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.specialty-notice {
-  background: #fff;
-  padding: 24px;
-  border-radius: 8px;
-  border-left: 4px solid #2f87df;
-  color: #666;
-  line-height: 1.6;
-}
-.specialty-notice p {
-  margin: 0;
-}
-
 .qa-detail-layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -2513,244 +2363,11 @@ a {
   font-size: 13px;
 }
 
-.qa-detail-emphasis {
-  margin: 0;
-  font-weight: 600;
-  font-size: 13px;
-  color: #1b2a4d;
-}
-
-.qa-detail-link {
-  color: #2f87df;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.qa-status--soft {
-  border-radius: 4px;
-  padding: 4px 8px;
-  background: #d4edda;
-  color: #155724;
-}
-
 .btn-block {
   width: 100%;
   padding: 10px 16px;
   font-weight: 600;
   font-size: 13px;
-}
-
-.qa-detail-related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-}
-
-.qa-detail-related-card {
-  border: 1px solid #e0e8f0;
-  border-radius: 8px;
-  padding: 16px;
-  text-decoration: none;
-  transition: all 0.3s;
-  display: block;
-}
-.qa-detail-related-card h4 {
-  margin: 0 0 8px;
-  color: #1b2a4d;
-  font-size: 14px;
-}
-.qa-detail-related-card p {
-  margin: 0 0 8px;
-  color: #666;
-  font-size: 13px;
-}
-
-.qa-detail-related-status {
-  display: inline-block;
-  background: #f0f4fb;
-  color: #2f87df;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 11px;
-}
-
-.specialty-detail-layout {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 32px;
-  align-items: start;
-}
-
-.specialty-detail-list {
-  color: #666;
-  line-height: 1.8;
-}
-
-.specialty-detail-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 12px;
-}
-.specialty-detail-table th,
-.specialty-detail-table td {
-  padding: 12px;
-  text-align: left;
-  border: 1px solid #ddd;
-}
-.specialty-detail-table thead tr {
-  background: #f2f7ff;
-}
-
-.specialty-info-card {
-  background: #f2f7ff;
-  padding: 24px;
-  border-radius: 8px;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.specialty-info-card__label {
-  color: #999;
-  font-size: 13px;
-  margin: 0 0 4px;
-}
-.specialty-info-card__value {
-  color: #1b2a4d;
-  font-weight: 600;
-  margin: 0;
-}
-.specialty-info-card__value--price {
-  color: #e51f2d;
-  font-size: 18px;
-}
-
-.specialty-step-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.specialty-step-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-.specialty-step-card__num {
-  font-size: 48px;
-  margin-bottom: 12px;
-}
-.specialty-step-card__title {
-  color: #1b2a4d;
-  margin: 0 0 12px;
-}
-.specialty-step-card__desc {
-  color: #666;
-  font-size: 14px;
-  margin: 0;
-}
-
-.specialty-contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.specialty-contact-card {
-  background: #fff;
-  border: 1px solid #e0e8f0;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-.specialty-contact-card__avatar {
-  font-size: 40px;
-  margin-bottom: 12px;
-}
-.specialty-contact-card__title {
-  color: #1b2a4d;
-  margin: 0 0 8px;
-}
-.specialty-contact-card__subtitle {
-  color: #666;
-  font-size: 13px;
-  margin: 0 0 12px;
-}
-.specialty-contact-card__button {
-  display: inline-block;
-  padding: 8px 16px;
-  background: #f2f7ff;
-  color: #2f87df;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.doctor-related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.doctor-related-card {
-  background: #fff;
-  border: 1px solid #e0e8f0;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.doctor-related-card__media {
-  height: 140px;
-  background: linear-gradient(135deg, #2c83dd 0%, #469df5 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 48px;
-}
-.doctor-related-card__body {
-  padding: 16px;
-}
-.doctor-related-card__date {
-  margin: 0 0 8px;
-  font-size: 12px;
-  color: #999;
-}
-.doctor-related-card__title {
-  margin: 0 0 8px;
-  color: #1b2a4d;
-  font-size: 15px;
-}
-.doctor-related-card__desc {
-  margin: 0;
-  color: #666;
-  font-size: 13px;
-}
-
-.narrow-form {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.detail-cta-row {
-  text-align: center;
-}
-.detail-cta-row .btn-primary {
-  display: inline-block;
-  width: auto;
-  padding: 12px 32px;
-  margin-right: 12px;
-  text-decoration: none;
-}
-.detail-cta-row .btn-pill {
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 6px;
-  background: #f2f7ff;
-  color: #2f87df;
-  border: 1px solid #ddd;
 }
 
 .search-box {
@@ -6312,7 +5929,9 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
   position: relative;
   overflow: hidden;
   padding: 24px 0 18px;
-  background: linear-gradient(120deg, rgba(222, 240, 253, 0.96), rgba(207, 229, 246, 0.92)), url("../image/Mask group.png") center/cover no-repeat;
+  /* Slightly stronger tint: increase gradient alpha to make hero appear bolder */
+  background: linear-gradient(120deg, rgba(222, 240, 253, 0.36), rgba(207, 229, 246, 0.26)), url("../image/hero_banner.png") center/cover no-repeat;
+  min-height: 212px;
 }
 
 .specialty-figma-hero::after {
@@ -6327,10 +5946,41 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 
 .specialty-figma-hero__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 920px;
 }
 
+/* keep inline bg img for mobile: hide on desktop, show on small screens */
+.specialty-figma-hero__bg {
+  display: none;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .specialty-figma-hero {
+    /* disable CSS background on small screens to prefer the inline img */
+    background-image: none !important;
+    min-height: 200px;
+    background-position: center top;
+  }
+  .specialty-figma-hero__bg {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 1;
+  }
+  .specialty-figma-hero__inner {
+    position: relative;
+    z-index: 2;
+  }
+}
 .specialty-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -7374,20 +7024,48 @@ body:has(.article-page) .main-nav .container,
   background: linear-gradient(90deg, rgba(232, 246, 255, 0.96), rgba(232, 246, 255, 0.42));
 }
 
+/* Keep the default (desktop) layout as flex; collapse to block on small screens */
 .blog-hero__inner {
-  display: block;
-}
-
-.blog-hero__media {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
 .blog-hero.inline-image {
-  background-image: none !important;
+  /* Use the page-specific banner as a background so it sits under the copy */
+  background-image: url("../image/banner3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 320px;
+  position: relative;
 }
 
+/* Hide the inline img when using background variant; small screens will show a smaller height */
 .blog-hero.inline-image .blog-hero__media {
-  display: block !important;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .blog-hero__inner {
+    display: block;
+  }
+  .blog-hero__media {
+    display: none;
+  }
+  .blog-hero.inline-image {
+    min-height: 200px;
+    background-position: center top;
+  }
+  .blog-hero.inline-image .blog-hero__media {
+    display: block !important;
+  }
+}
+/* Ensure content sits above the background image */
+.blog-hero__content {
+  position: relative;
+  z-index: 2;
 }
 
 .blog-hero__content h1 {
