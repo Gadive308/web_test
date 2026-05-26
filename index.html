@@ -1,718 +1,1021 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medivax</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="top-header">
-            <div class="container top-header-inner">
-                <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
-                        <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
-                </a>
+      <div class="top-header">
+        <div class="container top-header-inner">
+          <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
+            <img src="assets/image/logo.png" alt="Medivax" class="brand-mark" />
+          </a>
 
-                <form class="search-box" role="search">
-                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
-                        <img src="assets/image/Search.png" alt="Tìm">
-                    </button>
-                </form>
+          <form class="search-box" role="search">
+            <input
+              type="search"
+              name="q"
+              placeholder="Tìm tên vắc xin..."
+              aria-label="Tìm kiếm vắc xin"
+            />
+            <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+              <img src="assets/image/Search.png" alt="Tìm" />
+            </button>
+          </form>
 
-                <div class="header-actions">
-                    <a href="#" class="action-link action-login">
-                        <img src="assets/image/cart.png" alt="" class="icon-cart">
-                    Đăng nhập
-                    </a>
-                    <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
-                    </a>
-                </div>
-            </div>
+          <div class="header-actions">
+            <a href="#" class="action-link action-login">
+              <img src="assets/image/cart.png" alt="" class="icon-cart" />
+              Đăng nhập
+            </a>
+            <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
+              <img
+                src="assets/image/cart.png"
+                alt="Giỏ hàng"
+                class="icon-cart"
+              />
+              Giỏ hàng
+            </a>
+          </div>
         </div>
+      </div>
 
-        <nav class="main-nav">
-            <div class="container">
-                <ul class="nav-links">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li class="nav-dropdown">
-                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
-                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
-                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                            <li><a href="bacsi.html">Bác sĩ</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
-                    <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="null.html">Tin tức</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="nav-dropdown">
+              <a
+                href="#"
+                class="nav-dropdown-toggle"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Đặt lịch khám <span aria-hidden="true">⌄</span></a
+              >
+              <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                <li><a href="bacsi.html">Bác sĩ</a></li>
+              </ul>
+            </li>
+            <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
+            <li><a href="camnangyte.html">Cẩm nang</a></li>
+            <li><a href="null.html">Tin tức</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero-section" role="img" aria-label="Banner Medivax">
-            <div class="hero-frame-single">
-                <img src="assets/image/hero-frame-1.png" alt="Banner Medivax" class="hero-frame-img">
-            </div>
-        </section>
-
-        <section class="quick-actions">
-            <div class="container action-list">
-                <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/logo1.png" alt="Giới thiệu trung tâm">
-                    <p>Giới thiệu trung tâm</p>
-                </article>
-                <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/goitiem_logo.png" alt="Các gói tiêm">
-                    <p>Các gói tiêm</p>
-                </article>
-                <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/banggia_logo.png" alt="Bảng giá">
-                    <p>Bảng giá</p>
-                </article>
-                <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/logo2.png" alt="Quy trình tiêm">
-                    <p>Quy trình tiêm</p>
-                </article>
-                <article class="action-item">
-                    <img class="action-icon-image" src="assets/image/logo3.png" alt="Địa điểm">
-                    <p>Địa điểm</p>
-                </article>
-            </div>
-        </section>
-        <div class="wrapper">
-        <div class="section-chip-image">
-                    <img src="assets/image/banner.png" alt="Trung tâm tiêm chủng">
-                </div>
+      <section class="hero-section" role="img" aria-label="Banner Medivax">
+        <div class="hero-frame-single">
+          <img
+            src="assets/image/hero-frame-1.png"
+            alt="Banner Medivax"
+            class="hero-frame-img"
+          />
         </div>
-        <section class="trust-section section-gap">
+      </section>
 
-            
-            <div class="container narrow">
+      <section class="quick-actions">
+        <div class="container action-list">
+          <article class="action-item">
+            <img
+              class="action-icon-image"
+              src="assets/image/logo1.png"
+              alt="Giới thiệu trung tâm"
+            />
+            <p>Giới thiệu trung tâm</p>
+          </article>
+          <article class="action-item">
+            <img
+              class="action-icon-image"
+              src="assets/image/goitiem_logo.png"
+              alt="Các gói tiêm"
+            />
+            <p>Các gói tiêm</p>
+          </article>
+          <article class="action-item">
+            <img
+              class="action-icon-image"
+              src="assets/image/banggia_logo.png"
+              alt="Bảng giá"
+            />
+            <p>Bảng giá</p>
+          </article>
+          <article class="action-item">
+            <img
+              class="action-icon-image"
+              src="assets/image/logo2.png"
+              alt="Quy trình tiêm"
+            />
+            <p>Quy trình tiêm</p>
+          </article>
+          <article class="action-item">
+            <img
+              class="action-icon-image"
+              src="assets/image/logo3.png"
+              alt="Địa điểm"
+            />
+            <p>Địa điểm</p>
+          </article>
+        </div>
+      </section>
+      <div class="wrapper">
+        <div class="section-chip-image">
+          <img src="assets/image/banner.png" alt="Trung tâm tiêm chủng" />
+        </div>
+      </div>
+      <section class="trust-section section-gap">
+        <div class="container narrow">
+          <h2 class="section-title">
+            “ Tiêm chủng đã giúp cứu sống hàng triệu sinh mạng trên thế giới ”
+          </h2>
 
-                <h2 class="section-title">“ Tiêm chủng đã giúp cứu sống hàng triệu sinh mạng trên thế giới ”</h2>
+          <p class="section-desc trust-desc">
+            Trung tâm tiêm chủng Medivax tự hào là đơn vị cung cấp các loại vắc
+            xin thế hệ mới nhất từ các nhà sản xuất hàng đầu thế giới, toàn bộ
+            vắc xin đều được nhập khẩu chính hãng từ các nhà sản xuất lớn trên
+            thế giới. Tiêm chủng Long Châu cung cấp nhiều dịch vụ tiêm chủng
+            linh hoạt theo yêu cầu của Quý khách: Tiêm lẻ, tiêm theo yêu cầu,
+            mua đặt giữ vắc xin theo yêu cầu, đặt giữ vắc xin online...
+          </p>
 
-                <p class="section-desc trust-desc">Trung tâm tiêm chủng Medivax tự hào là đơn vị cung cấp các loại vắc xin thế hệ mới nhất từ các nhà sản xuất hàng đầu thế giới, toàn bộ vắc xin đều được nhập khẩu chính hãng từ các nhà sản xuất lớn trên thế giới. Tiêm chủng Long Châu cung cấp nhiều dịch vụ tiêm chủng linh hoạt theo yêu cầu của Quý khách: Tiêm lẻ, tiêm theo yêu cầu, mua đặt giữ vắc xin theo yêu cầu, đặt giữ vắc xin online...</p>
+          <h3 class="sub-title">Vì sao chọn trung tâm tiêm chủng Medivax?</h3>
 
-                <h3 class="sub-title">Vì sao chọn trung tâm tiêm chủng Medivax?</h3>
+          <div class="trust-combined">
+            <img src="assets/image/Group 1000004269.png" alt="Lý do 1" />
+            <img src="assets/image/Group 1000004270.png" alt="Lý do 2" />
+            <img src="assets/image/Group 1000004271.png" alt="Lý do 3" />
+            <img src="assets/image/Group 1000004272.png" alt="Lý do 4" />
+          </div>
+        </div>
+      </section>
 
-                <div class="trust-combined">
-                    <img src="assets/image/Group 1000004269.png" alt="Lý do 1">
-                    <img src="assets/image/Group 1000004270.png" alt="Lý do 2">
-                    <img src="assets/image/Group 1000004271.png" alt="Lý do 3">
-                    <img src="assets/image/Group 1000004272.png" alt="Lý do 4">
-                </div>
+      <section class="package-section section-gap">
+        <div class="container narrow">
+          <h2 class="center-heading">Giới thiệu các gói tiêm chủng</h2>
+          <p class="package-intro">
+            Tiêm vắc xin đầy đủ và đúng lịch giúp cơ thể kích thích sinh ra miễn
+            dịch chủ động đặc hiệu, từ đó tăng cường sức đề kháng, phòng ngừa
+            các bệnh nguy hiểm.
+          </p>
+          <div class="package-layout">
+            <aside class="package-menu">
+              <button
+                type="button"
+                class="menu-item active"
+                data-package="baby-0-24"
+              >
+                <span class="menu-icon"
+                  ><img src="assets/image/baby.png" alt="icon"
+                /></span>
+                <span class="menu-text">Gói trẻ em từ 0 - 2 tuổi</span>
+                <span class="menu-arrow">›</span>
+              </button>
+              <button type="button" class="menu-item" data-package="child-3-9">
+                <span class="menu-icon"
+                  ><img src="assets/image/kid1.png" alt="icon"
+                /></span>
+                <span class="menu-text">Gói tiền học đường từ 3 - 9 tuổi</span>
+                <span class="menu-arrow">›</span>
+              </button>
+              <button type="button" class="menu-item" data-package="youth-9-18">
+                <span class="menu-icon"
+                  ><img src="assets/image/kid2.png" alt="icon"
+                /></span>
+                <span class="menu-text"
+                  >Gói thanh thiếu niên từ 9 - 18 tuổi</span
+                >
+                <span class="menu-arrow">›</span>
+              </button>
+              <button
+                type="button"
+                class="menu-item"
+                data-package="pre-pregnancy"
+              >
+                <span class="menu-icon"
+                  ><img src="assets/image/pregnant.png" alt="icon"
+                /></span>
+                <span class="menu-text">Gói phụ nữ trước khi mang thai</span>
+                <span class="menu-arrow">›</span>
+              </button>
+              <button type="button" class="menu-item" data-package="adult">
+                <span class="menu-icon"
+                  ><img src="assets/image/man.png" alt="icon"
+                /></span>
+                <span class="menu-text">Gói người trưởng thành</span>
+                <span class="menu-arrow">›</span>
+              </button>
+              <button type="button" class="menu-item" data-package="chronic">
+                <span class="menu-icon"
+                  ><img src="assets/image/oldman.png" alt="icon"
+                /></span>
+                <span class="menu-text">Gói người có bệnh mãn tính</span>
+                <span class="menu-arrow">›</span>
+              </button>
+              <button
+                type="button"
+                class="menu-item"
+                data-package="pre-marriage"
+              >
+                <span class="menu-icon"
+                  ><img src="assets/image/marriage.png" alt="icon"
+                /></span>
+                <span class="menu-text">Gói tiền hôn nhân</span>
+                <span class="menu-arrow">›</span>
+              </button>
+            </aside>
+            <div class="package-detail">
+              <img
+                class="package-hero-image"
+                src="assets/image/Rectangle 11302.png"
+                alt="Gói dành cho trẻ sơ sinh đến 12 tháng tuổi"
+              />
+              <div class="package-banner" id="package-title">
+                Gói trẻ em từ 0 - 2 tuổi
+              </div>
+              <p class="muted" id="package-description">
+                Trẻ cần được tiêm vắc xin sớm và đúng lịch để có kháng thể bảo
+                vệ trước khi tiếp xúc với các mầm bệnh nguy hiểm.
+              </p>
+              <img
+                src="assets/image/banner2.png"
+                alt="banner"
+                class="package-section-banner"
+              />
+              <p class="fw-bold text-primary mb-3" id="package-price">
+                Giá tham khảo: 4.850.000đ
+              </p>
+              <table class="table-lite">
+                <thead>
+                  <tr>
+                    <th>Phòng bệnh</th>
+                    <th>Tên vắc xin</th>
+                    <th>Nước sản xuất</th>
+                    <th>Số mũi</th>
+                  </tr>
+                </thead>
+                <tbody id="package-table-body">
+                  <tr>
+                    <td>
+                      <ul class="disease-list">
+                        <li>Lao</li>
+                      </ul>
+                    </td>
+                    <td>BCG</td>
+                    <td>Việt Nam</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul class="disease-list">
+                        <li>Rota virus</li>
+                      </ul>
+                    </td>
+                    <td>ROTARIX</td>
+                    <td>Bỉ</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul class="disease-list">
+                        <li>Bạch hầu, ho gà, uốn ván</li>
+                      </ul>
+                    </td>
+                    <td>INFANRIX HEXA</td>
+                    <td>Bỉ</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul class="disease-list">
+                        <li>Sởi - Quai bị - Rubella</li>
+                      </ul>
+                    </td>
+                    <td>PRIORIX</td>
+                    <td>Bỉ</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul class="disease-list">
+                        <li>Viêm gan A, B</li>
+                      </ul>
+                    </td>
+                    <td>TWINRIX</td>
+                    <td>Bỉ</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav class="package-pagination" aria-label="Phân trang gói tiêm">
+                <button type="button" class="page-btn" aria-label="Trang trước">
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  class="page-btn active"
+                  aria-current="page"
+                >
+                  1
+                </button>
+                <button type="button" class="page-btn">2</button>
+                <button type="button" class="page-btn">3</button>
+                <button type="button" class="page-btn" aria-label="Trang sau">
+                  ›
+                </button>
+              </nav>
+              <div class="package-cta-outline">
+                <button type="button" class="package-call-btn">
+                  <img src="assets/image/Phone Calling.png" alt="phone" />
+                  <span>Gọi 1800 6000 (Miễn Phí)</span>
+                </button>
+                <button type="button" class="package-register-btn">
+                  <img src="assets/image/cart.png" alt="cart" />
+                  <span>Đăng ký mua gói</span>
+                </button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="package-section section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Giới thiệu các gói tiêm chủng</h2>
-                <p class="package-intro">Tiêm vắc xin đầy đủ và đúng lịch giúp cơ thể kích thích sinh ra miễn dịch chủ động đặc hiệu, từ đó tăng cường sức đề kháng, phòng ngừa các bệnh nguy hiểm.</p>
-                <div class="package-layout">
-                    <aside class="package-menu">
-                        <button type="button" class="menu-item active" data-package="baby-0-24">
-                            <span class="menu-icon"><img src="assets/image/baby.png" alt="icon"></span>
-                            <span class="menu-text">Gói trẻ em từ 0 - 2 tuổi</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                        <button type="button" class="menu-item" data-package="child-3-9">
-                            <span class="menu-icon"><img src="assets/image/kid1.png" alt="icon"></span>
-                            <span class="menu-text">Gói tiền học đường từ 3 - 9 tuổi</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                        <button type="button" class="menu-item" data-package="youth-9-18">
-                            <span class="menu-icon"><img src="assets/image/kid2.png" alt="icon"></span>
-                            <span class="menu-text">Gói thanh thiếu niên từ 9 - 18 tuổi</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                        <button type="button" class="menu-item" data-package="pre-pregnancy">
-                            <span class="menu-icon"><img src="assets/image/pregnant.png" alt="icon"></span>
-                            <span class="menu-text">Gói phụ nữ trước khi mang thai</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                        <button type="button" class="menu-item" data-package="adult">
-                            <span class="menu-icon"><img src="assets/image/man.png" alt="icon"></span>
-                            <span class="menu-text">Gói người trưởng thành</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                        <button type="button" class="menu-item" data-package="chronic">
-                            <span class="menu-icon"><img src="assets/image/oldman.png" alt="icon"></span>
-                            <span class="menu-text">Gói người có bệnh mãn tính</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                        <button type="button" class="menu-item" data-package="pre-marriage">
-                            <span class="menu-icon"><img src="assets/image/marriage.png" alt="icon"></span>
-                            <span class="menu-text">Gói tiền hôn nhân</span>
-                            <span class="menu-arrow">›</span>
-                        </button>
-                    </aside>
-                    <div class="package-detail">
-                        <img class="package-hero-image" src="assets/image/Rectangle 11302.png" alt="Gói dành cho trẻ sơ sinh đến 12 tháng tuổi">
-                        <div class="package-banner" id="package-title">Gói trẻ em từ 0 - 2 tuổi</div>
-                        <p class="muted" id="package-description">Trẻ cần được tiêm vắc xin sớm và đúng lịch để có kháng thể bảo vệ trước khi tiếp xúc với các mầm bệnh nguy hiểm.</p>
-                        <img src="assets/image/banner2.png" alt="banner" class="package-section-banner">
-                        <p class="fw-bold text-primary mb-3" id="package-price">Giá tham khảo: 4.850.000đ</p>
-                        <table class="table-lite">
-                            <thead>
-                                <tr>
-                                    <th>Phòng bệnh</th>
-                                    <th>Tên vắc xin</th>
-                                    <th>Nước sản xuất</th>
-                                    <th>Số mũi</th>
-                                </tr>
-                            </thead>
-                            <tbody id="package-table-body">
-                                <tr>
-                                    <td><ul class="disease-list"><li>Lao</li></ul></td>
-                                    <td>BCG</td>
-                                    <td>Việt Nam</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td><ul class="disease-list"><li>Rota virus</li></ul></td>
-                                    <td>ROTARIX</td>
-                                    <td>Bỉ</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <td><ul class="disease-list"><li>Bạch hầu, ho gà, uốn ván</li></ul></td>
-                                    <td>INFANRIX HEXA</td>
-                                    <td>Bỉ</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td><ul class="disease-list"><li>Sởi - Quai bị - Rubella</li></ul></td>
-                                    <td>PRIORIX</td>
-                                    <td>Bỉ</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <td><ul class="disease-list"><li>Viêm gan A, B</li></ul></td>
-                                    <td>TWINRIX</td>
-                                    <td>Bỉ</td>
-                                    <td>2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <nav class="package-pagination" aria-label="Phân trang gói tiêm">
-                            <button type="button" class="page-btn" aria-label="Trang trước">‹</button>
-                            <button type="button" class="page-btn active" aria-current="page">1</button>
-                            <button type="button" class="page-btn">2</button>
-                            <button type="button" class="page-btn">3</button>
-                            <button type="button" class="page-btn" aria-label="Trang sau">›</button>
-                        </nav>
-                        <div class="package-cta-outline">
-                            <button type="button" class="package-call-btn">
-                                <img src="assets/image/Phone Calling.png" alt="phone" />
-                                <span>Gọi 1800 6000 (Miễn Phí)</span>
-                            </button>
-                            <button type="button" class="package-register-btn">
-                                <img src="assets/image/cart.png" alt="cart" />
-                                <span>Đăng ký mua gói</span>
-                            </button>
-                        </div>
-                        
+      <section class="price-section section-gap">
+        <div class="container narrow">
+          <h2 class="center-heading">Bảng giá tiêm chủng</h2>
+          <p class="section-desc">
+            Giá bán lẻ tham khảo, có thể sẽ thay đổi theo từng thời điểm
+          </p>
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Phòng bệnh</th>
+                <th>Tên vắc xin</th>
+                <th>Nước sản xuất</th>
+                <th>Giá lẻ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">
+                  Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B<br />(Vắc
+                  xin 6.1)
+                </td>
+                <td>HEXAXIM</td>
+                <td>Pháp</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td>INFANRIX HEXA</td>
+                <td>Bỉ</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td>Bạch hầu, Ho gà, Uốn ván, Bại liệt (Vắc xin 4.1)</td>
+                <td>TETRAXIM</td>
+                <td>Pháp</td>
+                <td>548.000đ</td>
+              </tr>
+              <tr>
+                <td>Bạch hầu – Uốn ván</td>
+                <td>UỐN VÁN, BẠCH HẦU HẤP PHỤ (TD) – LỌ 0,5ML</td>
+                <td>Việt Nam</td>
+                <td>174.000đ</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Bạch hầu, Uốn ván, Ho gà (Vắc xin 3.1)</td>
+                <td>ADACEL</td>
+                <td>Canada</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td>BOOSTRIX</td>
+                <td>Bỉ</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+                  Các bệnh do phế cầu (Viêm phổi, Viêm tai giữa, Viêm màng não)
+                </td>
+                <td>ADACEL</td>
+                <td>Canada</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td>BOOSTRIX</td>
+                <td>Bỉ</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Cúm mùa</td>
+                <td>ADACEL</td>
+                <td>Canada</td>
+                <td>1.020.000đ</td>
+              </tr>
+              <tr>
+                <td>BOOSTRIX</td>
+                <td>Bỉ</td>
+                <td>1.020.000đ</td>
+              </tr>
+            </tbody>
+          </table>
+          <nav
+            class="price-pagination"
+            aria-label="Phân trang bảng giá tiêm chủng"
+          >
+            <button type="button" class="page-btn" aria-label="Trang trước">
+              ‹
+            </button>
+            <button type="button" class="page-btn active" aria-current="page">
+              1
+            </button>
+            <button type="button" class="page-btn">2</button>
+            <button type="button" class="page-btn">3</button>
+            <button type="button" class="page-btn">4</button>
+            <button type="button" class="page-btn" aria-label="Trang sau">
+              ›
+            </button>
+          </nav>
+        </div>
+      </section>
+
+      <section class="process-section section-gap">
+        <div class="container narrow">
+          <h2 class="center-heading">Quy trình tiêm chủng tại Medivax</h2>
+          <div class="process-grid">
+            <article class="process-col">
+              <h3>1. Trước khi tiêm</h3>
+              <ul class="process-list">
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon5.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Sàng lọc</strong>
+                    <p>Khám sàng lọc và tư vấn cho đối tượng tiêm chủng</p>
+                  </div>
+                </li>
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon6.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Thông báo, giải đáp thắc mắc</strong>
+                    <p>Thông báo về loại vắc xin sẽ tiêm</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article class="process-col">
+              <h3>2. Trong khi tiêm</h3>
+              <ul class="process-list">
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon4.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Nhân viên y tế</strong>
+                    <p>
+                      Kiểm tra vắc xin, bơm tiêm và dung môi, dụng cụ trước khi
+                      sử dụng
+                    </p>
+                  </div>
+                </li>
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon7.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Đối tượng tiêm chủng</strong>
+                    <p>
+                      Cho đối tượng tiêm chủng hoặc cha mẹ, người giám hộ của
+                      trẻ xem lọ vắc xin
+                    </p>
+                  </div>
+                </li>
+                <li class="process-item">
+                  <img
+                    src="assets/image/syringe (2).png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Thực hiện tiêm</strong>
+                    <p>Tiêm đúng chỉ định, đúng liều, đúng đường dùng</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            <article class="process-col">
+              <h3>3. Sau khi tiêm</h3>
+              <ul class="process-list">
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon 8.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Theo dõi sau tiêm</strong>
+                    <p>Lưu trú, theo dõi các phản ứng sau tiêm</p>
+                  </div>
+                </li>
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon10.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Bảo quản</strong>
+                    <p>
+                      Bảo quản vắc xin, vật tư tiêm chủng chưa sử dụng theo quy
+                      định
+                    </p>
+                  </div>
+                </li>
+                <li class="process-item">
+                  <img
+                    src="assets/image/icon 9.png"
+                    alt="icon"
+                    class="process-item__icon"
+                  />
+                  <div class="process-item__content">
+                    <strong>Xử lý chất thải</strong>
+                    <p>
+                      Xử lý các chất thải y tế sau tiêm chủng theo đúng quy định
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section section-gap">
+        <div class="container narrow">
+          <h2 class="center-heading">Địa điểm tiêm chủng tại Medivax</h2>
+          <div class="location-layout location-layout--expanded">
+            <div class="location-panel">
+              <div class="location-toolbar">
+                <select
+                  class="location-select"
+                  aria-label="Chọn tỉnh thành phố"
+                >
+                  <option>Chọn tỉnh thành phố</option>
+                </select>
+                <select class="location-select" aria-label="Chọn quận huyện">
+                  <option>Chọn quận huyện</option>
+                </select>
+              </div>
+
+              <p class="location-count">
+                <strong>Có 86 trung tâm tiêm chủng:</strong>
+              </p>
+
+              <div class="location-list location-list--stacked">
+                <div class="location-item location-item--filled active">
+                  <div class="location-item__radio" aria-hidden="true"></div>
+                  <div class="location-item__content">
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <p>
+                      Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội
+                    </p>
+                    <div class="location-item__status">
+                      <span class="is-open">Đang mở</span>
+                      <span>•</span>
+                      <span>Đóng cửa lúc 18:00</span>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="price-section section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Bảng giá tiêm chủng</h2>
-                <p class="section-desc">Giá bán lẻ tham khảo, có thể sẽ thay đổi theo từng thời điểm</p>
-                <table class="price-table">
-                    <thead>
-                        <tr>
-                            <th>Phòng bệnh</th>
-                            <th>Tên vắc xin</th>
-                            <th>Nước sản xuất</th>
-                            <th>Giá lẻ</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="2">Bạch hầu, ho gà, uốn ván, bại liệt, Hib và viêm gan B<br>(Vắc xin 6.1)</td>
-                            <td>HEXAXIM</td>
-                            <td>Pháp</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td>INFANRIX HEXA</td>
-                            <td>Bỉ</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td>Bạch hầu, Ho gà, Uốn ván, Bại liệt (Vắc xin 4.1)</td>
-                            <td>TETRAXIM</td>
-                            <td>Pháp</td>
-                            <td>548.000đ</td>
-                        </tr>
-                        <tr>
-                            <td>Bạch hầu – Uốn ván</td>
-                            <td>UỐN VÁN, BẠCH HẦU HẤP PHỤ (TD) – LỌ 0,5ML</td>
-                            <td>Việt Nam</td>
-                            <td>174.000đ</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Bạch hầu, Uốn ván, Ho gà (Vắc xin 3.1)</td>
-                            <td>ADACEL</td>
-                            <td>Canada</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td>BOOSTRIX</td>
-                            <td>Bỉ</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Các bệnh do phế cầu (Viêm phổi, Viêm tai giữa, Viêm màng não)</td>
-                            <td>ADACEL</td>
-                            <td>Canada</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td>BOOSTRIX</td>
-                            <td>Bỉ</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">Cúm mùa</td>
-                            <td>ADACEL</td>
-                            <td>Canada</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                        <tr>
-                            <td>BOOSTRIX</td>
-                            <td>Bỉ</td>
-                            <td>1.020.000đ</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <nav class="price-pagination" aria-label="Phân trang bảng giá tiêm chủng">
-                    <button type="button" class="page-btn" aria-label="Trang trước">‹</button>
-                    <button type="button" class="page-btn active" aria-current="page">1</button>
-                    <button type="button" class="page-btn">2</button>
-                    <button type="button" class="page-btn">3</button>
-                    <button type="button" class="page-btn">4</button>
-                    <button type="button" class="page-btn" aria-label="Trang sau">›</button>
-                </nav>
-            </div>
-        </section>
-
-        <section class="process-section section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Quy trình tiêm chủng tại Medivax</h2>
-                <div class="process-grid">
-                    <article class="process-col">
-                        <h3>1. Trước khi tiêm</h3>
-                        <ul class="process-list">
-                            <li class="process-item">
-                                <img src="assets/image/icon5.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Sàng lọc</strong>
-                                    <p>Khám sàng lọc và tư vấn cho đối tượng tiêm chủng</p>
-                                </div>
-                            </li>
-                            <li class="process-item">
-                                <img src="assets/image/icon6.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Thông báo, giải đáp thắc mắc</strong>
-                                    <p>Thông báo về loại vắc xin sẽ tiêm</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </article>
-                    <article class="process-col">
-                        <h3>2. Trong khi tiêm</h3>
-                        <ul class="process-list">
-                            <li class="process-item">
-                                <img src="assets/image/icon4.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Nhân viên y tế</strong>
-                                    <p>Kiểm tra vắc xin, bơm tiêm và dung môi, dụng cụ trước khi sử dụng</p>
-                                </div>
-                            </li>
-                            <li class="process-item">
-                                <img src="assets/image/icon7.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Đối tượng tiêm chủng</strong>
-                                    <p>Cho đối tượng tiêm chủng hoặc cha mẹ, người giám hộ của trẻ xem lọ vắc xin</p>
-                                </div>
-                            </li>
-                            <li class="process-item">
-                                <img src="assets/image/syringe (2).png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Thực hiện tiêm</strong>
-                                    <p>Tiêm đúng chỉ định, đúng liều, đúng đường dùng</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </article>
-                    <article class="process-col">
-                        <h3>3. Sau khi tiêm</h3>
-                        <ul class="process-list">
-                            <li class="process-item">
-                                <img src="assets/image/icon 8.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Theo dõi sau tiêm</strong>
-                                    <p>Lưu trú, theo dõi các phản ứng sau tiêm</p>
-                                </div>
-                            </li>
-                            <li class="process-item">
-                                <img src="assets/image/icon10.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Bảo quản</strong>
-                                    <p>Bảo quản vắc xin, vật tư tiêm chủng chưa sử dụng theo quy định</p>
-                                </div>
-                            </li>
-                            <li class="process-item">
-                                <img src="assets/image/icon 9.png" alt="icon" class="process-item__icon">
-                                <div class="process-item__content">
-                                    <strong>Xử lý chất thải</strong>
-                                    <p>Xử lý các chất thải y tế sau tiêm chủng theo đúng quy định</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="location-section section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Địa điểm tiêm chủng tại Medivax</h2>
-                <div class="location-layout location-layout--expanded">
-                    <div class="location-panel">
-                        <div class="location-toolbar">
-                            <select class="location-select" aria-label="Chọn tỉnh thành phố">
-                                <option>Chọn tỉnh thành phố</option>
-                            </select>
-                            <select class="location-select" aria-label="Chọn quận huyện">
-                                <option>Chọn quận huyện</option>
-                            </select>
-                        </div>
-
-                        <p class="location-count"><strong>Có 86 trung tâm tiêm chủng:</strong></p>
-
-                        <div class="location-list location-list--stacked">
-                        <div class="location-item location-item--filled active">
-                            <div class="location-item__radio" aria-hidden="true"></div>
-                            <div class="location-item__content">
-                                <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                <p>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
-                                <div class="location-item__status">
-                                    <span class="is-open">Đang mở</span>
-                                    <span>•</span>
-                                    <span>Đóng cửa lúc 18:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="location-item location-item--filled">
-                            <div class="location-item__radio" aria-hidden="true"></div>
-                            <div class="location-item__content">
-                                <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                <p>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
-                                <div class="location-item__status">
-                                    <span class="is-open">Đang mở</span>
-                                    <span>•</span>
-                                    <span>Đóng cửa lúc 18:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="location-item location-item--filled">
-                            <div class="location-item__radio" aria-hidden="true"></div>
-                            <div class="location-item__content">
-                                <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                <p>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
-                                <div class="location-item__status">
-                                    <span class="is-open">Đang mở</span>
-                                    <span>•</span>
-                                    <span>Đóng cửa lúc 18:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="location-item location-item--filled">
-                            <div class="location-item__radio" aria-hidden="true"></div>
-                            <div class="location-item__content">
-                                <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                <p>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
-                                <div class="location-item__status">
-                                    <span class="is-open">Đang mở</span>
-                                    <span>•</span>
-                                    <span>Đóng cửa lúc 18:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="location-item location-item--filled">
-                            <div class="location-item__radio" aria-hidden="true"></div>
-                            <div class="location-item__content">
-                                <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                <p>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
-                                <div class="location-item__status">
-                                    <span class="is-open">Đang mở</span>
-                                    <span>•</span>
-                                    <span>Đóng cửa lúc 18:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="location-more-btn">
-                            <span aria-hidden="true">⌄⌄</span>
-                            Xem thêm trung tâm tiêm chủng
-                        </button>
-                        </div>
+                <div class="location-item location-item--filled">
+                  <div class="location-item__radio" aria-hidden="true"></div>
+                  <div class="location-item__content">
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <p>
+                      Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội
+                    </p>
+                    <div class="location-item__status">
+                      <span class="is-open">Đang mở</span>
+                      <span>•</span>
+                      <span>Đóng cửa lúc 18:00</span>
                     </div>
-                    <article class="location-card location-card--featured">
-                        <img class="location-image" src="assets/image/benhvien.png" alt="Trung tâm tiêm chủng Medivax">
-                        <div class="location-card__body">
-                            <h3>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</h3>
-                            <p>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
-                            <p><span class="is-open">Đang mở</span> <span class="location-dot">•</span> <span>Đóng cửa lúc 18:00</span></p>
-                            <p>Điện thoại: <a href="tel:18006000">1800 6000</a> (Nhánh 2)</p>
-                            <div class="location-actions">
-                                <button type="button" class="btn-pill">Xem chỉ đường</button>
-                                <button type="button" class="btn-pill btn-pill--soft">Gọi tư vấn</button>
-                            </div>
-                        </div>
-                    </article>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="booking-section section-gap">
-            <div class="container narrow booking-wrap">
-                <h2 class="center-heading">Bảng giá tiêm chủng</h2>
-                <p class="section-desc">Giá bán lẻ tham khảo, có thể sẽ thay đổi theo từng thời điểm</p>
-                <form class="booking-form booking-form--home">
-                    <fieldset>
-                        <legend><img src="assets/image/User.png" alt=""> Thông tin người đăng ký</legend>
-                        <div class="field-grid">
-                            <input type="text" placeholder="Nhập họ và tên">
-                            <input type="date" aria-label="Ngày sinh">
-                        </div>
-                        <div class="field-grid">
-                            <input type="tel" placeholder="Nhập số điện thoại">
-                            <input type="text" placeholder="Nhập email (Không bắt buộc)">
-                        </div>
-                        <div class="booking-tab-row">
-                            <button type="button" class="booking-tab active">Tiêm cho tôi</button>
-                            <button type="button" class="booking-tab">Tiêm cho người thân</button>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend><img src="assets/image/Map Point Wave.png" alt=""> Chọn trung tâm tiêm chủng</legend>
-                        <div class="field-grid">
-                            <select aria-label="Chọn tỉnh thành phố">
-                                <option>Chọn Tỉnh/Thành phố</option>
-                            </select>
-                            <select aria-label="Chọn quận huyện">
-                                <option>Chọn quận/huyện</option>
-                            </select>
-                        </div>
-                        <p class="location-count"><strong>Có 86 trung tâm tiêm chủng:</strong></p>
-                        <div class="booking-location-list">
-                            <label class="booking-location-item active">
-                                <input type="radio" name="booking-location" checked>
-                                <span>
-                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
-                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
-                                </span>
-                                <button type="button">Xem chỉ đường</button>
-                            </label>
-                            <label class="booking-location-item">
-                                <input type="radio" name="booking-location">
-                                <span>
-                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
-                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
-                                </span>
-                                <button type="button">Xem chỉ đường</button>
-                            </label>
-                            <label class="booking-location-item">
-                                <input type="radio" name="booking-location">
-                                <span>
-                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
-                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
-                                </span>
-                                <button type="button">Xem chỉ đường</button>
-                            </label>
-                            <label class="booking-location-item">
-                                <input type="radio" name="booking-location">
-                                <span>
-                                    <strong>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong>
-                                    <small>Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</small>
-                                    <em>Đang mở - Đóng cửa lúc 18:00</em>
-                                </span>
-                                <button type="button">Xem chỉ đường</button>
-                            </label>
-                        </div>
-                        <button type="button" class="location-more-btn">Xem thêm trung tâm tiêm chủng</button>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend><img src="assets/image/Shield Plus.png" alt=""> Thông tin tiêm chủng</legend>
-                        <div class="field-grid three-cols">
-                            <select aria-label="Chọn vắc xin phòng bệnh">
-                                <option>Chọn vắc xin phòng bệnh (Không bắt buộc)</option>
-                            </select>
-                            <input type="date" aria-label="Chọn ngày hẹn tiêm">
-                            <select aria-label="Chọn khung giờ">
-                                <option>Chọn khung giờ</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <button type="submit" class="btn-primary">Đăng ký ngay</button>
-                </form>
-            </div>
-        </section>
-
-
-        <section class="news-section section-gap">
-            <div class="container narrow">
-                <h2 class="center-heading">Thông tin về trung tâm tiêm chủng</h2>
-                <div class="news-layout">
-                    <article class="news-feature">
-                        <img class="news-feature-image" src="assets/image/nhombacsi.png" alt="Hình minh họa bài viết">
-                        <h3>Hội diễn văn nghệ quần chúng chào mừng đại hội công đoàn các cấp nhiệm kì 2023-2028</h3>
-                        
-                        <div class="news-date-block">
-                            <img src="assets/image/Calendar.png" alt="Calendar icon">
-                            <span>19/05/2026</span>
-                        </div>
-
-                        <p>Bệnh viện Nội tiết Trung ương đã đăng cai tổ chức thành công Hội diễn văn nghệ quần chúng chào mừng Đại hội Công đoàn các cấp nhiệm kì 2023-2028. Nhiều lãnh đạo các bệnh viện đã đến</p>
-                        <a href="chitiettintuc.html" type="button" class="btn-pill">Xem thêm</a>
-                    </article>
-                    <div class="news-list">
-                        <article class="news-mini">
-                            <img src="assets/image/vaccine.png" alt="Tin tiêm chủng">
-                            <p>
-                                Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
-                                <span class="news-date-block mini-date">
-                                    <img src="assets/image/Calendar.png" alt="Calendar icon">
-                                    <span>19/05/2026</span>
-                                </span>
-                            </p>
-                        </article>
-                        
-                        <article class="news-mini">
-                            <img src="assets/image/tiem.png" alt="Tin tiêm chủng">
-                            <p>
-                                Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
-                                <span class="news-date-block mini-date">
-                                    <img src="assets/image/Calendar.png" alt="Calendar icon">
-                                    <span>18/05/2026</span>
-                                </span>
-                            </p>
-                        </article>
-                        
-                        <article class="news-mini">
-                            <img src="assets/image/khambenh.png" alt="Tin tiêm chủng">
-                            <p>
-                                Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
-                                <span class="news-date-block mini-date">
-                                    <img src="assets/image/Calendar.png" alt="Calendar icon">
-                                    <span>17/05/2026</span>
-                                </span>
-                            </p>
-                        </article>
-                        
-                        <article class="news-mini">
-                            <img src="assets/image/tiem.png" alt="Tin tiêm chủng">
-                            <p>
-                                Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
-                                <span class="news-date-block mini-date">
-                                    <img src="assets/image/Calendar.png" alt="Calendar icon">
-                                    <span>16/05/2026</span>
-                                </span>
-                            </p>
-                        </article>
+                <div class="location-item location-item--filled">
+                  <div class="location-item__radio" aria-hidden="true"></div>
+                  <div class="location-item__content">
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <p>
+                      Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội
+                    </p>
+                    <div class="location-item__status">
+                      <span class="is-open">Đang mở</span>
+                      <span>•</span>
+                      <span>Đóng cửa lúc 18:00</span>
                     </div>
+                  </div>
                 </div>
+                <div class="location-item location-item--filled">
+                  <div class="location-item__radio" aria-hidden="true"></div>
+                  <div class="location-item__content">
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <p>
+                      Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội
+                    </p>
+                    <div class="location-item__status">
+                      <span class="is-open">Đang mở</span>
+                      <span>•</span>
+                      <span>Đóng cửa lúc 18:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="location-item location-item--filled">
+                  <div class="location-item__radio" aria-hidden="true"></div>
+                  <div class="location-item__content">
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <p>
+                      Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội
+                    </p>
+                    <div class="location-item__status">
+                      <span class="is-open">Đang mở</span>
+                      <span>•</span>
+                      <span>Đóng cửa lúc 18:00</span>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="location-more-btn">
+                  <span aria-hidden="true">⌄⌄</span>
+                  Xem thêm trung tâm tiêm chủng
+                </button>
+              </div>
             </div>
-        </section>
+            <article class="location-card location-card--featured">
+              <img
+                class="location-image"
+                src="assets/image/benhvien.png"
+                alt="Trung tâm tiêm chủng Medivax"
+              />
+              <div class="location-card__body">
+                <h3>TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</h3>
+                <p>
+                  Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội
+                </p>
+                <p>
+                  <span class="is-open">Đang mở</span>
+                  <span class="location-dot">•</span>
+                  <span>Đóng cửa lúc 18:00</span>
+                </p>
+                <p>
+                  Điện thoại: <a href="tel:18006000">1800 6000</a> (Nhánh 2)
+                </p>
+                <div class="location-actions">
+                  <button type="button" class="btn-pill">Xem chỉ đường</button>
+                  <button type="button" class="btn-pill btn-pill--soft">
+                    Gọi tư vấn
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section section-gap">
+        <div class="container narrow booking-wrap">
+          <h2 class="center-heading">Bảng giá tiêm chủng</h2>
+          <p class="section-desc">
+            Giá bán lẻ tham khảo, có thể sẽ thay đổi theo từng thời điểm
+          </p>
+          <form class="booking-form booking-form--home">
+            <fieldset>
+              <legend>
+                <img src="assets/image/User.png" alt="" /> Thông tin người đăng
+                ký
+              </legend>
+              <div class="field-grid">
+                <input type="text" placeholder="Nhập họ và tên" />
+                <input type="date" aria-label="Ngày sinh" />
+              </div>
+              <div class="field-grid">
+                <input type="tel" placeholder="Nhập số điện thoại" />
+                <input type="text" placeholder="Nhập email (Không bắt buộc)" />
+              </div>
+              <div class="booking-tab-row">
+                <button type="button" class="booking-tab active">
+                  Tiêm cho tôi
+                </button>
+                <button type="button" class="booking-tab">
+                  Tiêm cho người thân
+                </button>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <img src="assets/image/Map Point Wave.png" alt="" /> Chọn trung
+                tâm tiêm chủng
+              </legend>
+              <div class="field-grid">
+                <select aria-label="Chọn tỉnh thành phố">
+                  <option>Chọn Tỉnh/Thành phố</option>
+                </select>
+                <select aria-label="Chọn quận huyện">
+                  <option>Chọn quận/huyện</option>
+                </select>
+              </div>
+              <p class="location-count">
+                <strong>Có 86 trung tâm tiêm chủng:</strong>
+              </p>
+              <div class="booking-location-list">
+                <label class="booking-location-item active">
+                  <input type="radio" name="booking-location" checked />
+                  <span>
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <small
+                      >Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội</small
+                    >
+                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                  </span>
+                  <button type="button">Xem chỉ đường</button>
+                </label>
+                <label class="booking-location-item">
+                  <input type="radio" name="booking-location" />
+                  <span>
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <small
+                      >Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội</small
+                    >
+                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                  </span>
+                  <button type="button">Xem chỉ đường</button>
+                </label>
+                <label class="booking-location-item">
+                  <input type="radio" name="booking-location" />
+                  <span>
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <small
+                      >Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội</small
+                    >
+                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                  </span>
+                  <button type="button">Xem chỉ đường</button>
+                </label>
+                <label class="booking-location-item">
+                  <input type="radio" name="booking-location" />
+                  <span>
+                    <strong
+                      >TC Medivax: 25 Tô Vĩnh Diện, Thanh Xuân, Hà Nội</strong
+                    >
+                    <small
+                      >Địa chỉ: 25 P. Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                      Nội</small
+                    >
+                    <em>Đang mở - Đóng cửa lúc 18:00</em>
+                  </span>
+                  <button type="button">Xem chỉ đường</button>
+                </label>
+              </div>
+              <button type="button" class="location-more-btn">
+                Xem thêm trung tâm tiêm chủng
+              </button>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <img src="assets/image/Shield Plus.png" alt="" /> Thông tin tiêm
+                chủng
+              </legend>
+              <div class="field-grid three-cols">
+                <select aria-label="Chọn vắc xin phòng bệnh">
+                  <option>Chọn vắc xin phòng bệnh (Không bắt buộc)</option>
+                </select>
+                <input type="date" aria-label="Chọn ngày hẹn tiêm" />
+                <select aria-label="Chọn khung giờ">
+                  <option>Chọn khung giờ</option>
+                </select>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn-primary">Đăng ký ngay</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="news-section section-gap">
+        <div class="container narrow">
+          <h2 class="center-heading">Thông tin về trung tâm tiêm chủng</h2>
+          <div class="news-layout">
+            <article class="news-feature">
+              <img
+                class="news-feature-image"
+                src="assets/image/nhombacsi.png"
+                alt="Hình minh họa bài viết"
+              />
+              <h3>
+                Hội diễn văn nghệ quần chúng chào mừng đại hội công đoàn các cấp
+                nhiệm kì 2023-2028
+              </h3>
+
+              <div class="news-date-block">
+                <img src="assets/image/Calendar.png" alt="Calendar icon" />
+                <span>19/05/2026</span>
+              </div>
+
+              <p>
+                Bệnh viện Nội tiết Trung ương đã đăng cai tổ chức thành công Hội
+                diễn văn nghệ quần chúng chào mừng Đại hội Công đoàn các cấp
+                nhiệm kì 2023-2028. Nhiều lãnh đạo các bệnh viện đã đến
+              </p>
+              <a href="chitiettintuc.html" type="button" class="btn-pill"
+                >Xem thêm</a
+              >
+            </article>
+            <div class="news-list">
+              <article class="news-mini">
+                <img src="assets/image/vaccine.png" alt="Tin tiêm chủng" />
+                <p>
+                  Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
+                  <span class="news-date-block mini-date">
+                    <img src="assets/image/Calendar.png" alt="Calendar icon" />
+                    <span>19/05/2026</span>
+                  </span>
+                </p>
+              </article>
+
+              <article class="news-mini">
+                <img src="assets/image/tiem.png" alt="Tin tiêm chủng" />
+                <p>
+                  Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
+                  <span class="news-date-block mini-date">
+                    <img src="assets/image/Calendar.png" alt="Calendar icon" />
+                    <span>18/05/2026</span>
+                  </span>
+                </p>
+              </article>
+
+              <article class="news-mini">
+                <img src="assets/image/khambenh.png" alt="Tin tiêm chủng" />
+                <p>
+                  Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
+                  <span class="news-date-block mini-date">
+                    <img src="assets/image/Calendar.png" alt="Calendar icon" />
+                    <span>17/05/2026</span>
+                  </span>
+                </p>
+              </article>
+
+              <article class="news-mini">
+                <img src="assets/image/tiem.png" alt="Tin tiêm chủng" />
+                <p>
+                  Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
+                  <span class="news-date-block mini-date">
+                    <img src="assets/image/Calendar.png" alt="Calendar icon" />
+                    <span>16/05/2026</span>
+                  </span>
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid footer-grid--figma">
-            <div class="footer-brand-col">
-                <a href="index.html" class="footer-logo" aria-label="Medivax">
-                    <img src="assets/image/logo.png" alt="Medivax">
-                </a>
-                <ul class="footer-contact-list">
-                    <li>
-                        <img src="assets/image/icon3.png" alt="">
-                        <span>38 P. Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</span>
-                    </li>
-                    <li>
-                        <img src="assets/image/icon.png" alt="">
-                        <span>Hotline: 1900 6666</span>
-                    </li>
-                    <li>
-                        <img src="assets/image/icon2.png" alt="">
-                        <span>Email: care@medivax.vn</span>
-                    </li>
-                </ul>
-                <div class="footer-socials" aria-label="Mạng xã hội">
-                    <a href="#" aria-label="Facebook"><img src="assets/image/fb.png" alt=""></a>
-                    <a href="#" aria-label="Twitter"><img src="assets/image/tw.png" alt=""></a>
-                    <a href="#" aria-label="Gmail"><img src="assets/image/gmail.png" alt=""></a>
-                    <a href="#" aria-label="Youtube"><img src="assets/image/yt.png" alt=""></a>
-                </div>
-            </div>
-            <div class="footer-link-col">
-                <strong>GÓI KHÁM SỨC KHỎE</strong>
-                <a href="#">Tiêm chủng</a>
-                <a href="#">Khám tổng quát</a>
-                <a href="#">Tầm soát ung thư</a>
-                <a href="#">Khám nhi khoa</a>
-                <a href="#">Khám sản phụ khoa</a>
-            </div>
-            <div class="footer-link-col">
-                <strong>HỖ TRỢ KHÁCH HÀNG</strong>
-                <a href="#">Hướng dẫn đặt lịch</a>
-                <a href="#">Chính sách bảo mật</a>
-                <a href="#">Điều khoản sử dụng</a>
-                <a href="#">Câu hỏi thường gặp</a>
-                <a href="#">Liên hệ</a>
-            </div>
-            <div class="footer-hours-card">
-                <strong>GIỜ LÀM VIỆC</strong>
-                <div class="footer-hours-row"><span>Thứ 2</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 3</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 4</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 5</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 6</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 7</span><span>7:30 - 12:00</span></div>
-            </div>
+      <div class="container footer-grid footer-grid--figma">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Medivax">
+            <img src="assets/image/logo.png" alt="Medivax" />
+          </a>
+          <ul class="footer-contact-list">
+            <li>
+              <img src="assets/image/icon3.png" alt="" />
+              <span>38 P. Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</span>
+            </li>
+            <li>
+              <img src="assets/image/icon.png" alt="" />
+              <span>Hotline: 1900 6666</span>
+            </li>
+            <li>
+              <img src="assets/image/icon2.png" alt="" />
+              <span>Email: care@medivax.vn</span>
+            </li>
+          </ul>
+          <div class="footer-socials" aria-label="Mạng xã hội">
+            <a href="#" aria-label="Facebook"
+              ><img src="assets/image/fb.png" alt=""
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img src="assets/image/tw.png" alt=""
+            /></a>
+            <a href="#" aria-label="Gmail"
+              ><img src="assets/image/gmail.png" alt=""
+            /></a>
+            <a href="#" aria-label="Youtube"
+              ><img src="assets/image/yt.png" alt=""
+            /></a>
+          </div>
         </div>
+        <div class="footer-link-col">
+          <strong>GÓI KHÁM SỨC KHỎE</strong>
+          <a href="#">Tiêm chủng</a>
+          <a href="#">Khám tổng quát</a>
+          <a href="#">Tầm soát ung thư</a>
+          <a href="#">Khám nhi khoa</a>
+          <a href="#">Khám sản phụ khoa</a>
+        </div>
+        <div class="footer-link-col">
+          <strong>HỖ TRỢ KHÁCH HÀNG</strong>
+          <a href="#">Hướng dẫn đặt lịch</a>
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Liên hệ</a>
+        </div>
+        <div class="footer-hours-card">
+          <strong>GIỜ LÀM VIỆC</strong>
+          <div class="footer-hours-row">
+            <span>Thứ 2</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 3</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 4</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 5</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 6</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 7</span><span>7:30 - 12:00</span>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <div class="floating-contact floating-contact--left">
-        <a href="tel:0956466268" class="floating-hotline">
-            <img src="assets/image/Phone Calling.png" alt="">
-            <span>0956 46 62 68</span>
-        </a>
+      <a href="tel:0956466268" class="floating-hotline">
+        <img src="assets/image/Phone Calling.png" alt="" />
+        <span>0956 46 62 68</span>
+      </a>
     </div>
     <div class="floating-contact floating-contact--right">
-        <a href="#" class="floating-circle" aria-label="Lên đầu trang">
-            <img src="assets/image/Vector.png" alt="">
-        </a>
-        <a href="#" class="floating-circle floating-circle--green" aria-label="Tư vấn">
-            <img src="assets/image/facebook MSG.png" alt="">
-        </a>
+      <a href="#" class="floating-circle" aria-label="Lên đầu trang">
+        <img src="assets/image/Vector.png" alt="" /> </a
+      >h
+      <a
+        href="#"
+        class="floating-circle floating-circle--green"
+        aria-label="Tư vấn"
+      >
+        <img src="assets/image/facebook MSG.png" alt="" />
+      </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

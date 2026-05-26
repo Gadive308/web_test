@@ -162,8 +162,9 @@ function highlightCurrentNavLink() {
     const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
     document.querySelectorAll(".nav-links a").forEach((link) => {
-        const linkPath = new URL(link.href).pathname.split("/").pop() || "index.html";
-        const isActive = linkPath === currentPath;
+        const rawHref = link.getAttribute("href");
+        const linkPath = rawHref && rawHref !== "#" ? new URL(link.href).pathname.split("/").pop() || "index.html" : "";
+        const isActive = Boolean(linkPath) && linkPath === currentPath;
         link.classList.toggle("active", isActive);
 
         if (isActive) {
@@ -181,11 +182,38 @@ function highlightCurrentNavLink() {
             return;
         }
 
-        toggle.classList.toggle("active", toggle.classList.contains("active") || hasActiveChild);
+        const toggleHref = toggle.getAttribute("href");
+        const togglePath = toggleHref && toggleHref !== "#" ? new URL(toggle.href).pathname.split("/").pop() || "index.html" : "";
+        const isToggleActive = Boolean(togglePath) && togglePath === currentPath;
+        toggle.classList.toggle("active", isToggleActive || hasActiveChild);
     });
 }
 
 highlightCurrentNavLink();
+
+document.querySelectorAll(".nav-dropdown-toggle").forEach((toggle) => {
+    if (toggle.getAttribute("href") !== "#") {
+        return;
+    }
+
+    toggle.addEventListener("click", (event) => {
+        event.preventDefault();
+        const dropdown = toggle.closest(".nav-dropdown");
+        const isOpen = dropdown?.classList.toggle("is-open") || false;
+        toggle.setAttribute("aria-expanded", String(isOpen));
+    });
+});
+
+document.addEventListener("click", (event) => {
+    document.querySelectorAll(".nav-dropdown.is-open").forEach((dropdown) => {
+        if (dropdown.contains(event.target)) {
+            return;
+        }
+
+        dropdown.classList.remove("is-open");
+        dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
+    });
+});
 
 function ensureLoginModal() {
     if (document.getElementById("login-modal-overlay")) {
@@ -302,7 +330,7 @@ document.addEventListener("submit", (event) => {
     if (event.target && event.target.id === "login-form") {
         event.preventDefault();
         closeLoginModal();
-        alert("Đăng nhập demo đã được kích hoạt. Phần xác thực thật cần backend hoặc OAuth Google.");
+        alert("Đăng nhập thành công! ( mô phỏng )");
     }
 });
 

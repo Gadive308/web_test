@@ -1,229 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cẩm nang y tế - Medivax</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="top-header">
-            <div class="container top-header-inner">
-                <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
-                        <img src="assets/image/logo.png" alt="Medivax" class="brand-mark">
-                </a>
+      <div class="top-header">
+        <div class="container top-header-inner">
+          <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
+            <img src="assets/image/logo.png" alt="Medivax" class="brand-mark" />
+          </a>
 
-                <form class="search-box" role="search">
-                    <input type="search" name="q" placeholder="Tìm tên vắc xin..." aria-label="Tìm kiếm vắc xin">
-                    <button type="submit" class="search-btn" aria-label="Tìm kiếm">
-                        <img src="assets/image/Search.png" alt="Tìm">
-                    </button>
-                </form>
+          <form class="search-box" role="search">
+            <input
+              type="search"
+              name="q"
+              placeholder="Tìm tên vắc xin..."
+              aria-label="Tìm kiếm vắc xin"
+            />
+            <button type="submit" class="search-btn" aria-label="Tìm kiếm">
+              <img src="assets/image/Search.png" alt="Tìm" />
+            </button>
+          </form>
 
-                <div class="header-actions">
-                    <a href="#" class="action-link action-login">
-                        <img src="assets/image/cart.png" alt="" class="icon-cart">
-                    Đăng nhập
-                    </a>
-                    <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
-                        <img src="assets/image/cart.png" alt="Giỏ hàng" class="icon-cart"> Giỏ hàng
-                    </a>
-                </div>
-            </div>
+          <div class="header-actions">
+            <a href="#" class="action-link action-login">
+              <img src="assets/image/cart.png" alt="" class="icon-cart" />
+              Đăng nhập
+            </a>
+            <a href="#" class="action-link action-cart" aria-label="Giỏ hàng">
+              <img
+                src="assets/image/cart.png"
+                alt="Giỏ hàng"
+                class="icon-cart"
+              />
+              Giỏ hàng
+            </a>
+          </div>
         </div>
+      </div>
 
-        <nav class="main-nav">
-            <div class="container">
-                <ul class="nav-links">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li class="nav-dropdown">
-                        <a href="datlichkham.html" class="nav-dropdown-toggle">Đặt lịch khám <span aria-hidden="true">⌄</span></a>
-                        <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
-                            <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                            <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                            <li><a href="bacsi.html">Bác sĩ</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
-                    <li><a href="camnangyte.html">Cẩm nang</a></li>
-                    <li><a href="null.html">Tin tức</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="nav-dropdown">
+              <a href="datlichkham.html" class="nav-dropdown-toggle"
+                >Đặt lịch khám <span aria-hidden="true">⌄</span></a
+              >
+              <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
+                <li><a href="cosoyte.html">Cơ sở y tế</a></li>
+                <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
+                <li><a href="bacsi.html">Bác sĩ</a></li>
+              </ul>
+            </li>
+            <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
+            <li><a href="camnangyte.html">Cẩm nang</a></li>
+            <li><a href="null.html">Tin tức</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main class="blog-page">
-        <section class="blog-hero">
-            <div class="container blog-hero__inner">
-                <div class="blog-hero__content">
-                    <nav class="breadcrumb">
-                        <a href="index.html">Trang chủ</a>
-                        <span>/</span>
-                        <span>Cẩm nang y tế</span>
-                    </nav>
-                    <h1>Cẩm nang y tế</h1>
+      <section class="blog-hero inline-image">
+        <div class="container blog-hero__inner">
+          <div class="blog-hero__content">
+            <nav class="breadcrumb">
+              <a href="index.html">Trang chủ</a>
+              <span>/</span>
+              <span>Cẩm nang y tế</span>
+            </nav>
+            <h1>Cẩm nang y tế</h1>
+          </div>
+          <div class="blog-hero__media">
+            <img src="assets/image/banner3.png" alt="Cẩm nang y tế" />
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-content">
+        <div class="container blog-grid">
+          <div class="blog-list">
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="assets/image/anh1.png" alt="" />
+              </div>
+              <div class="blog-card__body">
+                <h3>
+                  Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?
+                </h3>
+                <p>
+                  Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng
+                  số các bệnh ung thư nội chung và 18% của các khối u ác tính
+                  hiếm gặp.
+                </p>
+                <div class="blog-card__meta">
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />12/08/2020</span
+                  >
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />21 lượt xem</span
+                  >
                 </div>
-                <div class="blog-hero__media">
-                    <img src="assets/image/banner3.png" alt="Cẩm nang y tế">
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="assets/image/anh2.png" alt="" />
+              </div>
+              <div class="blog-card__body">
+                <h3>
+                  Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?
+                </h3>
+                <p>
+                  Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng
+                  số các bệnh ung thư nội chung và 18% của các khối u ác tính
+                  hiếm gặp.
+                </p>
+                <div class="blog-card__meta">
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />12/08/2020</span
+                  >
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />21 lượt xem</span
+                  >
                 </div>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="assets/image/anh3.png" alt="" />
+              </div>
+              <div class="blog-card__body">
+                <h3>
+                  Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?
+                </h3>
+                <p>
+                  Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng
+                  số các bệnh ung thư nội chung và 18% của các khối u ác tính
+                  hiếm gặp.
+                </p>
+                <div class="blog-card__meta">
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />12/08/2020</span
+                  >
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />21 lượt xem</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="assets/image/anh4.png" alt="" />
+              </div>
+              <div class="blog-card__body">
+                <h3>
+                  Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?
+                </h3>
+                <p>
+                  Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng
+                  số các bệnh ung thư nội chung và 18% của các khối u ác tính
+                  hiếm gặp.
+                </p>
+                <div class="blog-card__meta">
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />12/08/2020</span
+                  >
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />21 lượt xem</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="assets/image/anh5.png" alt="" />
+              </div>
+              <div class="blog-card__body">
+                <h3>
+                  Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?
+                </h3>
+                <p>
+                  Theo thống kê, bệnh đa u tuỷ xương chiếm khoảng 1,8% trong
+                  tổng số các bệnh ung thư nói chung và 18% của các khối u ác
+                  tính về huyết...
+                </p>
+                <div class="blog-card__meta">
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />12/08/2020</span
+                  >
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />21 lượt xem</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__image">
+                <img src="assets/image/anh6.png" alt="" />
+              </div>
+              <div class="blog-card__body">
+                <h3>
+                  Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?
+                </h3>
+                <p>
+                  Theo thống kê, bệnh đa u tuỷ xương chiếm khoảng 1,8% trong
+                  tổng số các bệnh ung thư nói chung và 18% của các khối u ác
+                  tính về huyết...
+                </p>
+                <div class="blog-card__meta">
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />12/08/2020</span
+                  >
+                  <span
+                    ><img src="assets/image/icon.png" alt="" />21 lượt xem</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="blog-sidebar">
+            <div class="blog-search-card">
+              <h3>TÌM KIẾM BÀI VIẾT</h3>
+              <div class="blog-search">
+                <img src="assets/image/icon.png" alt="" />
+                <input
+                  type="search"
+                  placeholder="Tìm kiếm từ khóa, chủ đề"
+                  aria-label="Tìm kiếm bài viết"
+                />
+              </div>
             </div>
-        </section>
 
-        <section class="blog-content">
-            <div class="container blog-grid">
-                <div class="blog-list">
-                    <article class="blog-card">
-                        <div class="blog-card__image"><img src="assets/image/image 213-1.png" alt=""></div>
-                        <div class="blog-card__body">
-                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
-                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
-                            <div class="blog-card__meta">
-                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
-                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-card__image"><img src="assets/image/image 213-2.png" alt=""></div>
-                        <div class="blog-card__body">
-                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
-                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
-                            <div class="blog-card__meta">
-                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
-                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-card__image"><img src="assets/image/image 213-3.png" alt=""></div>
-                        <div class="blog-card__body">
-                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
-                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
-                            <div class="blog-card__meta">
-                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
-                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-card__image"><img src="assets/image/image 213-4.png" alt=""></div>
-                        <div class="blog-card__body">
-                            <h3>Giải đáp: Dưới 16 tuổi uống thuốc tránh thai có sao không?</h3>
-                            <p>Theo thống kê, bệnh u uỷ khoảng chiếm khoảng 1,8% trong tổng số các bệnh ung thư nội chung và 18% của các khối u ác tính hiếm gặp.</p>
-                            <div class="blog-card__meta">
-                                <span><img src="assets/image/icon.png" alt="">12/08/2020</span>
-                                <span><img src="assets/image/icon.png" alt="">21 lượt xem</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <aside class="blog-sidebar">
-                    <div class="blog-search-card">
-                        <h3>TÌM KIẾM BÀI VIẾT</h3>
-                        <div class="blog-search">
-                            <img src="assets/image/icon.png" alt="">
-                            <input type="search" placeholder="Tìm kiếm từ khóa, chủ đề" aria-label="Tìm kiếm bài viết">
-                        </div>
-                    </div>
-
-                    <div class="blog-category-card">
-                        <h3>ĐỌC THEO CHUYÊN ĐỀ</h3>
-                        <ul class="blog-category-list">
-                            <li><img src="assets/image/icon.png" alt=""><span>Hướng dẫn khám bệnh</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Cơ xương khớp</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Sức khỏe giới tính</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Tiểu hóa</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Tai Biến Mạch Máu Não</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Xét nghiệm</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Nhi khoa</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Vaccine Covid-19</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Covid-19 và Chăm sóc F0</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Răng hàm mặt</span><strong>1809 bài viết</strong></li>
-                            <li><img src="assets/image/icon.png" alt=""><span>Tim mạch</span><strong>1809 bài viết</strong></li>
-                        </ul>
-                    </div>
-                </aside>
+            <div class="blog-category-card">
+              <h3>ĐỌC THEO CHUYÊN ĐỀ</h3>
+              <ul class="blog-category-list">
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Hướng dẫn khám bệnh</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Cơ xương khớp</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Sức khỏe giới tính</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span>Tiểu hóa</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Tai Biến Mạch Máu Não</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Xét nghiệm</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span>Nhi khoa</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Vaccine Covid-19</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Covid-19 và Chăm sóc F0</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span
+                    >Răng hàm mặt</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+                <li>
+                  <img src="assets/image/icon.png" alt="" /><span>Tim mạch</span
+                  ><strong>1809 bài viết</strong>
+                </li>
+              </ul>
             </div>
-        </section>
+          </aside>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid footer-grid--figma">
-            <div class="footer-brand-col">
-                <a href="index.html" class="footer-logo" aria-label="Medivax">
-                    <img src="assets/image/logo.png" alt="Medivax">
-                </a>
-                <ul class="footer-contact-list">
-                    <li>
-                        <img src="assets/image/icon3.png" alt="">
-                        <span>38 P. Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</span>
-                    </li>
-                    <li>
-                        <img src="assets/image/icon.png" alt="">
-                        <span>Hotline: 1900 6666</span>
-                    </li>
-                    <li>
-                        <img src="assets/image/icon2.png" alt="">
-                        <span>Email: care@medivax.vn</span>
-                    </li>
-                </ul>
-                <div class="footer-socials" aria-label="Mạng xã hội">
-                    <a href="#" aria-label="Facebook"><img src="assets/image/fb.png" alt=""></a>
-                    <a href="#" aria-label="Twitter"><img src="assets/image/tw.png" alt=""></a>
-                    <a href="#" aria-label="Gmail"><img src="assets/image/gmail.png" alt=""></a>
-                    <a href="#" aria-label="Youtube"><img src="assets/image/yt.png" alt=""></a>
-                </div>
-            </div>
-            <div class="footer-link-col">
-                <strong>GÓI KHÁM SỨC KHỎE</strong>
-                <a href="#">Tiêm chủng</a>
-                <a href="#">Khám tổng quát</a>
-                <a href="#">Tầm soát ung thư</a>
-                <a href="#">Khám nhi khoa</a>
-                <a href="#">Khám sản phụ khoa</a>
-            </div>
-            <div class="footer-link-col">
-                <strong>HỖ TRỢ KHÁCH HÀNG</strong>
-                <a href="#">Hướng dẫn đặt lịch</a>
-                <a href="#">Chính sách bảo mật</a>
-                <a href="#">Điều khoản sử dụng</a>
-                <a href="#">Câu hỏi thường gặp</a>
-                <a href="#">Liên hệ</a>
-            </div>
-            <div class="footer-hours-card">
-                <strong>GIỜ LÀM VIỆC</strong>
-                <div class="footer-hours-row"><span>Thứ 2</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 3</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 4</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 5</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 6</span><span>7:30 - 17:00</span></div>
-                <div class="footer-hours-row"><span>Thứ 7</span><span>7:30 - 12:00</span></div>
-            </div>
+      <div class="container footer-grid footer-grid--figma">
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-logo" aria-label="Medivax">
+            <img src="assets/image/logo.png" alt="Medivax" />
+          </a>
+          <ul class="footer-contact-list">
+            <li>
+              <img src="assets/image/icon3.png" alt="" />
+              <span>38 P. Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</span>
+            </li>
+            <li>
+              <img src="assets/image/icon.png" alt="" />
+              <span>Hotline: 1900 6666</span>
+            </li>
+            <li>
+              <img src="assets/image/icon2.png" alt="" />
+              <span>Email: care@medivax.vn</span>
+            </li>
+          </ul>
+          <div class="footer-socials" aria-label="Mạng xã hội">
+            <a href="#" aria-label="Facebook"
+              ><img src="assets/image/fb.png" alt=""
+            /></a>
+            <a href="#" aria-label="Twitter"
+              ><img src="assets/image/tw.png" alt=""
+            /></a>
+            <a href="#" aria-label="Gmail"
+              ><img src="assets/image/gmail.png" alt=""
+            /></a>
+            <a href="#" aria-label="Youtube"
+              ><img src="assets/image/yt.png" alt=""
+            /></a>
+          </div>
         </div>
+        <div class="footer-link-col">
+          <strong>GÓI KHÁM SỨC KHỎE</strong>
+          <a href="#">Tiêm chủng</a>
+          <a href="#">Khám tổng quát</a>
+          <a href="#">Tầm soát ung thư</a>
+          <a href="#">Khám nhi khoa</a>
+          <a href="#">Khám sản phụ khoa</a>
+        </div>
+        <div class="footer-link-col">
+          <strong>HỖ TRỢ KHÁCH HÀNG</strong>
+          <a href="#">Hướng dẫn đặt lịch</a>
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+          <a href="#">Câu hỏi thường gặp</a>
+          <a href="#">Liên hệ</a>
+        </div>
+        <div class="footer-hours-card">
+          <strong>GIỜ LÀM VIỆC</strong>
+          <div class="footer-hours-row">
+            <span>Thứ 2</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 3</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 4</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 5</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 6</span><span>7:30 - 17:00</span>
+          </div>
+          <div class="footer-hours-row">
+            <span>Thứ 7</span><span>7:30 - 12:00</span>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <div class="floating-contact floating-contact--left">
-        <a href="tel:0956466268" class="floating-hotline">
-            <img src="assets/image/Phone Calling.png" alt="">
-            <span>0956 46 62 68</span>
-        </a>
+      <a href="tel:0956466268" class="floating-hotline">
+        <img src="assets/image/Phone Calling.png" alt="" />
+        <span>0956 46 62 68</span>
+      </a>
     </div>
     <div class="floating-contact floating-contact--right">
-        <a href="#" class="floating-circle" aria-label="Lên đầu trang">
-            <img src="assets/image/Vector.png" alt="">
-        </a>
-        <a href="#" class="floating-circle floating-circle--green" aria-label="Tư vấn">
-            <img src="assets/image/facebook MSG.png" alt="">
-        </a>
+      <a href="#" class="floating-circle" aria-label="Lên đầu trang">
+        <img src="assets/image/Vector.png" alt="" />
+      </a>
+      <a
+        href="#"
+        class="floating-circle floating-circle--green"
+        aria-label="Tư vấn"
+      >
+        <img src="assets/image/facebook MSG.png" alt="" />
+      </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
