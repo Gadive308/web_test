@@ -1,12 +1,3 @@
-const button = document.getElementById("colorBtn");
-
-if (button) {
-    button.addEventListener("click", () => {
-        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-        document.body.style.backgroundColor = `#${randomColor}`;
-    });
-}
-
 const packageData = {
     "baby-0-24": {
         title: "Gói trẻ em từ 0-2 tuổi",
@@ -25,7 +16,7 @@ const packageData = {
             ["Viêm Gan A+B", "HEXAXIM", "Pháp", "3"],
         ],
     },
-    "child-3-14": {
+    "child-3-9": {
         title: "Gói tiêm cho trẻ 3 - 14 tuổi",
         description: "Bổ sung các mũi tiêm quan trọng cho giai đoạn học đường và phát triển thể chất.",
         price: 3650000,
@@ -37,7 +28,7 @@ const packageData = {
             ["HPV", "GARDASIL 9", "Mỹ", "3"],
         ],
     },
-    "youth-19-34": {
+    "youth-9-18": {
         title: "Gói thanh niên 19 - 34 tuổi",
         description: "Phù hợp cho người trẻ đi học, đi làm, di chuyển nhiều và cần bảo vệ chủ động.",
         price: 4450000,
@@ -191,8 +182,53 @@ function highlightCurrentNavLink() {
 
 highlightCurrentNavLink();
 
+const menuTrigger = document.querySelector(".mobile-nav-trigger");
+const mainNav = document.querySelector(".main-nav");
+
+function closeMobileMenu() {
+    if (!mainNav) {
+        return;
+    }
+
+    menuTrigger?.classList.remove("is-active");
+    mainNav.classList.remove("is-open");
+    menuTrigger?.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("mobile-menu-open");
+}
+
+function bindMenuControl(control) {
+    if (!control || !mainNav) {
+        return;
+    }
+
+    control.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("is-open");
+        menuTrigger?.classList.toggle("is-active", isOpen);
+        menuTrigger?.setAttribute("aria-expanded", String(isOpen));
+        document.body.classList.toggle("mobile-menu-open", isOpen);
+    });
+}
+
+bindMenuControl(menuTrigger);
+
+if (mainNav) {
+    mainNav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            if (window.matchMedia("(max-width: 768px)").matches && !link.classList.contains("nav-dropdown-toggle")) {
+                closeMobileMenu();
+            }
+        });
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            closeMobileMenu();
+        }
+    });
+}
+
 document.querySelectorAll(".nav-dropdown-toggle").forEach((toggle) => {
-    if (toggle.getAttribute("href") !== "#") {
+    if (toggle.getAttribute("href") !== "#" && toggle.getAttribute("href") !== "javascript:void(0)") {
         return;
     }
 
@@ -205,6 +241,16 @@ document.querySelectorAll(".nav-dropdown-toggle").forEach((toggle) => {
 });
 
 document.addEventListener("click", (event) => {
+    if (
+        mainNav &&
+        menuToggle &&
+        mainNav.classList.contains("is-open") &&
+        !mainNav.contains(event.target) &&
+        !(menuTrigger && menuTrigger.contains(event.target))
+    ) {
+        closeMobileMenu();
+    }
+
     document.querySelectorAll(".nav-dropdown.is-open").forEach((dropdown) => {
         if (dropdown.contains(event.target)) {
             return;
@@ -243,11 +289,11 @@ function ensureLoginModal() {
                             <input class="login-modal__input" id="login-password" name="password" type="password" placeholder="Nhập mật khẩu" autocomplete="current-password" required>
                         </div>
                         <div class="login-modal__row">
-                            <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+                            <label class="login-modal__checkbox">
                                 <input type="checkbox" name="remember" checked>
                                 Ghi nhớ đăng nhập
                             </label>
-                            <a href="#" style="color:#2f87df; text-decoration:none; font-weight:700;">Quên mật khẩu?</a>
+                            <a href="#" class="login-modal__link">Quên mật khẩu?</a>
                         </div>
                         <button type="submit" class="login-modal__primary">Đăng nhập</button>
                         <div class="login-modal__divider">Hoặc</div>

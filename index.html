@@ -17,6 +17,15 @@
           <a href="index.html" class="brand" aria-label="Trang chủ Medivax">
             <img src="assets/image/logo.png" alt="Medivax" class="brand-mark" />
           </a>
+          <button
+            type="button"
+            class="mobile-nav-trigger"
+            aria-label="Mở menu"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+          >
+            Menu
+          </button>
 
           <form class="search-box" role="search">
             <input
@@ -47,7 +56,7 @@
         </div>
       </div>
 
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-navigation">
         <div class="container">
           <ul class="nav-links">
             <li><a href="index.html">Trang chủ</a></li>
@@ -351,12 +360,18 @@
             Giá bán lẻ tham khảo, có thể sẽ thay đổi theo từng thời điểm
           </p>
           <table class="price-table">
+            <colgroup>
+              <col class="price-col-disease" />
+              <col class="price-col-vaccine" />
+              <col class="price-col-origin" />
+              <col class="price-col-price" />
+            </colgroup>
             <thead>
               <tr>
                 <th>Phòng bệnh</th>
                 <th>Tên vắc xin</th>
                 <th>Nước sản xuất</th>
-                <th>Giá lẻ</th>
+                <th>Giá/mũi</th>
               </tr>
             </thead>
             <tbody>
@@ -374,7 +389,7 @@
                 <td>Bỉ</td>
                 <td>1.020.000đ</td>
               </tr>
-              <tr>
+              <tr class="price-row--alt">
                 <td>Bạch hầu, Ho gà, Uốn ván, Bại liệt (Vắc xin 4.1)</td>
                 <td>TETRAXIM</td>
                 <td>Pháp</td>
@@ -386,13 +401,13 @@
                 <td>Việt Nam</td>
                 <td>174.000đ</td>
               </tr>
-              <tr>
+              <tr class="price-row--alt">
                 <td rowspan="2">Bạch hầu, Uốn ván, Ho gà (Vắc xin 3.1)</td>
                 <td>ADACEL</td>
                 <td>Canada</td>
                 <td>1.020.000đ</td>
               </tr>
-              <tr>
+              <tr class="price-row--alt">
                 <td>BOOSTRIX</td>
                 <td>Bỉ</td>
                 <td>1.020.000đ</td>
@@ -410,13 +425,13 @@
                 <td>Bỉ</td>
                 <td>1.020.000đ</td>
               </tr>
-              <tr>
+              <tr class="price-row--alt">
                 <td rowspan="2">Cúm mùa</td>
                 <td>ADACEL</td>
                 <td>Canada</td>
                 <td>1.020.000đ</td>
               </tr>
-              <tr>
+              <tr class="price-row--alt">
                 <td>BOOSTRIX</td>
                 <td>Bỉ</td>
                 <td>1.020.000đ</td>
