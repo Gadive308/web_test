@@ -27,6 +27,7 @@ $surface: #ffffff;
 
 :root {
 	--header-height: 112px;
+	--footer-height: 260px;
 	--brand-blue: #{$brand-blue};
 	--nav-text: #{$nav-text};
 	--soft-bg: #{$soft-bg};
@@ -1376,7 +1377,7 @@ a {
 	padding: 24px 0 48px;
 }
 
-.blog-row {
+.blog-row:not(.row) {
 	display: flex;
 	gap: 24px;
 }
@@ -1668,8 +1669,6 @@ a {
 		flex-direction: column;
 		align-items: flex-start;
 	}
-
-	.blog-row,
 }
 
 @media (max-width: 600px) {
@@ -3433,9 +3432,9 @@ main {
 }
 
 @media (max-width: 1024px) {
-	:root {
-		--header-height: 128px;
-	}
+	.blog-card,
+	.blog-card__image,
+	.article-related .blog-card__image {
 
 .process-row,
 	.location-layout,
@@ -3449,6 +3448,7 @@ main {
 @media (max-width: 768px) {
 	:root {
 		--header-height: 150px;
+		--footer-height: 360px;
 	}
 
 	.top-header-inner {
@@ -3519,6 +3519,7 @@ main {
 @media (max-width: 576px) {
 	:root {
 		--header-height: 164px;
+		--footer-height: 420px;
 	}
 
 	.container {
@@ -3921,8 +3922,6 @@ body.modal-open {
 	line-height: 1;
 }
 
-
-// Thêm đoạn này vào cuối file style.scss để xử lý hiển thị icon và ngày tháng lẻ
 .news-date-block {
     display: flex;
     align-items: center;
@@ -3930,7 +3929,7 @@ body.modal-open {
     margin: 8px 0;
 
     img {
-        width: 14px !important;  // Thu nhỏ icon.png lại thành icon lịch nhỏ xinh
+        width: 14px !important;
         height: 14px !important;
         object-fit: contain;
     }
@@ -3961,7 +3960,7 @@ body.modal-open {
 }
 
 /* Homepage Figma refinements */
-main { padding-top: var(--header-height); }
+main { padding-top: var(--header-height); padding-bottom: var(--footer-height); }
 .hero-section { padding-top: 0; }
 .narrow { max-width: 920px; }
 .section-gap { padding: 42px 0; }
@@ -6609,8 +6608,10 @@ body:has(.article-page) .main-nav .container,
 }
 
 .blog-card__image {
-	width: 240px;
-	height: 150px;
+	width: 100%;
+	max-width: 240px;
+	height: 100%;
+	max-height: 150px;
 	aspect-ratio: auto;
 }
 
@@ -7131,9 +7132,9 @@ $mobile-breakpoint: 768px;
 	.location-layout,
 	.location-layout--expanded,
 	.news-layout,
-	.blog-row,
+	.blog-row:not(.row),
 	.article-layout,
-.package-menu {
+	.package-menu {
 		display: flex;
 	}
 
@@ -7614,22 +7615,22 @@ $mobile-breakpoint: 768px;
 	margin-left: 84px;
 }
 
-.blog-row,
+.blog-row:not(.row),
 .article-layout,
 .qa-content-row {
 	align-items: start;
 }
 
-.blog-row {
+.blog-row:not(.row) {
 	gap: 44px;
 }
 
-.blog-row > .blog-list {
+.blog-row:not(.row) > .blog-list {
 	flex: 0 0 570px;
 	max-width: 570px;
 }
 
-.blog-row > .blog-sidebar {
+.blog-row:not(.row) > .blog-sidebar {
 	flex: 0 0 330px;
 	max-width: 330px;
 	min-width: 0;
@@ -7860,7 +7861,7 @@ $mobile-breakpoint: 768px;
 }
 
 @media (max-width: 900px) {
-	.blog-row > *,
+	.blog-row:not(.row) > *,
 	.article-layout > * {
 		flex-basis: 100% !important;
 		max-width: 100% !important;
@@ -7943,7 +7944,7 @@ $mobile-breakpoint: 768px;
 	.location-layout > *,
 	.location-layout--expanded > *,
 	.news-layout > *,
-	.blog-row > *,
+	.blog-row:not(.row) > *,
 	.article-layout > *,
 	.qa-content-row > *,
 	.field-row > *,
