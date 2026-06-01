@@ -76,22 +76,6 @@ a {
 	margin: 0 auto;
 }
 
-button,
-input,
-select,
-textarea {
-	font: inherit;
-}
-
-a {
-	transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
-}
-
-.container {
-	width: min(1200px, calc(100% - 32px));
-	margin: 0 auto;
-}
-
 .site-header {
 	position: fixed;
 	top: 0;
@@ -976,9 +960,6 @@ a {
 	gap: 32px;
 }
 
-.article-layout--wide-sidebar {
-}
-
 .article-head {
 	background: #fff;
 	border-bottom: 2px solid #2f87df;
@@ -1689,18 +1670,6 @@ a {
 	}
 
 	.blog-grid,
-	.article-layout {
-	}
-}
-
-@media (max-width: 600px) {
-	.blog-card {
-	}
-}
-
-@media (max-width: 900px) {
-	.qa-content-grid {
-	}
 }
 
 @media (max-width: 600px) {
@@ -2250,13 +2219,7 @@ a {
 		align-items: flex-start;
 	}
 
-	.doctor-grid {
-	}
-
-	.doctor-detail-card {
-	}
-
-	.doctor-detail-card__stats {
+.doctor-detail-card__stats {
 		border-left: 0;
 		border-top: 1px dashed #e0e8f0;
 		padding-left: 0;
@@ -2270,10 +2233,7 @@ a {
 		align-items: stretch;
 	}
 
-	.doctor-grid {
-	}
-
-	.doctor-filters label {
+.doctor-filters label {
 		width: 100%;
 		justify-content: space-between;
 	}
@@ -2732,7 +2692,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     display: block;
-    max-width: 460px;
+    max-width: 260px;
     width: 100%;
     
     /* Đảm bảo ảnh img bên trong luôn co giãn khít theo block bọc nó */
@@ -3470,19 +3430,10 @@ main {
 		--header-height: 128px;
 	}
 
-	.action-list {
-	}
-
-	.package-layout {
-	}
-
-	.process-grid,
+.process-grid,
 	.location-layout,
 	.news-layout,
-	.footer-grid {
-	}
-
-	.location-image,
+.location-image,
 	.news-feature-image {
 		height: 180px;
 	}
@@ -3526,10 +3477,7 @@ main {
 		white-space: normal;
 	}
 
-	.action-list {
-	}
-
-	.section-title,
+.section-title,
 	.center-heading {
 		font-size: 30px;
 	}
@@ -3538,22 +3486,12 @@ main {
 	.location-layout,
 	.news-layout,
 	.field-grid,
-	.footer-grid {
-	}
-
-	.location-image,
+.location-image,
 	.news-feature-image {
 		height: 180px;
 	}
 
-	.section-chip-image {
-		max-width: 320px;
-	}
-
-	.news-mini {
-	}
-
-	.news-mini img {
+.news-mini img {
 		width: 72px;
 		height: 56px;
 	}
@@ -4034,7 +3972,6 @@ main { padding-top: var(--header-height); }
 .trust-desc,
 .package-intro { max-width: 720px; font-size: 12px; line-height: 1.65; }
 .sub-title { font-size: 14px; margin-top: 6px; }
-.section-chip-image { max-width: 260px; top: -11px; }
 .trust-combined { max-width: 760px; gap: 14px; margin-top: 14px; }
 .trust-combined img { width: calc((100% - 42px) / 4); max-width: 178px; }
 
@@ -4106,7 +4043,6 @@ main { padding-top: var(--header-height); }
 .booking-form--home legend { display: flex; align-items: center; gap: 6px; width: 100%; margin-bottom: 8px; font-size: 12px; font-weight: 700; color: #1f3763; }
 .booking-form--home legend img { width: 16px; height: 16px; object-fit: contain; flex: 0 0 16px; }
 .booking-form--home .field-grid { gap: 8px; margin-bottom: 8px; }
-.booking-form--home .three-cols { }
 .booking-form--home input,
 .booking-form--home select { height: 34px; border-radius: 4px; padding: 0 10px; font-size: 11px; }
 .booking-tab-row { display: flex; gap: 8px; }
@@ -4138,8 +4074,7 @@ main { padding-top: var(--header-height); }
 @media (max-width: 1024px) {
 	.narrow,
 	.booking-wrap { max-width: 860px; }
-	.package-layout { }
-	.package-layout,
+.package-layout,
 	.location-layout--expanded,
 	.news-layout { max-width: 100%; }
 }
@@ -4152,9 +4087,6 @@ main { padding-top: var(--header-height); }
 	.package-layout,
 	.process-grid,
 	.location-layout--expanded,
-	.news-layout { }
-	.package-menu { }
-	.booking-form--home .three-cols { }
 }
 
 @media (max-width: 576px) {
@@ -4162,11 +4094,8 @@ main { padding-top: var(--header-height); }
 	.section-title { font-size: 21px; }
 	.package-menu,
 	.field-grid,
-	.booking-form--home .field-grid { }
-	.booking-location-item { }
-	.booking-location-item button { justify-self: start; }
-	.news-mini { }
-	.news-mini img { width: 96px; height: 66px; }
+.booking-location-item button { justify-self: start; }
+.news-mini img { width: 96px; height: 66px; }
 }
 
 /* Header action refinements */
@@ -4403,10 +4332,7 @@ main { padding-top: var(--header-height); }
 }
 
 @media (max-width: 1024px) {
-	.footer-grid--figma {
-	}
-
-	.footer-hours-card {
+.footer-hours-card {
 		max-width: 260px;
 	}
 }
@@ -4422,10 +4348,7 @@ main { padding-top: var(--header-height); }
 }
 
 @media (max-width: 576px) {
-	.footer-grid--figma {
-	}
-
-	.floating-contact--left {
+.floating-contact--left {
 		left: 12px;
 		bottom: 12px;
 	}
@@ -4950,9 +4873,6 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 }
 
 .doctor-review-card p,
-.doctor-review-date {
-}
-
 .doctor-review-card p {
 	color: #64748b;
 	font-size: 12px;
@@ -5103,10 +5023,7 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 }
 
 @media (max-width: 900px) {
-	.doctor-time-grid {
-	}
-
-	.doctor-detail-card {
+.doctor-detail-card {
 		padding-right: 20px;
 	}
 
@@ -5114,8 +5031,6 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		width: 180px;
 	}
 
-	.doctor-detail-card__stats {
-	}
 }
 
 @media (max-width: 700px) {
@@ -5131,10 +5046,7 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		flex: 1 1 220px;
 	}
 
-	.doctor-grid {
-	}
-
-	.doctor-detail-card {
+.doctor-detail-card {
 		padding: 0 16px 18px;
 	}
 
@@ -5144,19 +5056,13 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		margin: 0 -16px;
 	}
 
-	.doctor-time-grid {
-	}
-
-	.review-pagination {
+.review-pagination {
 		justify-content: center;
 	}
 }
 
 @media (max-width: 520px) {
-	.doctor-grid {
-	}
-
-	.doctor-card {
+.doctor-card {
 		max-width: 240px;
 		margin: 0 auto;
 	}
@@ -5515,10 +5421,7 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 }
 
 @media (max-width: 480px) {
-	.facility-grid {
-	}
-
-	.facility-list-section {
+.facility-list-section {
 		padding: 24px 0 38px;
 	}
 
@@ -5924,8 +5827,6 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		gap: 14px;
 	}
 
-	.time-slot-grid {
-	}
 }
 
 @media (max-width: 768px) {
@@ -5945,13 +5846,7 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		flex: 0 0 auto;
 	}
 
-	.specialty-service-grid {
-	}
-
-	.detail-service-head {
-	}
-
-	.detail-service-head img {
+.detail-service-head img {
 		width: 100%;
 		height: 210px;
 	}
@@ -5960,17 +5855,12 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		padding: 22px;
 	}
 
-	.detail-location-bar {
-	}
-
-	.detail-date-row {
+.detail-date-row {
 		align-items: flex-start;
 		flex-direction: column;
 		gap: 10px;
 	}
 
-	.time-slot-grid {
-	}
 }
 
 @media (max-width: 520px) {
@@ -5978,10 +5868,7 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		padding: 34px 0 42px;
 	}
 
-	.specialty-service-card {
-	}
-
-	.specialty-service-card img {
+.specialty-service-card img {
 		width: 112px;
 	}
 
@@ -5994,8 +5881,6 @@ body:has(.doctor-detail-page) .site-header .top-header-inner .search-box .search
 		white-space: normal;
 	}
 
-	.time-slot-grid {
-	}
 }
 
 /* QA Figma pages - source styles only */
@@ -6572,15 +6457,10 @@ body:has(.qa-page) .nav-links a {
 		max-width: calc(100% - 32px);
 	}
 
-	.qa-content-grid {
-	}
 }
 
 @media (max-width: 760px) {
-	.qa-content-grid {
-	}
-
-	.qa-side {
+.qa-side {
 		order: -1;
 	}
 
@@ -6592,8 +6472,6 @@ body:has(.qa-page) .nav-links a {
 		border-radius: 18px;
 	}
 
-	.qa-detail-answer-box {
-	}
 }
 
 /* Medical guide and article detail Figma refinements */
@@ -7010,9 +6888,6 @@ body:has(.article-page) .main-nav .container,
 	gap: 18px;
 }
 
-.article-related .blog-card {
-}
-
 .article-related .blog-card__image {
 	width: 185px;
 	height: 112px;
@@ -7033,14 +6908,8 @@ body:has(.article-page) .main-nav .container,
 
 @media (max-width: 900px) {
 	.blog-grid,
-	.article-layout {
-	}
-
-	.blog-card,
-	.article-related .blog-card {
-	}
-
-	.blog-card__image,
+.blog-card,
+.blog-card__image,
 	.article-related .blog-card__image {
 		width: 160px;
 		height: 105px;
@@ -7049,10 +6918,7 @@ body:has(.article-page) .main-nav .container,
 
 @media (max-width: 560px) {
 	.blog-card,
-	.article-related .blog-card {
-	}
-
-	.blog-card__image,
+.blog-card__image,
 	.article-related .blog-card__image {
 		width: 100%;
 		height: auto;
@@ -7265,10 +7131,7 @@ $mobile-breakpoint: 768px;
 	.news-layout,
 	.blog-grid,
 	.article-layout,
-	.qa-content-grid {
-	}
-
-	.package-menu {
+.package-menu {
 		display: flex;
 	}
 
@@ -7283,13 +7146,7 @@ $mobile-breakpoint: 768px;
 	.booking-form--home .field-grid,
 	.booking-form--home .three-cols,
 	.field-grid,
-	.field-grid.three-cols {
-	}
-
-	.booking-location-item {
-	}
-
-	.booking-location-item button {
+.booking-location-item button {
 		justify-self: start;
 	}
 
@@ -7405,10 +7262,7 @@ $mobile-breakpoint: 768px;
 	}
 
 	.detail-service-head,
-	.doctor-detail-card {
-	}
-
-	.detail-service-head img,
+.detail-service-head img,
 	.doctor-detail-card__media img {
 		width: 100%;
 		height: auto;
@@ -7417,10 +7271,7 @@ $mobile-breakpoint: 768px;
 	}
 
 	.time-slot-grid,
-	.doctor-time-grid {
-	}
-
-	.qa-form-card,
+.qa-form-card,
 	.qa-ad-card,
 	.article-sidebar {
 		position: static;
@@ -7428,20 +7279,14 @@ $mobile-breakpoint: 768px;
 	}
 
 	.blog-card,
-	.article-related .blog-card {
-	}
-
-	.blog-card__image,
+.blog-card__image,
 	.article-related .blog-card__image {
 		width: 100% !important;
 		height: auto !important;
 		aspect-ratio: 16 / 10;
 	}
 
-	.blog-category-list li {
-	}
-
-	.blog-category-list img {
+.blog-category-list img {
 		width: 48px;
 		height: 48px;
 	}
@@ -7486,14 +7331,8 @@ $mobile-breakpoint: 768px;
 	}
 
 	.action-list,
-	.trust-combined {
-	}
-
-	.time-slot-grid,
-	.doctor-time-grid {
-	}
-
-	.article-main h1,
+.time-slot-grid,
+.article-main h1,
 	.detail-service-head h1,
 	.doctor-detail-card__body h1 {
 		font-size: 22px;

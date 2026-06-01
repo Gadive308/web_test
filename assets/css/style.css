@@ -51,22 +51,6 @@ a {
   margin: 0 auto;
 }
 
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-
-a {
-  transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
-}
-
-.container {
-  width: min(1200px, 100% - 32px);
-  margin: 0 auto;
-}
-
 .site-header {
   position: fixed;
   top: 0;
@@ -2611,7 +2595,7 @@ main {
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  max-width: 460px;
+  max-width: 260px;
   width: 100%;
   /* Đảm bảo ảnh img bên trong luôn co giãn khít theo block bọc nó */
 }
@@ -3402,9 +3386,6 @@ main {
   .news-feature-image {
     height: 180px;
   }
-  .section-chip-image {
-    max-width: 320px;
-  }
   .news-mini img {
     width: 72px;
     height: 56px;
@@ -3922,11 +3903,6 @@ main {
 .sub-title {
   font-size: 14px;
   margin-top: 6px;
-}
-
-.section-chip-image {
-  max-width: 260px;
-  top: -11px;
 }
 
 .trust-combined {
