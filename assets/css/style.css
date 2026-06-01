@@ -27,6 +27,7 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  zoom: 1.25;
 }
 
 img {
@@ -2996,29 +2997,12 @@ main {
 }
 
 .price-table {
-  table-layout: fixed;
-  box-shadow: none;
-  border-radius: 6px;
+  box-shadow: 0 14px 34px rgba(27, 86, 171, 0.06);
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #cbd4df;
+  border: 1px solid rgba(47, 135, 223, 0.08);
   border-collapse: separate;
   border-spacing: 0;
-}
-
-.price-col-disease {
-  width: 42%;
-}
-
-.price-col-vaccine {
-  width: 21%;
-}
-
-.price-col-origin {
-  width: 21%;
-}
-
-.price-col-price {
-  width: 16%;
 }
 
 .price-table thead th {
@@ -3027,15 +3011,15 @@ main {
   font-weight: 800;
   font-size: 14px;
   padding: 16px 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.45);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .price-table thead th:first-child {
-  border-top-left-radius: 5px;
+  border-top-left-radius: 12px;
 }
 
 .price-table thead th:last-child {
-  border-top-right-radius: 5px;
+  border-top-right-radius: 12px;
   border-right: 0;
 }
 
@@ -3048,8 +3032,8 @@ main {
   background: #fff;
 }
 
-.price-table tbody tr.price-row--alt {
-  background: #eef2f6;
+.price-table tbody tr:nth-child(2n) {
+  background: #f3f6f9;
 }
 
 .price-table td:first-child {
@@ -3061,16 +3045,11 @@ main {
 .price-table td {
   padding: 14px 18px;
   vertical-align: middle;
-  border-right: 1px solid #cbd4df;
-  border-bottom: 1px solid #cbd4df;
+  border-right: 1px solid #eef3fb;
 }
 
 .price-table td:last-child {
   border-right: 0;
-}
-
-.price-table tbody tr:last-child td {
-  border-bottom: 0;
 }
 
 .price-pagination {
@@ -7472,7 +7451,6 @@ body:has(.article-page) .main-nav .container,
     aspect-ratio: 16/10;
   }
 }
-
 /* variables */
 /* header */
 .mobile-nav-trigger {
@@ -7635,8 +7613,10 @@ body:has(.article-page) .main-nav .container,
     width: 100%;
     height: auto;
     min-height: 96px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
   .action-list,
   .trust-combined {
@@ -7790,7 +7770,8 @@ body:has(.article-page) .main-nav .container,
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .time-slot-grid,
   .doctor-time-grid {
@@ -7844,7 +7825,6 @@ body:has(.article-page) .main-nav .container,
     bottom: 14px;
   }
 }
-
 @media (max-width: 420px) {
   :root {
     --header-height: 120px;
@@ -7865,6 +7845,4 @@ body:has(.article-page) .main-nav .container,
   .doctor-detail-card__body h1 {
     font-size: 22px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
