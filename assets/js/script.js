@@ -165,9 +165,9 @@ function highlightCurrentNavLink() {
         }
     });
 
-    document.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
-        const toggle = dropdown.querySelector(".nav-dropdown-toggle");
-        const hasActiveChild = Boolean(dropdown.querySelector(".nav-dropdown-menu a.active"));
+    document.querySelectorAll(".main-nav .dropdown").forEach((dropdown) => {
+        const toggle = dropdown.querySelector(".dropdown-toggle");
+        const hasActiveChild = Boolean(dropdown.querySelector(".dropdown-menu a.active"));
 
         if (!toggle) {
             return;
@@ -214,7 +214,7 @@ bindMenuControl(menuTrigger);
 if (mainNav) {
     mainNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
-            if (window.matchMedia("(max-width: 768px)").matches && !link.classList.contains("nav-dropdown-toggle")) {
+            if (window.matchMedia("(max-width: 768px)").matches && !link.classList.contains("dropdown-toggle")) {
                 closeMobileMenu();
             }
         });
@@ -227,38 +227,16 @@ if (mainNav) {
     });
 }
 
-document.querySelectorAll(".nav-dropdown-toggle").forEach((toggle) => {
-    if (toggle.getAttribute("href") !== "#" && toggle.getAttribute("href") !== "javascript:void(0)") {
-        return;
-    }
-
-    toggle.addEventListener("click", (event) => {
-        event.preventDefault();
-        const dropdown = toggle.closest(".nav-dropdown");
-        const isOpen = dropdown?.classList.toggle("is-open") || false;
-        toggle.setAttribute("aria-expanded", String(isOpen));
-    });
-});
-
 document.addEventListener("click", (event) => {
     if (
         mainNav &&
-        menuToggle &&
+        menuTrigger &&
         mainNav.classList.contains("is-open") &&
         !mainNav.contains(event.target) &&
         !(menuTrigger && menuTrigger.contains(event.target))
     ) {
         closeMobileMenu();
     }
-
-    document.querySelectorAll(".nav-dropdown.is-open").forEach((dropdown) => {
-        if (dropdown.contains(event.target)) {
-            return;
-        }
-
-        dropdown.classList.remove("is-open");
-        dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
-    });
 });
 
 function ensureLoginModal() {

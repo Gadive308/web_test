@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
@@ -60,14 +60,14 @@
         <div class="container">
           <ul class="nav-links">
             <li><a href="index.html">Trang chủ</a></li>
-            <li class="nav-dropdown">
-              <a href="javascript:void(0)" class="nav-dropdown-toggle"
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 >Đặt lịch khám <span aria-hidden="true">⌄</span></a
               >
-              <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
-                <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                <li><a href="bacsi.html">Bác sĩ</a></li>
+              <ul class="dropdown-menu" aria-label="Đặt lịch khám">
+                <li><a class="dropdown-item" href="cosoyte.html">Cơ sở y tế</a></li>
+                <li><a class="dropdown-item" href="chuyenkhoa.html">Chuyên khoa</a></li>
+                <li><a class="dropdown-item" href="bacsi.html">Bác sĩ</a></li>
               </ul>
             </li>
             <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
@@ -90,7 +90,7 @@
       </section>
 
       <section class="quick-actions">
-        <div class="container action-list">
+        <div class="container action-list row row-cols-5">
           <article class="action-item">
             <img
               class="action-icon-image"
@@ -155,7 +155,7 @@
 
           <h3 class="sub-title">Vì sao chọn trung tâm tiêm chủng Medivax?</h3>
 
-          <div class="trust-combined">
+          <div class="trust-combined row row-cols-4">
             <img src="assets/image/Group 1000004269.png" alt="Lý do 1" />
             <img src="assets/image/Group 1000004270.png" alt="Lý do 2" />
             <img src="assets/image/Group 1000004271.png" alt="Lý do 3" />
@@ -172,8 +172,8 @@
             dịch chủ động đặc hiệu, từ đó tăng cường sức đề kháng, phòng ngừa
             các bệnh nguy hiểm.
           </p>
-          <div class="package-layout">
-            <aside class="package-menu">
+          <div class="package-layout row">
+            <aside class="package-menu col">
               <button
                 type="button"
                 class="menu-item active"
@@ -238,7 +238,7 @@
                 <span class="menu-arrow">›</span>
               </button>
             </aside>
-            <div class="package-detail">
+            <div class="package-detail col">
               <img
                 class="package-hero-image"
                 src="assets/image/Rectangle 11302.png"
@@ -461,7 +461,7 @@
       <section class="process-section section-gap">
         <div class="container narrow">
           <h2 class="center-heading">Quy trình tiêm chủng tại Medivax</h2>
-          <div class="process-grid">
+          <div class="process-grid row row-cols-1 row-cols-md-3">
             <article class="process-col">
               <h3>1. Trước khi tiêm</h3>
               <ul class="process-list">
@@ -583,8 +583,8 @@
       <section class="location-section section-gap">
         <div class="container narrow">
           <h2 class="center-heading">Địa điểm tiêm chủng tại Medivax</h2>
-          <div class="location-layout location-layout--expanded">
-            <div class="location-panel">
+          <div class="location-layout location-layout--expanded row row-cols-1 row-cols-md-2">
+            <div class="location-panel col">
               <div class="location-toolbar">
                 <select
                   class="location-select"
@@ -693,7 +693,7 @@
                 </button>
               </div>
             </div>
-            <article class="location-card location-card--featured">
+            <article class="location-card location-card--featured col">
               <img
                 class="location-image"
                 src="assets/image/benhvien.png"
@@ -736,11 +736,11 @@
                 <img src="assets/image/User.png" alt="" /> Thông tin người đăng
                 ký
               </legend>
-              <div class="field-grid">
+              <div class="field-grid row row-cols-1 row-cols-sm-2">
                 <input type="text" placeholder="Nhập họ và tên" />
                 <input type="date" aria-label="Ngày sinh" />
               </div>
-              <div class="field-grid">
+              <div class="field-grid row row-cols-1 row-cols-sm-2">
                 <input type="tel" placeholder="Nhập số điện thoại" />
                 <input type="text" placeholder="Nhập email (Không bắt buộc)" />
               </div>
@@ -759,7 +759,7 @@
                 <img src="assets/image/Map Point Wave.png" alt="" /> Chọn trung
                 tâm tiêm chủng
               </legend>
-              <div class="field-grid">
+              <div class="field-grid row row-cols-1 row-cols-sm-2">
                 <select aria-label="Chọn tỉnh thành phố">
                   <option>Chọn Tỉnh/Thành phố</option>
                 </select>
@@ -771,7 +771,7 @@
                 <strong>Có 86 trung tâm tiêm chủng:</strong>
               </p>
               <div class="booking-location-list">
-                <label class="booking-location-item active">
+                <label class="booking-location-item active row">
                   <input type="radio" name="booking-location" checked />
                   <span>
                     <strong
@@ -785,7 +785,7 @@
                   </span>
                   <button type="button">Xem chỉ đường</button>
                 </label>
-                <label class="booking-location-item">
+                <label class="booking-location-item row">
                   <input type="radio" name="booking-location" />
                   <span>
                     <strong
@@ -799,7 +799,7 @@
                   </span>
                   <button type="button">Xem chỉ đường</button>
                 </label>
-                <label class="booking-location-item">
+                <label class="booking-location-item row">
                   <input type="radio" name="booking-location" />
                   <span>
                     <strong
@@ -813,7 +813,7 @@
                   </span>
                   <button type="button">Xem chỉ đường</button>
                 </label>
-                <label class="booking-location-item">
+                <label class="booking-location-item row">
                   <input type="radio" name="booking-location" />
                   <span>
                     <strong
@@ -838,7 +838,7 @@
                 <img src="assets/image/Shield Plus.png" alt="" /> Thông tin tiêm
                 chủng
               </legend>
-              <div class="field-grid three-cols">
+              <div class="field-grid three-cols row row-cols-1 row-cols-md-3">
                 <select aria-label="Chọn vắc xin phòng bệnh">
                   <option>Chọn vắc xin phòng bệnh (Không bắt buộc)</option>
                 </select>
@@ -856,8 +856,8 @@
       <section class="news-section section-gap">
         <div class="container narrow">
           <h2 class="center-heading">Thông tin về trung tâm tiêm chủng</h2>
-          <div class="news-layout">
-            <article class="news-feature">
+          <div class="news-layout row">
+            <article class="news-feature col">
               <img
                 class="news-feature-image"
                 src="assets/image/nhombacsi.png"
@@ -882,8 +882,8 @@
                 >Xem thêm</a
               >
             </article>
-            <div class="news-list">
-              <article class="news-mini">
+            <div class="news-list col">
+              <article class="news-mini row flex-nowrap">
                 <img src="assets/image/vaccine.png" alt="Tin tiêm chủng" />
                 <p>
                   Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
@@ -894,7 +894,7 @@
                 </p>
               </article>
 
-              <article class="news-mini">
+              <article class="news-mini row flex-nowrap">
                 <img src="assets/image/tiem.png" alt="Tin tiêm chủng" />
                 <p>
                   Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
@@ -905,7 +905,7 @@
                 </p>
               </article>
 
-              <article class="news-mini">
+              <article class="news-mini row flex-nowrap">
                 <img src="assets/image/khambenh.png" alt="Tin tiêm chủng" />
                 <p>
                   Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
@@ -916,7 +916,7 @@
                 </p>
               </article>
 
-              <article class="news-mini">
+              <article class="news-mini row flex-nowrap">
                 <img src="assets/image/tiem.png" alt="Tin tiêm chủng" />
                 <p>
                   Nhiệt độ thích hợp bảo quản vắc xin là bao nhiêu?
@@ -933,7 +933,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid footer-grid--figma">
+      <div class="container footer-grid footer-grid--figma row">
         <div class="footer-brand-col">
           <a href="index.html" class="footer-logo" aria-label="Medivax">
             <img src="assets/image/logo.png" alt="Medivax" />

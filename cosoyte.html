@@ -60,14 +60,14 @@
         <div class="container">
           <ul class="nav-links">
             <li><a href="index.html">Trang chủ</a></li>
-            <li class="nav-dropdown">
-              <a href="javascript:void(0)" class="nav-dropdown-toggle"
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 >Đặt lịch khám <span aria-hidden="true">⌄</span></a
               >
-              <ul class="nav-dropdown-menu" aria-label="Đặt lịch khám">
-                <li><a href="cosoyte.html">Cơ sở y tế</a></li>
-                <li><a href="chuyenkhoa.html">Chuyên khoa</a></li>
-                <li><a href="bacsi.html">Bác sĩ</a></li>
+              <ul class="dropdown-menu" aria-label="Đặt lịch khám">
+                <li><a class="dropdown-item" href="cosoyte.html">Cơ sở y tế</a></li>
+                <li><a class="dropdown-item" href="chuyenkhoa.html">Chuyên khoa</a></li>
+                <li><a class="dropdown-item" href="bacsi.html">Bác sĩ</a></li>
               </ul>
             </li>
             <li><a href="hoiapbacsi.html">Hỏi đáp bác sĩ</a></li>
@@ -110,7 +110,7 @@
         <div class="container facility-list-container">
           <h2>Chọn cơ sở y tế</h2>
 
-          <div class="facility-grid">
+          <div class="facility-grid row row-cols-1 row-cols-md-2 row-cols-lg-3">
             <article class="facility-card">
               <div class="facility-card__logo">
                 <img src="assets/image/eh.png" alt="Bệnh viện E" />
@@ -291,7 +291,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid footer-grid--figma">
+      <div class="container footer-grid footer-grid--figma row">
         <div class="footer-brand-col">
           <a href="index.html" class="footer-logo" aria-label="Medivax">
             <img src="assets/image/logo.png" alt="Medivax" />
