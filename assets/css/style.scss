@@ -3432,10 +3432,6 @@ main {
 }
 
 @media (max-width: 1024px) {
-	.blog-card,
-	.blog-card__image,
-	.article-related .blog-card__image {
-
 .process-row,
 	.location-layout,
 	.news-layout,
@@ -4085,9 +4081,6 @@ main { padding-top: var(--header-height); padding-bottom: var(--footer-height); 
 @media (max-width: 768px) {
 	.section-gap { padding: 34px 0; }
 	.action-list { overflow-x: auto; }
-	.package-layout,
-	.process-row,
-	.location-layout--expanded,
 }
 
 @media (max-width: 576px) {
