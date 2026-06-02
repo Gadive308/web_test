@@ -1,0 +1,96 @@
+﻿// Variables, mixins, base reset
+// Source lines 1-94 from pre-refactor style.scss
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+$brand-blue: #2f87df;
+$nav-text: #1f2b49;
+$soft-bg: #f2f7ff;
+$hero-red: #e51f2d;
+$hero-blue: #0e4fb0;
+$text-main: #16233b;
+$surface: #ffffff;
+
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin row-auto($min, $gap) {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $gap;
+
+	> * {
+		flex: 1 1 $min;
+		min-width: 0;
+	}
+}
+
+:root {
+	--header-height: 112px;
+	--brand-blue: #{$brand-blue};
+	--nav-text: #{$nav-text};
+	--soft-bg: #{$soft-bg};
+	--hero-red: #{$hero-red};
+	--hero-blue: #{$hero-blue};
+	--text-main: #{$text-main};
+	--surface: #{$surface};
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", "Segoe UI", sans-serif;
+	color: $text-main;
+	background: linear-gradient(180deg, #f6f9ff 0%, #eef4fb 100%);
+	line-height: 1.6;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	zoom: 1.1;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+a {
+	transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.container {
+	width: min(1200px, calc(100% - 32px));
+	margin: 0 auto;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+a {
+	transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.container {
+	width: min(1200px, calc(100% - 32px));
+	margin: 0 auto;
+}
