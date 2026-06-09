@@ -2592,11 +2592,11 @@ main {
 
 .section-chip-image {
   position: absolute;
-  top: -17px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
-  max-width: 260px;
+  max-width: 400px;
   width: 100%;
   /* Đảm bảo ảnh img bên trong luôn co giãn khít theo block bọc nó */
 }
@@ -6760,10 +6760,6 @@ body:has(.article-page) .main-nav .container,
   max-width: 960px;
 }
 
-.blog-content .container {
-  max-width: 1036px;
-}
-
 .blog-page,
 .article-page {
   padding-top: var(--header-height);
@@ -6844,7 +6840,7 @@ body:has(.article-page) .main-nav .container,
 }
 
 .blog-row {
-  gap: 28px;
+  gap: 44px;
   align-items: start;
 }
 
@@ -6863,9 +6859,9 @@ body:has(.article-page) .main-nav .container,
 
 .blog-card__image {
   width: 100%;
-  max-width: 260px;
-  height: 174px;
-  max-height: none;
+  max-width: 240px;
+  height: 100%;
+  max-height: 150px;
   aspect-ratio: auto;
 }
 
@@ -7925,32 +7921,22 @@ body:has(.article-page) .main-nav .container,
 }
 
 .blog-category-list li {
-  display: block;
-  position: relative;
-  min-height: 84px;
-  padding: 10px 16px 10px 94px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .blog-category-list img {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  flex: none;
-  width: 64px;
-  height: 64px;
-  transform: translateY(-50%);
+  flex: 0 0 70px;
 }
 
 .blog-category-list span {
-  display: block;
-  padding-top: 8px;
+  flex: 1 1 calc(100% - 84px);
   min-width: 0;
 }
 
 .blog-category-list strong {
-  display: block;
-  margin-top: 2px;
-  margin-left: 0;
+  flex: 1 1 calc(100% - 84px);
+  margin-left: 84px;
 }
 
 .blog-page .blog-row,
@@ -7960,12 +7946,12 @@ body:has(.article-page) .main-nav .container,
 }
 
 .blog-page .blog-row {
-  gap: 28px;
+  gap: 44px;
 }
 
 .blog-page .blog-row > .blog-list {
-  flex: 1 1 calc(100% - 358px);
-  max-width: calc(100% - 358px);
+  flex: 1 1 calc(100% - 374px);
+  max-width: calc(100% - 374px);
 }
 
 .blog-page .blog-row > .blog-sidebar {
@@ -8017,8 +8003,8 @@ body:has(.article-page) .main-nav .container,
 }
 
 .blog-card__image {
-  flex: 0 0 260px;
-  max-width: 260px;
+  flex: 0 0 240px;
+  max-width: 240px;
 }
 
 .blog-card__body {
