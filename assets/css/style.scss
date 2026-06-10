@@ -1729,7 +1729,11 @@ a {
 	flex: 1;
 	padding: 10px 0;
 }
-
+.desc-package {
+	color: #295acd;
+	font-size: 13px;
+	line-height: 1.6;
+}
 .doctor-search__divider {
 	width: 1px;
 	height: 28px;
@@ -2767,13 +2771,6 @@ main {
 	align-items: stretch;
 }
 
-.trust-combined > * {
-	flex: 0 0 calc((100% - 42px) / 4) !important;
-	width: calc((100% - 42px) / 4) !important;
-	max-width: calc((100% - 42px) / 4) !important;
-	min-width: 0;
-}
-
 .trust-combined img {
 	width: 100%;
 	max-width: none;
@@ -2813,7 +2810,6 @@ main {
 .package-menu {
 	display: flex;
 	gap: 14px;
-	width: 100%;
 }
 
 .menu-item {
@@ -3949,7 +3945,7 @@ body.modal-open {
 }
 
 /* Homepage Figma refinements */
-main { padding-top: var(--header-height); padding-bottom: var(--footer-height); }
+main { padding-top: var(--header-height); }
 .hero-section { padding-top: 0; }
 .narrow { max-width: 920px; }
 .section-gap { padding: 42px 0; }
@@ -7496,11 +7492,6 @@ $mobile-breakpoint: 768px;
 	gap: 22px;
 }
 
-.action-list > * {
-	flex: 0 0 calc((100% - 88px) / 5);
-	max-width: calc((100% - 88px) / 5);
-}
-
 .package-layout {
 	gap: 14px;
 }
@@ -7988,18 +7979,6 @@ $mobile-breakpoint: 768px;
 		gap: 12px;
 	}
 
-	.action-list > * {
-		flex: 0 0 calc((100% - 12px) / 2);
-		max-width: calc((100% - 12px) / 2);
-	}
-
-	.trust-combined > * {
-		flex: 0 0 calc((100% - 36px) / 4) !important;
-		width: calc((100% - 36px) / 4) !important;
-		max-width: calc((100% - 36px) / 4) !important;
-		min-width: 0;
-	}
-
 	.package-layout > *,
 	.process-row > *,
 	.location-layout > *,
@@ -8117,5 +8096,123 @@ $mobile-breakpoint: 768px;
 	.doctor-row > * {
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+}
+
+/* Bootstrap grid normalization */
+.action-list,
+.trust-combined,
+.package-layout,
+.process-row,
+.location-layout,
+.location-layout--expanded,
+.news-layout,
+.footer-row--figma,
+.doctor-row,
+.doctor-time-row,
+.facility-row,
+.specialty-service-row,
+.time-slot-row,
+.qa-content-row,
+.blog-row,
+.article-layout,
+.field-row {
+	gap: 0 !important;
+}
+
+/* Bootstrap 5 layout fixes */
+.row.action-list,
+.row.trust-combined,
+.row.package-layout,
+.row.process-row,
+.row.location-layout,
+.row.location-layout--expanded,
+.row.news-layout,
+.row.footer-row--figma,
+.row.doctor-row,
+.row.facility-row,
+.row.specialty-service-row,
+.row.qa-content-row,
+.row.blog-row,
+.row.article-layout,
+.row.field-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.quick-actions .action-list {
+	max-width: 920px;
+}
+
+.section-chip-image {
+	top: -8px;
+	z-index: 2;
+}
+
+.package-layout,
+.location-layout--expanded,
+.news-layout {
+	max-width: 100%;
+}
+
+.package-menu {
+	row-gap: 12px;
+}
+
+.menu-item .menu-text {
+	font-weight: 500;
+}
+
+.menu-item.active .menu-text {
+	font-weight: 800;
+}
+
+.package-banner,
+#package-price,
+.booking-location-item em,
+.location-item__status .is-open,
+.location-card__body .is-open {
+	color: #2f87df !important;
+}
+
+.location-item__radio {
+	border-color: #2f87df;
+	background: #fff;
+	box-shadow: none;
+}
+
+.location-item.active .location-item__radio::after {
+	background: #2f87df;
+}
+
+.site-footer {
+	margin-top: 0;
+}
+
+main > section:last-of-type {
+	margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+	.section-chip-image {
+		position: relative;
+		top: auto;
+		left: auto;
+		transform: none;
+		margin: 0 auto;
+		max-width: min(360px, calc(100% - 32px));
+	}
+
+	.trust-combined > * {
+		margin-bottom: 0;
+	}
+
+	.package-section,
+	.price-section,
+	.process-section,
+	.location-section,
+	.booking-section,
+	.news-section {
+		overflow: hidden;
 	}
 }
